@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "menu-loader.js",
-  "scripts": {
-  "dev": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
-  "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify"
+ "scripts": {
+  "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+  "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify"
 },
   "keywords": [],
   "author": "",
