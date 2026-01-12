@@ -1,8 +1,9 @@
-// Contenido del Header (Inyección HTML) - Incluye SPAN para el icono de la hamburguesa/X
+
+   // Contenido del Header (Inyección HTML) - Incluye SPAN para el icono de la hamburguesa/X
 const headerHTML = `
     <header>
         <div class="logo"><a href="/">
-           <img src="imagen/logo.png" alt="Logo de maketo web"> </div></a>
+           <img src="/imagen/logo.png" alt="Logo de maketo web"> </div></a>
         <div class="header-right">
             <nav id="main-menu" role="navigation">
                 <ul>
