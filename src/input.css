@@ -61,7 +61,7 @@ body {
   background-color: #ffffff;
   color: var(--color-primary);
    font: 14px/1.4 Garamond, serif;
-  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-family: 'Inter', system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   line-height: 1.6;
 }
@@ -108,7 +108,7 @@ header {
 }
 /* ESTILO DE ENLACES (Subrayado Negro) */
 #main-menu a, .header-cta a {
-    color: #000000; text-transform: uppercase; text-decoration: none;
+    color: #faf8f8; text-transform: uppercase; text-decoration: none;
     letter-spacing: 0.15em; display: inline-block; padding: 15px 20px;
   
     position: relative;
@@ -141,7 +141,7 @@ header {
 
 #main-menu ul { display: flex; gap: 10px; }
 .menu-toggle { display: none; cursor: pointer; font-size: 30px; color: #000; z-index: 101; }
-
+/*
 .hero-section {
    
     min-height: 80vh; 
@@ -577,3 +577,4 @@ img[data-aspect-ratio] {
 img {
   aspect-ratio: attr(width) / attr(height);
 }
+
