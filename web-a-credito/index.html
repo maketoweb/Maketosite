@@ -126,115 +126,84 @@ img, video, iframe {
 
       
     </style>
-    <script type="application/ld+json">
+ <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": ["Organization", "LocalBusiness"],
+      "@type": ["ProfessionalService", "Organization"],
       "@id": "https://maketo.site/#organization",
-      "name": "Maketo Web | Diseño Web Financiado en Cuotas Sin Interés",
-      "alternateName": "Maketo Web",
+      "name": "Maketo Web",
       "url": "https://maketo.site",
-      "logo": "https://maketo.site/imagen/flex.png",
-      "image": "https://maketo.site/imagen/banner-flex.webp",
-      "description": "Financiamiento web para páginas nuevas en WordPress. Paga tu web en cuotas sin intereses. Servicio global desde Valencia, Venezuela. Para emprendedores, PYMES y profesionales.",
-      "sameAs": [
-        "https://facebook.com/maketoweboficial",
-        "https://instagram.com/maketo.web"
-      ],
-      "foundingDate": "2023",
-      "foundingLocation": "Valencia, Venezuela",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "customer service",
-        "telephone": "+584124058904",
-        "email": "maketostudio@gmail.com",
-        "contactOption": "https://maketo.site/web-a-credito#faq",
-        "availableLanguage": ["Spanish", "English"],
-        "hoursAvailable": {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "opens": "09:00",
-          "closes": "18:00",
-          "validFrom": "2023-01-01",
-          "validThrough": "2025-12-31"
-        },
-        "areaServed": {
-          "@type": "Country",
-          "name": "Global"
-        }
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://maketo.site/imagen/crediflex.webp",
+        "width": "512",
+        "height": "512"
       },
+      "image": "https://maketo.site/imagen/banner-flex.webp",
+      "description": "Líderes en soluciones de financiamiento para desarrollo web WordPress y tecnología digital.",
+      "telephone": "+584124058904",
+      "priceRange": "$$",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Valencia, Carabobo",
         "addressLocality": "Valencia",
         "addressRegion": "Carabobo",
-        "addressCountry": "VE",
-        "postalCode": "2001"
+        "addressCountry": "VE"
       },
-      "location": {
-        "@type": "Place",
-        "name": "Maketo Web Valencia",
-        "address": {
-          "@type": "PostalAddress",
-          "addressCountry": "VE",
-          "addressRegion": "Carabobo",
-          "addressLocality": "Valencia"
-        }
-      },
-      "knowsAbout": [
-        "Diseño Web a Crédito",
-        "Financiamiento Web en Cuotas",
-        "WordPress Profesional",
-        "Tiendas Online Financiadas",
-        "SEO para PYMES",
-        "Desarrollo Web Global"
-      ],
-      "makesOffer": {
-        "@type": "Offer",
-        "name": "Financiamiento Web 0% Interés",
-        "description": "30% inicial + cuotas mensuales sin intereses para páginas web nuevas en WordPress"
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "27"
       }
     },
     {
       "@type": "WebPage",
       "@id": "https://maketo.site/web-a-credito/#webpage",
       "url": "https://maketo.site/web-a-credito/",
-      "name": "Diseño Web a Crédito | Financiamiento en Cuotas Sin Interés ",
-      "description": "✅ Paga tu página web nueva en WordPress en cómodas cuotas sin interés. Solo 30% inicial + 12 meses. Solución para emprendedores, profesionales y PYMES.",
-      "primaryImageOfPage": {
-        "@type": "ImageObject",
-        "url": "https://maketo.site/imagen/banner-flex.webp",
-        "width": 1200,
-        "height": 630,
-        "caption": "Financiamiento web para Pymes y empresas"
-      },
-      "datePublished": "2024-06-15",
-      "dateModified": "2025-01-20",
-      "inLanguage": "es",
-      "breadcrumb": {
-        "@id": "https://maketo.site/web-a-credito/#breadcrumb"
-      },
+      "name": "Diseño Web a Crédito | Financiamiento en Cuotas sin Intereses",
+      "isPartOf": { "@id": "https://maketo.site/#organization" },
+      "description": "Obtén tu sitio web profesional con 30% de inicial y cuotas mensuales. Financiamiento directo sin bancos.",
+      "breadcrumb": { "@id": "https://maketo.site/web-a-credito/#breadcrumb" },
+      "mainEntity": { "@id": "https://maketo.site/web-a-credito/#service" }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://maketo.site/web-a-credito/#service",
+      "name": "Financiamiento de Páginas Web",
+      "serviceType": "Diseño Web Financiado",
+      "provider": { "@id": "https://maketo.site/#organization" },
+      "description": "Sistema de pago fraccionado para el desarrollo de sitios web profesionales en WordPress.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "seller": { "@id": "https://maketo.site/#organization" }
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://maketo.site/web-a-credito/#faq",
       "mainEntity": [
         {
-          "@id": "https://maketo.site/web-a-credito/#service"
+          "@type": "Question",
+          "name": "¿Cómo funciona el diseño web a crédito ?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Se requiere un pago inicial del 30% para comenzar el proyecto. El saldo restante se divide en cuotas fijas mensuales sin intereses."
+          }
         },
         {
-          "@id": "https://maketo.site/web-a-credito/#faqpage"
-        },
-        {
-          "@id": "https://maketo.site/web-a-credito/#howto"
+          "@type": "Question",
+          "name": "¿Se puede pagar en cuotas desde otros países?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí, el financiamiento web es global. Aceptamos PayPal, Zelle y transferencias internacionales para los pagos mensuales."
+          }
         }
-      ],
-      "speakable": {
-        "@type": "SpeakableSpecification",
-        "cssSelector": ["#proceso", "#faq", ".hero-bg h1"]
-      },
-      "potentialAction": {
-        "@type": "ReadAction",
-        "target": ["https://maketo.site/web-a-credito/#faq"]
-      }
+      ]
     },
     {
       "@type": "BreadcrumbList",
@@ -249,203 +218,10 @@ img, video, iframe {
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "Financiamiento Web",
+          "name": "Web a Crédito",
           "item": "https://maketo.site/web-a-credito/"
         }
       ]
-    },
-    {
-      "@type": "Service",
-      "@id": "https://maketo.site/web-a-credito/#service",
-      "name": "Financiamiento para Páginas Web para negocios",
-      "serviceType": "Diseño Web Financiado",
-      "provider": {
-        "@id": "https://maketo.site/#organization"
-      },
-      "description": "Servicio de financiamiento web con 30% inicial y hasta 10 cuotas sin intereses. Exclusivo para proyectos nuevos en WordPress, para emprendedores, PYMES y profesionales.",
-      "areaServed": {
-        "@type": "Country",
-        "name": "Global"
-      },
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Planes de Financiamiento Web",
-        "itemListElement": [
-          {
-            "@type": "OfferCatalog",
-            "name": "Plan Básico",
-            "description": "Página web informativa con hasta 5 secciones"
-          },
-          {
-            "@type": "OfferCatalog",
-            "name": "Plan Profesional",
-            "description": "Web corporativa con funcionalidades avanzadas"
-          },
-          {
-            "@type": "OfferCatalog",
-            "name": "Plan Tienda Online",
-            "description": "E-commerce con WooCommerce y pasarelas de pago"
-          }
-        ]
-      },
-      "termsOfService": "https://maketo.site/terminos",
-      "serviceOutput": {
-        "@type": "WebSite",
-        "name": "Página Web Profesional a Cuotas"
-      }
-    },
-    {
-      "@type": "FAQPage",
-      "@id": "https://maketo.site/web-a-credito/#faq",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "¿Cómo funciona el financiamiento para páginas web?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Con solo el 30% inicial comienza el desarrollo de tu nueva página web en WordPress. El 70% restante se divide en 6 a 12 cuotas mensuales sin intereses adicionales."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "¿El financiamiento está disponible solo en Venezuela?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "No, trabajamos con emprendedores y PYMES en todo el mundo. Desde Venezuela aceptamos pagos en bolívares , Euros y dólares, internacionalmente con PayPal y transferencias."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "¿Qué incluye el financiamiento web?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Diseño web profesional en WordPress, dominio y hosting por 1 año, certificado SSL, capacitación, soporte durante el financiamiento y optimización SEO básica."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "¿Ofrecen financiamiento para tiendas online?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Sí, financiamos tiendas online en WooCommerce con las mismas condiciones: 30% inicial y cuotas sin intereses. Incluye catálogo, pasarelas de pago y gestión de envíos."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "¿Es solo para proyectos nuevos?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Sí, este financiamiento está disponible exclusivamente para páginas web nuevas en WordPress, no aplica para rediseños o migraciones."
-          }
-        }
-      ]
-    },
-    {
-      "@type": "HowTo",
-      "@id": "https://maketo.site/web-a-credito/#howto",
-      "name": "Cómo obtener tu página web con financiamiento en 4 pasos",
-      "description": "Proceso simple para conseguir tu nueva página web en WordPress con un plan de pago adaptado a tu flujo de caja.",
-      "totalTime": "PT7D",
-      "step": [
-        {
-          "@type": "HowToStep",
-          "name": "Cuéntanos tu proyecto",
-          "text": "Describimos juntos tu nueva página web en WordPress y definimos el alcance.",
-          "url": "https://maketo.site/web-a-credito#proceso"
-        },
-        {
-          "@type": "HowToStep",
-          "name": "Acordamos el plan de pago",
-          "text": "Elegimos entre 6 a 12 cuotas mensuales sin intereses adicionales, con solo 30% inicial.",
-          "url": "https://maketo.site/web-a-credito#financiamiento"
-        },
-        {
-          "@type": "HowToStep",
-          "name": "Desarrollo y lanzamiento",
-          "text": "Creamos y ponemos online tu web en 7 días hábiles mientras comienzas con el pago inicial.",
-          "url": "https://maketo.site/web-a-credito#proceso"
-        },
-        {
-          "@type": "HowToStep",
-          "name": "Pagas en cuotas mensuales",
-          "text": "Completas el pago restante de manera cómoda mientras tu web ya está trabajando para ti.",
-          "url": "https://maketo.site/web-a-credito#transparencia"
-        }
-      ],
-      "supply": {
-        "@type": "HowToSupply",
-        "name": "Contenido básico (textos, imágenes)"
-      },
-      "tool": {
-        "@type": "HowToTool",
-        "name": "WordPress"
-      }
-    },
-    {
-  "@context": "https://schema.org/",
-  "@type": "Service",
-  "name": "Diseño Web a Crédito",
-  "serviceType": "Diseño y Desarrollo Web",
-  "provider": {
-    "@type": "LocalBusiness",
-    "name": "Maketo Web"
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "24",
-    "bestRating": "5",
-    "worstRating": "1"
-  },
-  "review": [
-    {
-      "@type": "Review",
-      "author": {
-        "@type": "Person",
-        "name": "Carlos Rodríguez"
-      },
-      "datePublished": "2023-11-15",
-      "reviewBody": "Excelente servicio. Pude financiar mi tienda online en 10 cuotas sin interés y el proceso fue muy transparente.",
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5"
-      }
-    },
-    {
-      "@type": "Review",
-      "author": {
-        "@type": "Person",
-        "name": "Elena Martínez"
-      },
-      "datePublished": "2024-01-10",
-      "reviewBody": "La mejor opción para emprendedores que no pueden pagar todo de una vez. Mi web en WordPress quedó profesional.",
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5"
-      }
-    }
-  ]
-},
-    {
-      "@type": "Article",
-      "headline": "Financiamiento Web: La solución para emprendedores que necesitan una web profesional",
-      "description": "Guía completa sobre cómo obtener una página web nueva en WordPress pagando en cuotas sin intereses, preservando tu capital de trabajo.",
-      "image": "https://maketo.site/imagen/banner-flex.webp",
-      "author": {
-        "@type": "Organization",
-        "name": "Maketo Web"
-      },
-      "publisher": {
-        "@id": "https://maketo.site/#organization"
-      },
-      "datePublished": "2023-06-15",
-      "dateModified": "2025-01-20",
-      "mainEntityOfPage": {
-        "@type": "WebPage",
-        "@id": "https://maketo.site/web-a-credito/"
-      },
-      "articleSection": "Financiamiento Web",
-      "keywords": "diseño web a crédito, financiamiento web, páginas web financiadas, Crédito digital, tienda online financiada"
     }
   ]
 }
