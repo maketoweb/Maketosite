@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    
+    <title>404 | Maketo: Página No Encontrada</title>
+    
+    <meta name="description" content="Lo sentimos, la página que buscas en maketo.site no existe. Utiliza los enlaces para volver a la página principal o contactar." />
+    <link rel="canonical" href="https://maketo.site/404.html" />
+
+    <link rel="icon" href="/imagen/favicon.png" type="imagen/png"> 
+    <link rel="icon" href="/imagen/favicon.png" type="imagen/x-icon">
+    <link rel="icon" href="/imagen/favicon-32x32.png" type="imagen/png" sizes="32x32">
+    <link rel="icon" href="/imagen/favicon-16x16.png" type="imagen/png" sizes="16x16">
+    <link rel="apple-touch-icon" href="/imagen/favicon.png" sizes="180x180">
+    <link rel="manifest" href="/site.webmanifest">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5CN6E2EFS2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-5CN6E2EFS2');
+    </script>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.getElementsByTagName(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5ZK3M5QT');</script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'dark-bg': '#050506',
+              'secondary-bg': '#0f0f12',
+              'accent': '#00acee',
+              'secondary-text': '#b4b4b4',
+              'primary-text': '#ffffff'
+            },
+            fontFamily: { sans:['Inter','system-ui','sans-serif'] },
+            // Se omiten los keyframes y animations para aligerar la carga.
+          }
+        }
+      }
+    </script>
+
+
+    <style>
+      /* Estilos generales (Tomados de index.html) */
+      body{background:#050506;color:#fff;font-family:Inter,system-ui, sans-serif;-webkit-font-smoothing:antialiased}
+      
+      /* Estilo específico para la sección 404 */
+      .error-container {
+          /* Ajustado para asegurar que el contenido esté centrado en la vista */
+          min-height: calc(100vh - 80px); /* Restamos un aproximado de la altura del nav/footer */
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          text-align: center;
+          padding: 20px 0;
+      }
+      /* Animación del CTA (tomada de index.html) */
+      @keyframes pop-bounce {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+      }
+      .cta-anim {
+        animation: pop-bounce 2s infinite ease-in-out;
+      }
+    </style>
+
+</head>
+<body class="min-h-screen bg-dark-bg text-primary-text">
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZK3M5QT"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<header class="shadow-xl bg-black sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
+        <a href="/" class="flex items-center space-x-2">
+            <img src="/imagen/logo.png" alt="Logo Maketo" class="w-8 h-8">
+            <span class="text-sm text-white-800 font-bold">Web & Financiación</span>
+        </a>
+        
+        <nav class="hidden md:flex space-x-6 text-gray-700 font-medium items-center">
+            <a href="/" class="text-primary-text hover:text-accent transition">Home</a>
+            <a href="/diseno-web-a-credito.html" class="text-primary-text hover:text-accent transition">Financiamiento</a>
+            <a href="/#ejemplos" class="text-primary-text hover:text-accent transition">Ejemplos</a>
+            <a href="/blog" class="text-primary-text hover:text-accent transition">Blog</a>
+            <a href="/#contacto" class="py-2 px-4 bg-accent text-white rounded-lg font-semibold hover:bg-blue-700 transition shadow-md">Contactar</a>
+        </nav>
+        
+        <button class="md:hidden text-primary-text focus:outline-none" id="mobileMenuButton">
+            <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+        </button>
+    </div>
+
+    <div id="mobileMenu" class="md:hidden fixed inset-0 bg-secondary-bg z-50 transform translate-x-full transition-transform duration-300">
+        <div class="flex justify-between items-center p-4 border-b border-gray-800 bg-secondary-bg">
+            <a href="/index.html" class="flex items-center space-x-2">
+                <img src="/imagen/logo.png" alt="Logo" class="w-8 h-8">
+                <span class="text-sm text-primary-text font-bold">Web & Financiación</span>
+            </a>
+            <button id="closeMobileMenu" class="text-primary-text p-2">
+                <svg class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+        </div>
+        <nav class="p-4 space-y-1 overflow-y-auto h-full pb-20">
+            <a href="/index.html" class="block py-3 px-4 text-primary-text font-medium hover:bg-gray-800 rounded-lg">Home</a>
+            <a href="/diseno-web-a-credito.html" class="block py-3 px-4 text-primary-text font-medium hover:bg-gray-800 rounded-lg">Financiamiento</a>
+
+            <div>
+                <button class="mobile-accordion-btn w-full flex justify-between items-center py-3 px-4 text-primary-text font-medium hover:bg-gray-800 rounded-lg" aria-expanded="false">
+                    <span>Servicios</span>
+                    <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div class="mobile-accordion-content hidden pl-8 pr-4 py-2 space-y-1 text-sm bg-gray-900 rounded-b-lg">
+                    <a href="/#servicios" class="block py-2 text-secondary-text hover:text-accent transition">Ver Todos</a>
+                    <a href="/#diseno" class="block py-2 text-secondary-text hover:text-accent transition">Diseño Web Profesional</a>
+                    <a href="/#seo" class="block py-2 text-secondary-text hover:text-accent transition">Posicionamiento SEO</a>
+                </div>
+            </div>
+
+            <a href="/index.html/#portafolio" class="block py-3 px-4 text-primary-text font-medium hover:bg-gray-800 rounded-lg">Ejemplos</a>
+
+            
+            <a href="/index.html/#contacto" class="block py-3 px-4 bg-accent text-white font-semibold hover:bg-blue-700 rounded-lg text-center mt-4 shadow-md">Contactar</a>
+        </nav>
+    </div>
+</header>
+
+ <section class="py-20 bg-dark-bg error-container">
+    <div class="max-w-xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <h1 class="text-8xl md:text-9xl font-extrabold text-accent mb-6 leading-none">404</h1>
+        
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+            ¡Vaya! Página No Encontrada
+        </h2>
+        
+        <p class="text-lg md:text-xl text-secondary-text mb-10 max-w-md mx-auto">
+            Parece que te perdiste. El enlace al que intentaste acceder ya no existe o es incorrecto. 
+            Te invitamos a volver a nuestra página de inicio para encontrar lo que necesitas.
+        </p>
+        
+        <a href="/" class="inline-block py-3 px-8 bg-accent text-white font-bold rounded-xl hover:bg-blue-700 transition shadow-lg text-lg">
+            Volver a la Página Principal
+        </a>
+
+        <p class="text-sm text-gray-500 mt-6">
+            Si crees que esto es un error, <a href="https://wa.me/584143420573" class="text-accent hover:text-blue-400 font-semibold" target="_blank">contáctanos por WhatsApp</a>.
+        </p>
+        
+    </div>
+</section>
+
+<footer class="bg-secondary-bg text-white py-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left">
+        <div class="grid md:grid-cols-4 gap-8">
+            <div>
+                <a href="/" class="flex items-center space-x-2 mb-4 justify-center md:justify-start">
+                    <span class="text-3xl font-bold text-accent">MAKETO</span>
+                </a>
+                <p class="text-sm text-secondary-text">Páginas web premium con Plan de Negocio y posicionamiento SEO. Su socio para crecer en Venezuela y LATAM.</p>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold mb-4 text-accent">Servicios</h3>
+                <ul class="space-y-2 text-sm text-secondary-text">
+                    <li><a href="/#servicios" class="hover:text-primary-text">SEO técnico y On Page</a></li>
+                    <li><a href="/#servicios" class="hover:text-primary-text">Rediseño de webs</a></li>
+                    <li><a href="/#servicios" class="hover:text-primary-text">Mantenimiento mensual</a></li>
+                    <li><a href="/politica-de-privacidad.html" class="hover:text-primary-text">Política de Privacidad</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold mb-4 text-accent">Contacto</h3>
+                <ul class="space-y-2 text-sm text-secondary-text">
+                    <li><a href="mailto:maketostudio@gmail.com" class="hover:text-primary-text">maketostudio@gmail.com</a></li>
+                    <li><a href="tel:+584143420573" class="hover:text-primary-text">+58 414-342-0573</a></li>
+                    <li>Valencia, Carabobo, Venezuela</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold mb-4 text-accent">Síguenos</h3>
+                <div class="flex space-x-4 justify-center md:justify-start">
+                    
+                    <a href="https://facebook.com/maketoweboficial" target="_blank" class="text-secondary-text hover:text-accent transition" aria-label="Facebook de Maketo">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.879v-6.989H7.234V12h3.204V9.349c0-3.14 1.894-4.851 4.659-4.851 1.328 0 2.468.236 2.801.34v3.25h-1.921c-1.503 0-1.802.716-1.802 1.776V12h3.692l-.594 3.49H14.18V21.88C18.889 21.085 22 16.94 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                    </a>
+
+                    <a href="https://instagram.com/maketo.web" target="_blank" class="text-secondary-text hover:text-accent transition" aria-label="Instagram de Maketo">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M7.5 2C4.46 2 2 4.46 2 7.5v9C2 19.54 4.46 22 7.5 22h9c3.04 0 5.5-2.46 5.5-5.5v-9C22 4.46 19.54 2 16.5 2h-9zm9 2c.28 0 .5.22.5.5v9c0 .28-.22.5-.5.5h-9c-.28 0-.5-.22-.5-.5v-9c0-.28.22-.5.5-.5h9zM8 8.5c0 .28-.22.5-.5.5H7c-.28 0-.5-.22-.5-.5v-1c0-.28.22-.5.5-.5h.5c.28 0 .5.22.5.5v1zM12 9a3 3 0 100 6 3 3 0 000-6zm0 2a1 1 0 110 2 1 1 0 010-2z"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="mt-8 border-t border-gray-800 pt-6">
+            <p class="text-sm text-secondary-text text-center">© 2024 Maketo. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const mobileMenuButton = document.getElementById('mobileMenuButton');
+        const closeMobileMenu = document.getElementById('closeMobileMenu');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const accordionButtons = document.querySelectorAll('.mobile-accordion-btn');
+
+        // Función para abrir/cerrar el menú móvil
+        mobileMenuButton.addEventListener('click', function() {
+            mobileMenu.classList.remove('translate-x-full');
+            document.body.style.overflow = 'hidden'; // Evita el scroll del fondo
+        });
+
+        closeMobileMenu.addEventListener('click', function() {
+            mobileMenu.classList.add('translate-x-full');
+            document.body.style.overflow = '';
+        });
+
+        // Toggle del acordeón (Servicios)
+        accordionButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const content = this.nextElementSibling;
+                const icon = this.querySelector('svg');
+                content.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+                
+                // Cierra otros acordeones si es necesario (opcional)
+                accordionButtons.forEach(otherButton => {
+                    if (otherButton !== button) {
+                        otherButton.nextElementSibling.classList.add('hidden');
+                        otherButton.querySelector('svg').classList.remove('rotate-180');
+                    }
+                });
+            });
+        });
+
+        // Cerrar menú al hacer clic en un enlace (solo en móvil)
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            // Solo para enlaces que no sean el botón de acordeón
+            if (!link.closest('.mobile-accordion-content') && link.getAttribute('href') !== '#') {
+                link.addEventListener('click', function() {
+                    setTimeout(() => {
+                        mobileMenu.classList.add('translate-x-full');
+                        document.body.style.overflow = '';
+                    }, 100); 
+                });
+            }
+        });
+    });
+</script>
+
+<a href="https://api.whatsapp.com/send?phone=+584143420573&text=Hola%20Maketo,%20quiero%20informaci%C3%B3n%20sobre%20los%20planes%20y%20financiamiento." 
+   class="fixed bottom-6 left-6 z-50 bg-accent text-dark-bg px-5 py-3 rounded-full font-bold shadow-2xl hover:bg-white transition cta-anim flex items-center gap-2">
+  ¿Cotizar?
+</a>
+</body>
+</html>
