@@ -25,8 +25,8 @@ const headerHTML = `
 const footerHTML = `
    <footer class="footer-container" style="font-family: 'Inter', sans-serif;">
     <div class="footer-column footer-info" style="max-width: 300px;">
-        <h4>Maketo Web | Agencia de Diseño Web en Venezuela</h4>
-        <p>Expertos en <strong>metodología de conversión</strong>. Diseñamos páginas web de alto rendimiento en Venezuela para clientes de todo el mundo.</p>
+        <h4>Maketo Web | Diseño de paginas web a credito </h4>
+        <p>Expertos en <strong>metodología de conversión</strong>. Diseñamos páginas web de alto rendimiento financiamiento para Pymes, emprendedores y profesionales</p>
         
         <div class="social-links">
             <a href="https://instagram.com/maketo.web" target="_blank" aria-label="Instagram"><i class="ri-instagram-fill"></i></a>
@@ -64,7 +64,7 @@ const footerHTML = `
     </div>
     
     <div class="footer-copyright">
-        <p>© 2025 Maketo Web. Sede en Valencia, Venezuela | Soluciones de Diseño Web para todo el mundo.</p>
+        <p>© 2025 Maketo Web. Sede en Valencia, Venezuela | Soluciones de Diseño Web financiado para todo el mundo.</p>
     </div>
 </footer>
 `;
