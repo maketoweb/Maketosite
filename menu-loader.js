@@ -53,8 +53,8 @@ const footerHTML = `
         <h4>Legal y Contacto</h4>
         <ul>
             <li><a href="/planes/">Planes</a></li>
-            <li><a href="/legal/terminos">Términos</a></li>
-            <li><a href="/legal/privacidad">Privacidad</a></li>
+            <li><a href="/politica-legal">Politica legal</a></li>
+           
         </ul>
     </div>
     <div class="footer-copyright">

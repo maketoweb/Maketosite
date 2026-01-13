@@ -1,21 +1,7 @@
-# Maketo  - robots.txt
 User-agent: *
-
-# Permitir todo el contenido principal
 Allow: /
-Allow: /ve/
-Allow: /blog/
-Allow: /imagen/
 
-# Bloquear URLs de WhatsApp y archivos técnicos
-Disallow: /send?phone=
-Disallow: /send/?phone=
-Disallow: /site.webmanifest
+User-agent: Google-Extended
+Disallow: /
 
-# Bloquear archivos de configuración
-Disallow: /.git/
-Disallow: /.env
-Disallow: /node_modules/
-
-# Sitemap
 Sitemap: https://maketo.site/sitemap.xml
