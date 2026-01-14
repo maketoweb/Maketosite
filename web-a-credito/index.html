@@ -69,25 +69,12 @@
              overflow-x: hidden;
              margin-top: -10px;
         }
-
-        /* Estilos para el Hero con imagen fija */
-        .hero-bg {
-           position: relative;
-            overflow: hidden;
-          
-    
-        }
         
        
 img, video, iframe {
   aspect-ratio: attr(width) / attr(height);
 }
 
-
-.hero-bg img {
-  width: auto;
-  height: auto;
-}
 
         /* Animación del botón flotante */
         .whatsapp-float {
@@ -126,25 +113,25 @@ img, video, iframe {
 
       
     </style>
- <script type="application/ld+json">
+    
+    <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": ["ProfessionalService", "Organization"],
+      "@type": "Organization", 
       "@id": "https://maketo.site/#organization",
       "name": "Maketo Web",
       "url": "https://maketo.site",
       "logo": {
         "@type": "ImageObject",
         "url": "https://maketo.site/imagen/crediflex.webp",
-        "width": "512",
-        "height": "512"
+        "width": 512,
+        "height": 512
       },
       "image": "https://maketo.site/imagen/banner-flex.webp",
-      "description": "Líderes en soluciones de financiamiento para desarrollo web WordPress y tecnología digital.",
+      "description": "Agencia de diseño y desarrollo web especializada en soluciones WordPress para PYMES y emprendedores, con opciones de financiamiento directo.", // <-- MEJORA: Descripción más general de la organización.
       "telephone": "+584124058904",
-      "priceRange": "$$",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Valencia, Carabobo",
@@ -164,43 +151,67 @@ img, video, iframe {
       "url": "https://maketo.site/web-a-credito/",
       "name": "Diseño Web a Crédito | Financiamiento en Cuotas sin Intereses",
       "isPartOf": { "@id": "https://maketo.site/#organization" },
-      "description": "Obtén tu sitio web profesional con 30% de inicial y cuotas mensuales. Financiamiento directo sin bancos.",
+      "description": "Obtén tu página web profesional pagando 30% de inicial y el resto en 6 a 12 cuotas mensuales sin intereses. Financiamiento directo sin bancos para PYMES y emprendedores.",
       "breadcrumb": { "@id": "https://maketo.site/web-a-credito/#breadcrumb" },
-      "mainEntity": { "@id": "https://maketo.site/web-a-credito/#service" }
+      "mainEntity": { "@id": "https://maketo.site/web-a-credito/#service" } 
     },
     {
-      "@type": "Service",
+      "@type": "WebService", // <-- MEJORA: Más específico que "Service". Indica que el servicio resulta en un producto digital/web.
       "@id": "https://maketo.site/web-a-credito/#service",
-      "name": "Financiamiento de Páginas Web",
-      "serviceType": "Diseño Web Financiado",
+      "serviceType": "Diseño y Desarrollo Web Financiado", 
+      "name": "Servicio de Diseño Web a Crédito", 
+      "description": "Ofrecemos un servicio completo de diseño y desarrollo de páginas web en WordPress con un modelo de financiamiento directo. El cliente paga un 30% de inicial y el resto en 6 a 12 cuotas mensuales fijas y sin intereses. Ideal para PYMES y emprendedores que buscan presencia online profesional sin descapitalizarse.", // <-- MEJORA: Descripción detallada que la IA puede usar para generar resúmenes.
       "provider": { "@id": "https://maketo.site/#organization" },
-      "description": "Sistema de pago fraccionado para el desarrollo de sitios web profesionales en WordPress.",
+      "areaServed": { 
+        "@type": "Country",
+        "name": ["VE", "ES", "CO", "MX", "US", "CL", "AR"] 
+      },
+      "serviceOutput": { 
+        "@type": "WebSite",
+        "name": "Página Web Profesional en WordPress"
+      },
       "offers": {
         "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD",
         "availability": "https://schema.org/InStock",
-        "seller": { "@id": "https://maketo.site/#organization" }
+        "seller": { "@id": "https://maketo.site/#organization" },
+        "priceSpecification": { 
+          "@type": "UnitPriceSpecification",
+          "priceCurrency": "USD",
+          "valueAddedTaxIncluded": false,
+          "description": "El precio total del proyecto se financia con un pago inicial del 30%. El 70% restante se divide en 6 a 12 cuotas mensuales sin intereses. El precio varía según el alcance del proyecto.",
+          "paymentMethod": [ // <-- MEJORA: Especifica los métodos de pago que aceptas.
+            "https://schema.org/PayPal",
+            "https://schema.org/ByBankTransferInAdvance"
+          ]
+        }
       }
     },
     {
       "@type": "FAQPage",
       "@id": "https://maketo.site/web-a-credito/#faq",
-      "mainEntity": [
+      "mainEntity": [ 
         {
           "@type": "Question",
-          "name": "¿Cómo funciona el diseño web a crédito ?",
+          "name": "¿Cómo funciona el diseño web a crédito?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Se requiere un pago inicial del 30% para comenzar el proyecto. El saldo restante se divide en cuotas fijas mensuales sin intereses."
+            "text": "Nuestro modelo de financiamiento requiere un pago inicial del 30% para comenzar el desarrollo de tu página web. El 70% restante se divide en cuotas fijas mensuales, de 6 a 12 meses, sin ningún tipo de interés."
           }
         },
         {
           "@type": "Question",
-          "name": "¿Se puede pagar en cuotas desde otros países?",
+          "name": "¿Necesito tener historial crediticio o pasar por un banco?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Sí, el financiamiento web es global. Aceptamos PayPal, Zelle y transferencias internacionales para los pagos mensuales."
+            "text": "No. Nuestro financiamiento es directo, sin intermediarios bancarios. No revisamos tu historial crediticio, la aprobación se basa en el proyecto y el acuerdo mutuo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿El financiamiento está disponible para otros países fuera de Venezuela?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí, nuestro servicio de diseño web a crédito es global. Atendemos a clientes en España, Colombia, México, Estados Unidos y toda Latinoamérica. Aceptamos pagos internacionales vía PayPal, Zelle y transferencias."
           }
         }
       ]
@@ -218,7 +229,7 @@ img, video, iframe {
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "Web a Crédito",
+          "name": "Diseño Web a Crédito",
           "item": "https://maketo.site/web-a-credito/"
         }
       ]
@@ -235,7 +246,7 @@ img, video, iframe {
     <div class="absolute inset-0 z-0 w-full h-full" 
          style="background-image: url('/imagen/loro-azul.webp'); 
                 background-size: cover; 
-                background-position: 80% center; 
+                background-position: 60% center; 
                 background-repeat: no-repeat;">
         
         <div class="absolute inset-0 bg-slate-950/70 md:bg-transparent"></div>
@@ -263,6 +274,8 @@ img, video, iframe {
                     <span class="bg-brand-accent/20 border border-brand-accent/30 px-2 py-0.5 text-blue-600 rounded text-brand-accent font-bold">30% inicial</span>. 
                     El resto en <span class="bg-white/10 px-2 py-0.5 rounded font-bold">hasta 12 cuotas fijas</span>. 
                 </h2>
+                <p class="reveal reveal-delay-3 text-xs md:text-2xl mb-8 text-white max-w-4xl  leading-relaxed" >Una página web a crédito es un servicio donde financias el desarrollo de tu sitio pagando solo un 20–30% de inicial y el resto en cuotas mensuales sin intereses. En Maketo aplicamos este modelo para PYMES y emprendedores de Venezuela, España y Latinoamérica, incluyendo dominio, hosting y SEO básico en el mismo plan.”</p>
+    
 
                 <!-- LISTA DE BENEFICIOS OPTIMIZADA (Horizontal en Desktop) -->
                 <div class="reveal reveal-delay-2 mb-10 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3 max-w-4xl">
@@ -338,6 +351,13 @@ img, video, iframe {
         </div>
     </section>
 
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Ruta de navegación">
+        <div class="container m-10">
+            <a href="https://maketo.site">Inicio</a> › <span>Diseño web a Credito</span>
+        </div>
+    </nav>
 
 <!-- SECCIÓN DE CONFIABILIDAD -->
 <section class="py-8 bg-gradient-to-r from-blue-50/30 to-white">
@@ -1178,7 +1198,7 @@ img, video, iframe {
             </span>
             
             <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-gray-900">
-                Resolvemos tus Dudas sobre <span class="text-blue-600">Financiamiento Web</span>
+                Resolvemos tus Dudas sobre <span class="text-blue-600">Nuestros Sistema FLEX</span>
             </h2>
             
             <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
@@ -1232,7 +1252,7 @@ img, video, iframe {
             <div class="faq-category" data-category="financiamiento">
                 <h3 class="text-2xl font-bold mb-6 text-gray-800 border-b pb-3 flex items-center">
                     <i class="fas fa-credit-card text-blue-600 mr-3"></i>
-                    Financiamiento y Pagos
+                    Creditos y Pagos
                 </h3>
                 
                 <div class="space-y-4">
