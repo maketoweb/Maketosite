@@ -33,28 +33,31 @@ const footerHTML = `
             <a href="https://wa.me/+584124058904" target="_blank" aria-label="WhatsApp"><i class="ri-whatsapp-fill"></i></a>
         </div>
     </div>
+   
     <div class="footer-column">
         <h4>Explora</h4>
         <ul>
             <li><a href="/blog">Blog de SEO y Diseño</a></li>
-            <li><a href="/nosotros">Quienes Somos</a></li>
-            <li><a href="/servicios">Servicios Globales</a></li>
+            <li><a href="/nosotros">Nosotros</a></li>
+            <li><a href="/servicios">Servicios </a></li>
         </ul>
     </div>
+
     <div class="footer-column">
         <h4>Planes Flex</h4>
         <ul>
-            <li><a href="/ecommerce/">Diseño Web Venezuela</a></li>
-            <li><a href="/global/">Maketo Global</a></li>
+          <li><a href="/Ecommerce.html">Ecommerce</a></li>
+            <li><a href="/portafolio/">Portafolio</a></li>
             <li><a href="/web-a-credito/">Financiamiento 0%</a></li>
         </ul>
     </div>
+
     <div class="footer-column">
         <h4>Legal y Contacto</h4>
         <ul>
             <li><a href="/planes/">Planes</a></li>
-            <li><a href="/politica-legal">Politica legal</a></li>
-           
+            <li><a href="/politica-legal.html">Politica Legal</a></li>
+          
         </ul>
     </div>
     <div class="footer-copyright">

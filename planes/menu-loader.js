@@ -26,9 +26,10 @@ const headerHTML = `
 const footerHTML = `
    <footer class="footer-container" style="font-family: 'Inter', sans-serif;">
     <div class="footer-column footer-info" style="max-width: 300px;">
-        <h4>Maketo Web | Agencia de Diseño Web en Venezuela</h4>
-        <p>Expertos en <strong>metodología de conversión</strong>. Diseñamos páginas web de alto rendimiento en Venezuela para clientes de todo el mundo.</p>
-        
+       <h4 class="text-xl font-bold mb-4 text-white">Maketo Web | Planes y Precios</h4>
+        <p class="text-gray-400 max-w-2xl leading-relaxed">
+            Enfocados en <strong>impulsar tu negocio</strong> con las mejores tarifas del mercado. Estructuramos soluciones competitivas diseñadas para ayudarte a <strong>diferenciarte en el entorno digital</strong>.
+        </p>
         <div class="social-links">
             <a href="https://instagram.com/maketo.web" target="_blank" aria-label="Instagram"><i class="ri-instagram-fill"></i></a>
             <a href="https://facebook.com/maketoweboficial" target="_blank" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
@@ -41,16 +42,16 @@ const footerHTML = `
         <h4>Explora</h4>
         <ul>
             <li><a href="/blog">Blog de SEO y Diseño</a></li>
-            <li><a href="/nosotros">Portafolio Pro</a></li>
-            <li><a href="/servicios">Servicios Globales</a></li>
+            <li><a href="/nosotros">Nosotros</a></li>
+            <li><a href="/servicios">Servicios </a></li>
         </ul>
     </div>
 
     <div class="footer-column">
         <h4>Planes Flex</h4>
         <ul>
-            <li><a href="/ecommerce/">Diseño Web Venezuela</a></li>
-            <li><a href="/global/">Maketo Global</a></li>
+            <li><a href="/Ecommerce.html">Ecommerce</a></li>
+            <li><a href="/portafolio/">Portafolio</a></li>
             <li><a href="/web-a-credito/">Financiamiento 0%</a></li>
         </ul>
     </div>
@@ -58,9 +59,9 @@ const footerHTML = `
     <div class="footer-column">
         <h4>Legal y Contacto</h4>
         <ul>
-            <li><a href="/contacto">Contacto Directo</a></li>
-            <li><a href="/legal/terminos">Términos</a></li>
-            <li><a href="/legal/privacidad">Privacidad</a></li>
+            <li><a href="/planes/">Planes</a></li>
+            <li><a href="/politica-legak.html">Politica Legal</a></li>
+          
         </ul>
     </div>
     

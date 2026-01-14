@@ -44,8 +44,8 @@ const footerHTML = `
     <div class="footer-column">
         <h4>Planes Flex</h4>
         <ul>
-            <li><a href="/ecommerce/">Diseño Web Venezuela</a></li>
-            <li><a href="/global/">Maketo Global</a></li>
+          <li><a href="/Ecommerce.html">Ecommerce</a></li>
+            <li><a href="/portafolio/">Portafolio</a></li>
             <li><a href="/web-a-credito/">Financiamiento 0%</a></li>
         </ul>
     </div>
