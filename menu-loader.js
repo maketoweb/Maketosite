@@ -6,7 +6,7 @@ const headerHTML = `
         <div class="header-right">
             <nav id="main-menu" role="navigation">
                 <ul>
-                    <li><a href="/">Home</a></li>  
+                    <li><a href="/global/">Global</a></li>  
                     <li><a href="/web-a-credito/">Financiamiento</a></li>
                     <li><a href="/servicios/">Servicios</a></li>
                    <li><a href="/planes/">Planes</a></li>
@@ -44,7 +44,7 @@ const footerHTML = `
     <div class="footer-column">
         <h4>Planes Flex</h4>
         <ul>
-          <li><a href="/Ecommerce.html">Ecommerce</a></li>
+          <li><a href="/global/">Global</a></li>
             <li><a href="/portafolio/">Portafolio</a></li>
             <li><a href="/web-a-credito/">Financiamiento 0%</a></li>
         </ul>
@@ -173,7 +173,7 @@ function initScrollReveal() {
 }
 document.addEventListener('DOMContentLoaded', initScrollReveal);
 
-const demos = { 'tienda-online': 'https://example.com', 'pizzeria': 'https://example.com' };
+const demos = { 'tienda-online': 'https://oneuswp.themesflat.com/?storefront=envato-elementsm', 'pizzeria': 'https://pipirima-elementor.nelly-k.com/?storefront=envato-elements' };
 
 function openLiveDemo(template) {
     const modal = document.getElementById('liveDemoModal');
