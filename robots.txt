@@ -5,4 +5,5 @@ User-agent: Google-Extended
 Disallow: /
 
 
-Sitemap: https://maketo.site/sitemap-v2.xml
+Sitemap: https://maketo.site/sitemap.xml
+
