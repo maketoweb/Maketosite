@@ -99,16 +99,20 @@ header {
 }
 
 .logo a {
-    font-size: 10px; font-weight: bold; color: #ffffff;
+    font-size: 10px; font-weight: bold; color: #020202;
     text-transform: uppercase; letter-spacing: 0.15em;
 }
 .logo img {
    width: 50px;
     
 }
+
+
+
+
 /* ESTILO DE ENLACES (Subrayado Negro) */
 #main-menu a, .header-cta a {
-    color: #faf8f8; text-transform: uppercase; text-decoration: none;
+    color: #070606; text-transform: uppercase; text-decoration: none;
     letter-spacing: 0.15em; display: inline-block; padding: 15px 20px;
   
     position: relative;
@@ -119,13 +123,16 @@ header {
     transition: width 0.3s ease 0s, left 0.3s ease 0s; width: 0;
    
 }
+
+
+
 #main-menu a:hover:after, .header-cta a:hover:after {    
     width: 100%; left: 0;    
 }
 
 /* BOTONES CTA */
 .btn-primary-cta {
-    background-color: var(--color-primario); color: #fff !important; 
+    background-color: var(--color-primario); color: #0e0d0d !important; 
     border-radius: 5px; font-weight: bold;
     padding: 10px 15px; transition: background-color 0.3s;
     text-decoration: none;
@@ -139,7 +146,7 @@ header {
 }
 .btn-secondary-cta:hover { background: #555; }
 
-#main-menu ul { display: flex; gap: 10px; }
+#main-menu ul { display: flex; gap: 10px;  }
 .menu-toggle { display: none; cursor: pointer; font-size: 30px; color: #000; z-index: 101; }
 /*
 .hero-section {
@@ -219,7 +226,7 @@ footer a:hover { color: var(--color-primario); }
     
     /* Estilos de los enlaces en el menú abierto */
     #main-menu a, #main-menu .btn-primary-cta { 
-        color: #fff !important; /* Texto blanco para contraste */
+        color: #000000 !important; /* Texto blanco para contraste */
         padding: 15px 20px;
         display: block;
     } 
@@ -236,13 +243,7 @@ footer a:hover { color: var(--color-primario); }
         margin-top: 20px;
     }
 
-    /* Ajuste del Hero para móviles */
-    .hero-section h1 {
-        font-size: 32px;
-    }
-    .hero-section p {
-        font-size: 18px;
-    }
+  
 }
 /* Tus estilos de Neurodiseño (.card-elegant, .modal, etc.) */
 .card-elegant {

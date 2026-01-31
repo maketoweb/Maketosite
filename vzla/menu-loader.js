@@ -1,12 +1,12 @@
 // Contenido del Header (Inyección HTML)
 const headerHTML = `
-    <header>
-        <div class="logo"><a href="/">
-           <img src="/imagen/logo.png" alt="Logo de maketo web"> </div></a>
+    <header >
+        <div class="logo"><a href="/vzla/">
+           <img src="/imagen/logo.png"  alt="Logo de maketo web"> </div> </a>
         <div class="header-right">
-            <nav id="main-menu" role="navigation">
+            <nav id="main-menu" role="navigation " >
                 <ul>
-                    <li><a href="/https://maketo.web/">Inicio</a></li>  
+                    <li><a href="/https://maketo.site/">Inicio</a></li>  
                     <li><a href="/web-a-credito/">Financiamiento</a></li>
                     <li><a href="/servicios/">Servicios</a></li>
                    <li><a href="/planes/">Planes</a></li>
@@ -33,7 +33,7 @@ const footerHTML = `
             <a href="https://wa.me/+584124058904" target="_blank" aria-label="WhatsApp"><i class="ri-whatsapp-fill"></i></a>
         </div>
     </div>
-    <div class="footer-column">
+    <div class="footer-column ">
         <h4>Explora</h4>
         <ul>
             <li><a href="/blog/">Blog de SEO y Diseño</a></li>
@@ -78,13 +78,13 @@ document.addEventListener('DOMContentLoaded', () => {
             mainMenu.classList.toggle('open');
             if (mainMenu.classList.contains('open')) {
                 menuToggle.innerHTML = '✕'; 
-                menuToggle.style.color = '#FFFFFF'; 
+                menuToggle.style.color = '#fffff'; 
                 menuToggle.style.position = 'fixed';
                 menuToggle.style.right = '5%';
                 menuToggle.style.top = '25px';
             } else {
                 menuToggle.innerHTML = '☰'; 
-                menuToggle.style.color = '#FFFFFF';
+                menuToggle.style.color = '#fffff';
                 menuToggle.style.position = 'static';
             }
         });
@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (window.innerWidth <= 900) {
                     mainMenu.classList.remove('open');
                     menuToggle.innerHTML = '☰'; 
-                    menuToggle.style.color = '#FFFFFF';
+                    menuToggle.style.color = '#fffff';
                     menuToggle.style.position = 'static';
                 }
             });
