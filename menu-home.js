@@ -1,7 +1,7 @@
 // Contenido del Header (Inyección HTML)
 const headerHTML = `
     <header>
-        <div class="logo"><a href="https://maketo.site">
+        <div class="logo"><a href="https://maketo.site/">
            <img src="/imagen/logo.png" alt="Logo de maketo web"> </div></a>
         <div class="header-right">
             <nav id="main-menu" role="navigation">
@@ -182,7 +182,7 @@ function initScrollReveal() {
 }
 document.addEventListener('DOMContentLoaded', initScrollReveal);
 
-const demos = { 'tienda-online': 'https://example.com', 'pizzeria': 'https://example.com' };
+const demos = { 'tienda-online': 'https://oneuswp.themesflat.com/?storefront=envato-elementsm', 'pizzeria': 'https://pipirima-elementor.nelly-k.com/?storefront=envato-elements' };
 
 function openLiveDemo(template) {
     const modal = document.getElementById('liveDemoModal');
