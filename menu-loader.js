@@ -1,12 +1,12 @@
 // Contenido del Header (Inyección HTML)
 const headerHTML = `
     <header>
-        <div class="logo"><a href="https://maketo.site">
+        <div class="logo"><a href="/">
            <img src="/imagen/logo.png" alt="Logo de maketo web"> </div></a>
         <div class="header-right">
             <nav id="main-menu" role="navigation">
                 <ul>
-                    <li><a href="/">Home</a></li>  
+                    <li><a href="/https://maketo.web/">Inicio</a></li>  
                     <li><a href="/web-a-credito/">Financiamiento</a></li>
                     <li><a href="/servicios/">Servicios</a></li>
                    <li><a href="/planes/">Planes</a></li>
@@ -25,16 +25,7 @@ const footerHTML = `
    <footer class="footer-container" style="font-family: 'Inter', sans-serif;">
     <div class="footer-column footer-info" style="max-width: 300px;">
         <h4>Maketo Web | Agencia de Diseño Web en Venezuela</h4>
-        <p>
-
-Maketo Global - Sistemas de Venta Digital de Alto Rendimiento 
-
-
-Email: maketostudio@gmail.com | WhatsApp: +58 412-4058904
-
-
-Atendemos clientes en: Chile 🇨🇱 • Colombia 🇨🇴 • México 🇲🇽 • España 🇪🇸 • USA 🇺🇸 • Argentina 🇦🇷 • Venezuela 🇻🇪
-</p>
+        <p>Expertos en <strong>metodología de conversión</strong>. Diseñamos páginas web de alto rendimiento en Venezuela para clientes de todo el mundo.</p>
         <div class="social-links">
             <a href="https://instagram.com/maketo.web" target="_blank" aria-label="Instagram"><i class="ri-instagram-fill"></i></a>
             <a href="https://facebook.com/maketoweboficial" target="_blank" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
@@ -47,13 +38,13 @@ Atendemos clientes en: Chile 🇨🇱 • Colombia 🇨🇴 • México 🇲🇽
         <ul>
             <li><a href="/blog/">Blog de SEO y Diseño</a></li>
             <li><a href="/nosotros/">Quienes Somos</a></li>
-            <li><a href="/servicios/">Servicios Globales</a></li>
+            <li><a href="/servicios/">Servicios </a></li>
         </ul>
     </div>
     <div class="footer-column">
         <h4>Planes y Servicios</h4>
         <ul>
-          <li><a href="/vzla/">Venezuela</a></li>
+          <li><a href="https://maketo.site">Global</a></li>
             <li><a href="/planes/">Planes</a></li>
             <li><a href="/web-a-credito/">Financiamiento </a></li>
         </ul>
@@ -67,7 +58,7 @@ Atendemos clientes en: Chile 🇨🇱 • Colombia 🇨🇴 • México 🇲🇽
         </ul>
     </div>
     <div class="footer-copyright">
-        <p>© <span id="currentYear"></span> Maketo Web  | Soluciones de Diseño Web para todo el mundo.</p>
+        <p>© <span id="currentYear"></span> Maketo Web. Sede en Valencia, Venezuela | Soluciones de Diseño Web para todo el mundo.</p>
     </div>
 </footer>
 `;
@@ -182,7 +173,7 @@ function initScrollReveal() {
 }
 document.addEventListener('DOMContentLoaded', initScrollReveal);
 
-const demos = { 'tienda-online': 'https://example.com', 'pizzeria': 'https://example.com' };
+const demos = { 'tienda-online': 'https://oneuswp.themesflat.com/?storefront=envato-elementsm', 'pizzeria': 'https://pipirima-elementor.nelly-k.com/?storefront=envato-elements' };
 
 function openLiveDemo(template) {
     const modal = document.getElementById('liveDemoModal');
