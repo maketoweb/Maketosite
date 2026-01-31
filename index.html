@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Maketo web Global">
+  <meta name="robots" content="index, follow">
+  
+  <title>Servicio de Diseño Web de Alto Rendimiento | Maketo web</title>
+  
+  <meta name="description" content="Sistemas de venta  para empresas  a nivel internacional. Diseño web profesional para Latinoamérica, España y USA con enfoque en conversión.">
+  
+  <!-- Meta Tags Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://maketo.site/">
+  <meta property="og:title" content="Maketo Global | Diseño Web de Alto Rendimiento">
+  <meta property="og:description" content="Expertos en conversión y diseño web profesional para el mercado internacional.">
+  <meta property="og:image" content="https://maketo.site/imagen/banner-maketo.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="es_ES">
+  
+  <!-- Meta Tags Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Maketo Global | Expertos en Diseño Web y Conversión">
+  <meta name="twitter:description" content="Desarrollo web empresarial para mercados globales con enfoque en resultados medibles.">
+  <meta name="twitter:image" content="/imagen/banner-maketo.webp">
+  
+  <!-- Favicon y Apple Touch Icon -->
+  <link rel="icon" href="/imagen/favicon.png" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/imagen/favicon.png">
+  
+  <!-- Internacionalización -->
+  <link rel="alternate" hreflang="es-VE" href="https://maketo.site/vzla/" />
+  <link rel="alternate" hreflang="es" href="https://maketo.site/global/" />
+  <link rel="alternate" hreflang="x-default" href="https://maketo.site/" />
+  <link rel="canonical" href="https://maketo.site/">
+  
+  <!-- Estilos -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Preload de recursos críticos -->
+  <link rel="preload" href="/imagen/aguilamecanica.jpg" as="image" fetchpriority="high">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Estilos personalizados -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+    
+    :root {
+      --apple-bg: #ffffff;
+      --apple-text: #1d1d1f;
+      --apple-gray: #f5f5f7;
+      --apple-blue: #0066cc;
+      --danger: #ff3b30;
+      --success: #34c759;
+    }
+
+    body { 
+      font-family: 'Inter', sans-serif; 
+      background-color: var(--apple-bg);
+      color: var(--apple-text);
+      letter-spacing: -0.015em;
+      overflow-x: hidden;
+    }
+
+    .glass-nav {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: saturate(180%) blur(20px);
+      border-bottom: 0.5px solid rgba(0,0,0,0.08);
+      -webkit-backdrop-filter: saturate(180%) blur(20px);
+    }
+
+    .hero-title {
+      font-weight: 900;
+      letter-spacing: -0.05em;
+      line-height: 0.95;
+      text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+    }
+
+    .btn-dark {
+      background-color: #000;
+      color: white;
+      border-radius: 980px;
+      padding: 18px 36px;
+      font-weight: 700;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      border: none;
+      cursor: pointer;
+      display: inline-block;
+      text-align: center;
+    }
+
+    .btn-dark:hover {
+      transform: scale(1.05);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+      background-color: #1a1a1a;
+    }
+
+    .scarcity-bar {
+      background: linear-gradient(90deg, var(--danger) 0%, #ff6b6b 100%);
+      color: white;
+      font-size: 11px;
+      font-weight: 900;
+      text-align: center;
+      padding: 8px 0;
+      text-transform: uppercase;
+      letter-spacing: 0.25em;
+      position: sticky;
+      top: 0;
+      z-index: 40;
+    }
+
+    .card-impact {
+      background: var(--apple-gray);
+      border-radius: 40px;
+      padding: 3rem;
+      transition: all 0.5s ease;
+      border: 1px solid rgba(0,0,0,0.05);
+      height: 100%;
+    }
+
+    .card-impact:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 25px 50px -12px rgba(0,0,0,0.08);
+      border-color: rgba(0,0,0,0.1);
+    }
+
+    .badge-scarcity {
+      background: #fff1f0;
+      color: #ff4d4f;
+      border: 1px solid #ffa39e;
+      padding: 4px 12px;
+      border-radius: 10px;
+      font-size: 12px;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    ::-webkit-scrollbar { 
+      width: 8px;
+      height: 8px;
+    }
+    
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+      border-radius: 10px;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      background: #888;
+      border-radius: 10px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+
+    /* Animaciones personalizadas */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-fadeInUp {
+      animation: fadeInUp 0.8s ease-out;
+    }
+
+    /* Efecto para imágenes de fondo */
+    .bg-gradient-overlay {
+      background: linear-gradient(180deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.6) 100%);
+    }
+
+    /* Estilos para FAQ */
+    details summary::-webkit-details-marker {
+      display: none;
+    }
+
+    details[open] summary {
+      color: #000;
+      font-weight: 700;
+    }
+
+    /* Mejoras de accesibilidad */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    /* Optimización para móviles */
+    @media (max-width: 768px) {
+      .hero-title {
+        font-size: 2.5rem;
+        line-height: 1.1;
+      }
+      
+      .card-impact {
+        padding: 2rem;
+        border-radius: 30px;
+      }
+    }
+  </style>
+  
+ <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": ["Organization", "ProfessionalService"],
+      "@id": "https://maketo.site/#organization",
+      "name": "Maketo Global",
+      "url": "https://maketo.site/",
+      "logo": {
+        "@type": "ImageObject",
+        "@id": "https://maketo.site/#logo",
+        "url": "https://maketo.site/imagen/logo.png",
+        "contentUrl": "https://maketo.site/imagen/logo.png",
+        "width": "600",
+        "height": "60",
+        "caption": "Maketo Global"
+      },
+      "image": "https://maketo.site/imagen/banner-maketo.webp",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Global",
+        "description": "Servicios de alto rendimiento para mercados internacionales"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/maketoweb", 
+        "https://www.instagram.com/maketo.web"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+584124058904",
+        "contactType": "sales",
+        "areaServed": ["CL", "CO", "MX", "ES", "US", "AR"],
+        "availableLanguage": "Spanish"
+      },
+      "areaServed": [
+        {"@type": "Country", "name": "Chile"},
+        {"@type": "Country", "name": "Colombia"},
+        {"@type": "Country", "name": "México"},
+        {"@type": "Country", "name": "España"},
+        {"@type": "Country", "name": "Estados Unidos"},
+        {"@type": "Country", "name": "Argentina"}
+      ],
+      "knowsAbout": [
+        "Conversion Rate Optimization", 
+        "Web Design", 
+        "Digital Marketing", 
+        "SEO Técnico", 
+        "User Experience Design", 
+        "Generative Engine Optimization",
+        "Core Web Vitals",
+        "WordPress Development"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "27",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Alex R." },
+          "datePublished": "2024-01-15",
+          "reviewBody": "Excelente servicio. La optimización de mi sitio superó las expectativas en términos de velocidad y conversión.",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5" }
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Elena M." },
+          "datePublished": "2024-01-20",
+          "reviewBody": "Expertos en SEO internacional. Logramos posicionarnos en mercados que antes no alcanzábamos.",
+          "reviewRating": { "@type": "Rating", "ratingValue": "5" }
+        }
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://maketo.site/#service",
+      "name": "Diseño Web de Alto Impacto y Conversión",
+      "provider": { "@id": "https://maketo.site/#organization" },
+      "description": "Sistemas de ventas digitales de alto rendimiento para el mercado hispano. Optimización de activos para buscadores e Inteligencia Artificial.",
+      "areaServed": ["CL", "CO", "MX", "ES", "US", "AR"],
+      "serviceType": "Desarrollo Web Empresarial",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servicios de Diseño Web",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Diseño Web Global para Empresas",
+              "description": "Desarrollo de sitios web optimizados para conversión y velocidad en mercados internacionales"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://maketo.site/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Cómo gestiona Maketo Global proyectos de diseño web de forma remota?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Utilizamos metodologías ágiles y flujos de trabajo asíncronos que nos permiten colaborar con empresas en cualquier zona horaria, garantizando entregas puntuales y comunicación fluida a través de canales digitales avanzados. Cada proyecto tiene un gestor dedicado y reportes semanales de progreso."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué tecnologías utilizan para garantizar la velocidad de carga internacional?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Desarrollamos sobre WordPress y Elementor, optimizando cada activo con estándares de Core Web Vitals, compresión de próxima generación y arquitecturas preparadas para CDN globales. Implementamos lazy loading, minificación de recursos y hosting premium para carga en menos de 2 segundos en cualquier continente."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuáles son los métodos de pago Internacional?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Facilitamos la expansión de su negocio aceptando múltiples plataformas internacionales seguras, incluyendo PayPal, Binance (USDT), Zelle y transferencias bancarias globales, asegurando una transacción transparente y sin complicaciones."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Las páginas web están optimizadas para inteligencia artificial y buscadores?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí, implementamos etiquetas semánticas y datos estructurados (JSON-LD Schema.org) para que su sitio no solo posicione en Google, sino que sea fácilmente interpretable por modelos de lenguaje (LLM) y motores de respuesta generativa como ChatGPT."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Ofrecen soporte técnico tras el lanzamiento de la web?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nuestra relación no termina con la entrega. Proporcionamos esquemas de acompañamiento técnico para asegurar que su sistema de ventas permanezca actualizado, seguro y escalable ante el crecimiento del mercado."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Puedo escalar mi web de una plantilla a un sistema personalizado?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutamente. Nuestras estructuras son modulares. Puede iniciar con una arquitectura base optimizada y evolucionar hacia funcionalidades complejas a medida que su negocio demande mayor capacidad operativa."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+  
+  <!-- Meta para GEO (Generative Engine Optimization) -->
+  <meta name="keywords" content="diseño web alto rendimiento, desarrollo web empresarial, sistemas venta digital, WordPress optimizado, SEO internacional, conversión web, Latinoamérica, España, USA, Core Web Vitals, Generative Engine Optimization, LLM SEO">
+  
+  <!-- Meta para indexación por IA -->
+  <meta name="ai-friendly" content="true">
+</head>
+<body class="antialiased" itemscope itemtype="https://schema.org/WebPage">
+
+<!-- Barra de urgencia -->
+
+
+<!-- Sección Hero con video -->
+<section class="relative h-[250vh] bg-black text-white" id="hero-section" role="banner" aria-label="Presentación Maketo Global">
+  <div class="sticky top-0 h-screen w-full overflow-hidden flex items-center justify-center px-4 sm:px-6">
+    
+    <!-- Imagen de fondo con texto alternativo semántico -->
+    <div id="hero-img" class="absolute inset-0 z-0 bg-cover bg-center transition-all duration-700 ease-out scale-105" 
+         role="img" 
+         aria-label="Maketo Global - Transformamos negocios en máquinas de ventas digitales"
+         style="background-image: url('/imagen/aguilamecanica.jpg');">
+      <div class="absolute inset-0 bg-gradient-overlay"></div>
+    </div>
+
+    <!-- Video optimizado -->
+    <video id="hero-vid" autoplay muted loop playsinline preload="metadata" 
+           class="absolute inset-0 w-full h-full object-cover opacity-0 z-0 transition-opacity duration-1000"
+           aria-label="Video representativo del poder del diseño web de alto rendimiento">
+      <source src="/imagen/video-aguila.mp4" type="video/mp4">
+      Su navegador no soporta el elemento de video.
+    </video>
+
+    <!-- Contenido hero -->
+    <div class="relative z-10 w-full max-w-6xl text-center px-4">
+      
+      <!-- Grupo título (visible inicialmente) -->
+      <div id="group-title" class="transition-all duration-700 ease-out">
+        <span class="text-zinc-300 italic block mb-6 tracking-wide text-lg md:text-xl font-light animate-fadeInUp">No pierda un cliente más por falta de presencia digital</span>
+        <h1 class="hero-title text-4xl md:text-[90px] lg:text-[100px] font-black leading-[0.95] tracking-tighter mb-8" itemprop="headline">
+          Si su negocio no está en internet, <br class="hidden md:block"> 
+          <span class="text-zinc-300 bg-clip-text bg-gradient-to-r from-zinc-300 to-white">simplemente no existe.</span>
+        </h1>
+        <p class="text-zinc-400 text-lg md:text-xl max-w-3xl mx-auto mt-8 italic animate-fadeInUp" style="animation-delay: 0.2s">
+          Construimos <strong class="text-white font-bold">sistemas de venta digital</strong> para empresas que escalan a nivel internacional
+        </p>
+      </div>
+
+      <!-- Grupo descripción (aparece con scroll) -->
+      <div id="group-desc" class="absolute inset-0 flex flex-col items-center justify-center opacity-0 pointer-events-none transition-all duration-700 ease-out scale-95">
+        <div class="max-w-4xl px-4">
+          <h2 class="text-2xl md:text-4xl font-bold mb-8 text-white leading-tight">¿Qué hacemos exactamente?</h2>
+          <p class="text-xl md:text-2xl text-zinc-200 font-light mb-10 leading-relaxed" itemprop="description">
+            Transformamos negocios en <strong class="text-white font-bold">máquinas de ventas digitales</strong> que funcionan 24/7. Ya sea que esté <span class="text-white font-bold">empezando desde cero</span> o que su web actual <span class="text-white font-bold">sea invisible</span>, nosotros construimos el sistema que le garantiza ventas consistentes.
+          </p>
+          
+          <div class="mb-12">
+            <h3 class="text-lg md:text-xl font-semibold text-zinc-300 mb-4">¿Para quién lo hacemos?</h3>
+            <p class="text-zinc-300 italic">
+              Empresas y emprendedores en <strong>Latinoamérica, España y USA</strong> que buscan expandir su presencia digital con resultados medibles.
+            </p>
+          </div>
+          
+          <div class="flex flex-col md:flex-row gap-6 justify-center items-center mb-12">
+            <a href="https://wa.me/584124058904?text=Hola%20Maketo%20Global,%20quiero%20conversar%20sobre%20un%20proyecto%20web%20de%20alto%20rendimiento" 
+               class="px-10 py-4 bg-white text-black font-bold rounded-full hover:scale-105 transition-all duration-300 text-lg md:text-xl uppercase tracking-tight shadow-2xl hover:shadow-3xl"
+               itemprop="potentialAction"
+               aria-label="Contactar a Maketo Global para proyecto web">
+              <i class="fab fa-whatsapp mr-2"></i> Quiero mi máquina de ventas
+            </a>
+            <a href="#proceso" 
+               class="px-8 py-4 border-2 border-white text-white font-bold rounded-full hover:bg-white hover:text-black transition-all duration-300"
+               aria-label="Ver nuestro proceso de trabajo">
+              Ver proceso completo
+            </a>
+          </div>
+          
+          <div class="mt-8">
+            <p class="text-[10px] font-bold text-zinc-500 uppercase tracking-[0.3em]">
+              <i class="fas fa-star text-yellow-500 mr-2"></i> Atención personalizada para líderes
+            </p>
+            <p class="text-zinc-400 text-sm mt-2 italic">
+              ¿Cuál es el siguiente paso? <a href="#siguiente-paso" class="text-white font-bold underline hover:no-underline">Ver abajo →</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    
+    <!-- Indicador de scroll -->
+    <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20 opacity-70 animate-bounce">
+      <i class="fas fa-chevron-down text-white text-xl"></i>
+    </div>
+  </div>
+</section>
+<div class="scarcity-bar">
+  <span class="animate-pulse">⚡</span> ABERTAS 2 VACANTES PARA PROYECTOS DE ALTA PRIORIDAD - DISPONIBILIDAD LIMITADA <span class="animate-pulse">⚡</span>
+</div>
+
+<!-- Sección: El problema (Riesgo) -->
+<section id="riesgo" class="py-24 md:py-32 px-6 bg-black text-white" aria-labelledby="problema-title">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
+      <div data-aos="fade-right" data-aos-delay="100">
+        <span class="text-red-400 font-bold uppercase tracking-[0.3em] text-xs mb-6 block">Análisis realista</span>
+        <h2 id="problema-title" class="text-3xl md:text-5xl font-black tracking-tighter mb-10 leading-tight italic">Usted tiene un problema de invisibilidad digital.</h2>
+        <p class="text-zinc-300 mb-10 text-lg leading-relaxed">
+          En la era digital actual, no tener una web optimizada es equivalente a no existir para el 87% de los consumidores que investigan online antes de comprar.
+        </p>
+        
+        <ul class="space-y-8" role="list">
+          <li class="flex items-start space-x-4" role="listitem">
+            <div class="w-8 h-8 bg-gradient-to-br from-red-600 to-red-800 rounded-full flex items-center justify-center shrink-0 mt-1">
+              <i class="fas fa-times text-xs"></i>
+            </div>
+            <div>
+              <p class="text-zinc-300"><strong class="text-white">Sin Web o Web Obsoleta:</strong> Sus clientes potenciales están encontrando a su competencia ahora mismo porque usted es invisible en los buscadores.</p>
+            </div>
+          </li>
+          <li class="flex items-start space-x-4" role="listitem">
+            <div class="w-8 h-8 bg-gradient-to-br from-red-600 to-red-800 rounded-full flex items-center justify-center shrink-0 mt-1">
+              <i class="fas fa-chart-line text-xs"></i>
+            </div>
+            <div>
+              <p class="text-zinc-300"><strong class="text-white">Pérdida de Credibilidad:</strong> Una web desactualizada proyecta una imagen de abandono y espanta a los clientes de calidad que buscan profesionalismo.</p>
+            </div>
+          </li>
+          <li class="flex items-start space-x-4" role="listitem">
+            <div class="w-8 h-8 bg-gradient-to-br from-red-600 to-red-800 rounded-full flex items-center justify-center shrink-0 mt-1">
+              <i class="fas fa-money-bill-wave text-xs"></i>
+            </div>
+            <div>
+              <p class="text-zinc-300"><strong class="text-white">Fuga de Ingresos:</strong> Cada día sin una web optimizada es dinero que su competencia está ganando en su lugar.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      
+      <div data-aos="zoom-in" data-aos-delay="300" class="bg-gradient-to-br from-zinc-900 to-black border border-white/10 p-8 md:p-12 rounded-3xl text-center shadow-2xl">
+        <div class="mb-8">
+          <div class="text-5xl md:text-7xl font-black mb-2 bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">$0.00</div>
+          <p class="text-lg font-semibold text-zinc-300">Facturación digital actual</p>
+        </div>
+        
+        <div class="bg-zinc-900/50 p-6 rounded-2xl mb-8">
+          <p class="text-xl font-light leading-relaxed mb-6 text-zinc-300 italic">
+            "Eso es lo que factura su negocio a través de internet hoy. <br> 
+            <span class="text-white font-bold">¿Va a permitir que esto siga así otro mes más?</span>"
+          </p>
+        </div>
+        
+        <a href="https://wa.me/584124058904?text=Necesito%20detener%20la%20pérdida%20de%20clientes%20digitales" 
+           class="btn-dark bg-gradient-to-r from-red-600 to-orange-600 text-white hover:from-red-700 hover:to-orange-700 w-full py-4 text-lg"
+           aria-label="Solicitar solución para problema de invisibilidad digital">
+          <i class="fas fa-stop-circle mr-2"></i> Detener la pérdida ahora
+        </a>
+        
+        <p class="text-zinc-500 text-xs mt-6 italic">
+          La solución promedio toma 4-6 semanas desde la contratación
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sección: Tecnologías y Plataformas -->
+<section class="py-16 bg-white border-y border-zinc-100" aria-label="Tecnologías y plataformas que utilizamos">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-12">
+      <h3 class="text-2xl font-bold mb-4 tracking-tight">Tecnologías de Alto Rendimiento</h3>
+      <p class="text-zinc-500 max-w-2xl mx-auto italic">Trabajamos con las herramientas más avanzadas del mercado para garantizar velocidad, seguridad y escalabilidad</p>
+    </div>
+    
+    <div class="flex flex-wrap justify-center items-center gap-10 md:gap-16 opacity-70 hover:opacity-100 transition-opacity duration-300">
+      <div class="flex flex-col items-center group" title="WordPress Optimizado">
+        <i class="fab fa-wordpress text-4xl md:text-5xl group-hover:text-[#21759b] transition-all duration-300"></i>
+        <span class="text-xs font-bold mt-2 text-zinc-500 group-hover:text-zinc-800">WORDPRESS</span>
+      </div>
+      <div class="flex flex-col items-center group" title="Elementor Pro">
+        <i class="fab fa-elementor text-4xl md:text-5xl group-hover:text-[#d62828] transition-all duration-300"></i>
+        <span class="text-xs font-bold mt-2 text-zinc-500 group-hover:text-zinc-800">ELEMENTOR</span>
+      </div>
+      <div class="flex flex-col items-center group" title="WooCommerce">
+        <i class="fab fa-woocommerce text-4xl md:text-5xl group-hover:text-[#96588a] transition-all duration-300"></i>
+        <span class="text-xs font-bold mt-2 text-zinc-500 group-hover:text-zinc-800">WOOCOMMERCE</span>
+      </div>
+      <div class="flex flex-col items-center group" title="Pasarelas de Pago Internacional">
+        <i class="fab fa-cc-paypal text-4xl md:text-5xl group-hover:text-[#003087] transition-all duration-300"></i>
+        <span class="text-xs font-bold mt-2 text-zinc-500 group-hover:text-zinc-800">PAYPAL</span>
+      </div>
+      <div class="flex flex-col items-center group" title="Binance Pay y Cripto">
+        <div class="flex items-center gap-2 group-hover:text-[#F3BA2F] transition-all">
+          <i class="fas fa-coins text-3xl"></i>
+          <span class="font-bold text-xl tracking-tighter">BINANCE</span>
+        </div>
+        <span class="text-xs font-bold mt-2 text-zinc-500 group-hover:text-zinc-800">CRYPTO PAYMENTS</span>
+      </div>
+      <div class="flex flex-col items-center group" title="Google Suite y SEO">
+        <i class="fab fa-google text-3xl md:text-4xl group-hover:text-[#4285F4] transition-all duration-300"></i>
+        <span class="text-xs font-bold mt-2 text-zinc-500 group-hover:text-zinc-800">GOOGLE</span>
+      </div>
+      <div class="flex flex-col items-center group" title="Adobe Creative Cloud">
+        <i class="fas fa-infinity text-3xl md:text-4xl group-hover:text-[#FF0000] transition-all duration-300"></i>
+        <span class="text-xs font-bold mt-2 text-zinc-500 group-hover:text-zinc-800">ADOBE</span>
+      </div>
+      <div class="flex flex-col items-center group" title="Optimizado para IA">
+        <div class="flex items-center gap-2 group-hover:text-[#10a37f] transition-all">
+          <i class="fas fa-robot text-3xl"></i>
+          <span class="font-bold text-sm tracking-widest">AI READY</span>
+        </div>
+        <span class="text-xs font-bold mt-2 text-zinc-500 group-hover:text-zinc-800">GENERATIVE SEO</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sección: ¿Qué es el diseño web de alto rendimiento? -->
+<section class="py-20 bg-zinc-50" id="que-es" aria-labelledby="alto-rendimiento-title">
+  <div class="max-w-4xl mx-auto px-6 text-center">
+    <div data-aos="fade-up" class="bg-white p-8 md:p-12 rounded-3xl shadow-lg border border-zinc-100">
+      <h2 id="alto-rendimiento-title" class="text-3xl md:text-4xl font-black mb-8 tracking-tight bg-gradient-to-r from-black to-zinc-700 bg-clip-text text-transparent">
+        ¿Qué es el <span class="italic">diseño web de alto rendimiento</span>?
+      </h2>
+      
+      <div class="text-left">
+        <p class="text-lg md:text-xl text-zinc-700 mb-8 leading-relaxed italic" itemprop="description">
+          El <strong>diseño web de alto rendimiento</strong> es una metodología integral que combina:
+        </p>
+        
+        <div class="grid md:grid-cols-3 gap-6 mb-10">
+          <div class="bg-zinc-100 p-6 rounded-2xl">
+            <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center mb-4 mx-auto">
+              <i class="fas fa-bolt text-white text-lg"></i>
+            </div>
+            <h3 class="font-bold text-lg mb-2">Velocidad Extrema</h3>
+            <p class="text-zinc-600 text-sm">Carga en menos de 2 segundos en cualquier dispositivo y ubicación geográfica</p>
+          </div>
+          
+          <div class="bg-zinc-100 p-6 rounded-2xl">
+            <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-green-700 rounded-full flex items-center justify-center mb-4 mx-auto">
+              <i class="fas fa-chart-line text-white text-lg"></i>
+            </div>
+            <h3 class="font-bold text-lg mb-2">Conversión Optimizada</h3>
+            <p class="text-zinc-600 text-sm">Estructura persuasiva diseñada para maximizar leads y ventas de forma consistente</p>
+          </div>
+          
+          <div class="bg-zinc-100 p-6 rounded-2xl">
+            <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-700 rounded-full flex items-center justify-center mb-4 mx-auto">
+              <i class="fas fa-robot text-white text-lg"></i>
+            </div>
+            <h3 class="font-bold text-lg mb-2">Preparado para IA</h3>
+            <p class="text-zinc-600 text-sm">Optimizado para motores generativos y asistentes de inteligencia artificial</p>
+          </div>
+        </div>
+        
+        <div class="bg-gradient-to-r from-blue-50 to-zinc-50 p-6 rounded-2xl border border-blue-100">
+          <p class="text-zinc-700 italic">
+            <strong>Resultado:</strong> No es solo un sitio web bonito. Es un <strong>sistema de ventas automatizado</strong> que trabaja 24/7 para atraer, convertir y retener clientes en mercados internacionales.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sección: La Solución (El Plan Maketo Global) -->
+<section id="solucion" class="py-24 md:py-32 px-6 bg-white" aria-labelledby="solucion-title">
+  <div class="max-w-6xl mx-auto">
+    <div class="mb-16 text-center">
+      <span class="text-blue-600 font-bold uppercase tracking-[0.3em] text-xs mb-4 block">Estrategia Comprobada</span>
+      <h2 id="solucion-title" class="text-4xl md:text-6xl font-black tracking-tighter mb-6 leading-tight italic">El Plan Maketo Global.</h2>
+      <p class="text-xl text-zinc-500 italic max-w-3xl mx-auto">No importa en qué punto esté su negocio hoy. Tenemos un camino probado hacia el éxito digital.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+      <!-- Card 1 -->
+      <div data-aos="fade-up" data-aos-delay="100" class="card-impact group hover:bg-gradient-to-br hover:from-white hover:to-blue-50">
+        <div class="mb-8">
+          <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl flex items-center justify-center mb-6">
+            <i class="fas fa-rocket text-white text-2xl"></i>
+          </div>
+          <h3 class="text-2xl font-black mb-4 uppercase tracking-tight">Lanzamiento Total</h3>
+          <p class="text-zinc-600 leading-relaxed mb-6 italic">Si no tiene nada, creamos su identidad digital desde cero con el poder de una marca multinacional.</p>
+          <ul class="text-zinc-500 text-sm space-y-2 mb-8">
+            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2 text-xs"></i> Diseño 100% personalizado</li>
+            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2 text-xs"></i> Copywriting persuasivo</li>
+            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2 text-xs"></i> Optimización SEO básica</li>
+            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2 text-xs"></i> 5 páginas principales</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div data-aos="fade-up" data-aos-delay="200" class="card-impact bg-gradient-to-br from-zinc-900 to-black text-white group hover:from-black hover:to-zinc-900">
+        <div class="mb-8">
+          <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-700 rounded-2xl flex items-center justify-center mb-6">
+            <i class="fas fa-bolt text-white text-2xl"></i>
+          </div>
+          <h3 class="text-2xl font-black mb-4 uppercase tracking-tight text-green-400">Rescate y Evolución</h3>
+          <p class="text-zinc-300 leading-relaxed mb-6 italic">Tomamos su web actual y la transformamos en una herramienta de persuasión masiva que sí trae dinero.</p>
+          <ul class="text-zinc-400 text-sm space-y-2 mb-8">
+            <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2 text-xs"></i> Auditoría completa del sitio actual</li>
+            <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2 text-xs"></i> Rediseño conversional</li>
+            <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2 text-xs"></i> Optimización Core Web Vitals</li>
+            <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2 text-xs"></i> Migración sin pérdida de SEO</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div data-aos="fade-up" data-aos-delay="300" class="card-impact group hover:bg-gradient-to-br hover:from-white hover:to-purple-50">
+        <div class="mb-8">
+          <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-700 rounded-2xl flex items-center justify-center mb-6">
+            <i class="fas fa-crosshairs text-white text-2xl"></i>
+          </div>
+          <h3 class="text-2xl font-black mb-4 uppercase tracking-tight">Dominio de Mercado</h3>
+          <p class="text-zinc-600 leading-relaxed mb-6 italic">Posicionamos su marca para que sea la primera opción cuando alguien necesite lo que usted ofrece.</p>
+          <ul class="text-zinc-500 text-sm space-y-2 mb-8">
+            <li class="flex items-center"><i class="fas fa-check text-purple-500 mr-2 text-xs"></i> Estrategia SEO avanzada</li>
+            <li class="flex items-center"><i class="fas fa-check text-purple-500 mr-2 text-xs"></i> Contenido para autoridad</li>
+            <li class="flex items-center"><i class="fas fa-check text-purple-500 mr-2 text-xs"></i> Link building estratégico</li>
+            <li class="flex items-center"><i class="fas fa-check text-purple-500 mr-2 text-xs"></i> Reportes mensuales de progreso</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Proceso de Trabajo -->
+    <div id="proceso" class="mt-20 pt-20 border-t border-zinc-100" aria-labelledby="proceso-title">
+      <div class="text-center mb-16">
+        <h2 id="proceso-title" class="text-3xl md:text-5xl font-black tracking-tighter mb-6 leading-tight">Nuestro Proceso de Trabajo</h2>
+        <p class="text-xl text-zinc-500 italic max-w-3xl mx-auto">Metodología probada que garantiza resultados en 4-6 semanas</p>
+      </div>
+
+      <div class="grid md:grid-cols-5 gap-6 mb-20">
+        <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-white font-bold text-xl">1</span>
+          </div>
+          <h3 class="font-bold text-lg mb-2">Diagnóstico</h3>
+          <p class="text-zinc-600 text-sm">Análisis de mercado y competencia</p>
+        </div>
+        
+        <div class="text-center" data-aos="fade-up" data-aos-delay="150">
+          <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-700 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-white font-bold text-xl">2</span>
+          </div>
+          <h3 class="font-bold text-lg mb-2">Estrategia</h3>
+          <p class="text-zinc-600 text-sm">Plan conversional personalizado</p>
+        </div>
+        
+        <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-700 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-white font-bold text-xl">3</span>
+          </div>
+          <h3 class="font-bold text-lg mb-2">Diseño</h3>
+          <p class="text-zinc-600 text-sm">Prototipo y estructura visual</p>
+        </div>
+        
+        <div class="text-center" data-aos="fade-up" data-aos-delay="250">
+          <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-700 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-white font-bold text-xl">4</span>
+          </div>
+          <h3 class="font-bold text-lg mb-2">Desarrollo</h3>
+          <p class="text-zinc-600 text-sm">Implementación técnica optimizada</p>
+        </div>
+        
+        <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+          <div class="w-16 h-16 bg-gradient-to-br from-red-500 to-red-700 rounded-full flex items-center justify-center mx-auto mb-4">
+            <span class="text-white font-bold text-xl">5</span>
+          </div>
+          <h3 class="font-bold text-lg mb-2">Lanzamiento</h3>
+          <p class="text-zinc-600 text-sm">Publicación y optimización final</p>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <a href="https://wa.me/584124058904?text=Quiero%20conocer%20más%20sobre%20el%20proceso%20de%20trabajo%20Maketo%20Global" 
+           class="btn-dark bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:from-blue-700 hover:to-purple-700 px-10 py-4 text-lg">
+          <i class="fas fa-calendar-alt mr-2"></i> Agendar consulta de proceso
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sección: Para quién lo hacemos -->
+<section class="py-24 px-6 bg-zinc-50" id="para-quien" aria-labelledby="clientes-title">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-16">
+      <h2 id="clientes-title" class="text-4xl md:text-5xl font-black tracking-tighter mb-6 leading-tight italic">¿Para quién construimos estas máquinas de ventas?</h2>
+      <p class="text-xl text-zinc-500 max-w-3xl mx-auto">Identificamos y resolvemos los desafíos digitales específicos de cada tipo de negocio</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+      <div class="bg-white p-8 rounded-3xl shadow-sm border border-zinc-100 hover:shadow-lg transition-shadow" data-aos="fade-up">
+        <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-700 rounded-xl flex items-center justify-center mb-6">
+          <i class="fas fa-briefcase text-white text-lg"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-4">Empresas Establecidas</h3>
+        <p class="text-zinc-600 mb-6">Negocios con años en el mercado que necesitan modernizar su presencia digital para competir en la nueva economía.</p>
+        <ul class="text-zinc-500 text-sm space-y-2">
+          <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2 text-xs"></i> Migración de sistemas legacy</li>
+          <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2 text-xs"></i> Integración con ERP/CRM</li>
+          <li class="flex items-center"><i class="fas fa-check text-blue-500 mr-2 text-xs"></i> Escalabilidad internacional</li>
+        </ul>
+      </div>
+
+      <div class="bg-white p-8 rounded-3xl shadow-sm border border-zinc-100 hover:shadow-lg transition-shadow" data-aos="fade-up" data-aos-delay="100">
+        <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-green-700 rounded-xl flex items-center justify-center mb-6">
+          <i class="fas fa-rocket text-white text-lg"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-4">Startups y Scale-ups</h3>
+        <p class="text-zinc-600 mb-6">Empresas en crecimiento que necesitan una base digital sólida para atraer inversión y expandirse a nuevos mercados.</p>
+        <ul class="text-zinc-500 text-sm space-y-2">
+          <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2 text-xs"></i> MVP digital de alto impacto</li>
+          <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2 text-xs"></i> Pitch decks interactivos</li>
+          <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2 text-xs"></i> Funnel de captación de leads</li>
+        </ul>
+      </div>
+
+      <div class="bg-white p-8 rounded-3xl shadow-sm border border-zinc-100 hover:shadow-lg transition-shadow" data-aos="fade-up" data-aos-delay="200">
+        <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-700 rounded-xl flex items-center justify-center mb-6">
+          <i class="fas fa-user-tie text-white text-lg"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-4">Profesionales y Consultores</h3>
+        <p class="text-zinc-600 mb-6">Expertos que necesitan posicionar su marca personal y convertir su conocimiento en clientes de alto valor.</p>
+        <ul class="text-zinc-500 text-sm space-y-2">
+          <li class="flex items-center"><i class="fas fa-check text-purple-500 mr-2 text-xs"></i> Landing pages de alta conversión</li>
+          <li class="flex items-center"><i class="fas fa-check text-purple-500 mr-2 text-xs"></i> Sistemas de booking integrados</li>
+          <li class="flex items-center"><i class="fas fa-check text-purple-500 mr-2 text-xs"></i> Portafolio digital interactivo</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="bg-gradient-to-r from-blue-900/5 to-purple-900/5 p-8 rounded-3xl border border-blue-100">
+      <div class="flex flex-col md:flex-row items-center justify-between">
+        <div class="mb-6 md:mb-0 md:mr-8">
+          <h3 class="text-2xl font-bold mb-4">¿No ve su tipo de negocio aquí?</h3>
+          <p class="text-zinc-600">Hemos trabajado con más de 12 industrias diferentes. Hablemos de su caso específico.</p>
+        </div>
+        <a href="https://wa.me/584124058904?text=Mi%20negocio%20es%20[describa%20brevemente]%20y%20necesito%20una%20web%20de%20alto%20rendimiento" 
+           class="btn-dark bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:from-blue-700 hover:to-purple-700 whitespace-nowrap">
+          <i class="fas fa-comments mr-2"></i> Conversar sobre mi caso
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sección: Inversión vs Gasto -->
+<section class="py-24 px-6 bg-black text-white" aria-labelledby="inversion-title">
+  <div class="max-w-6xl mx-auto">
+    <div class="bg-gradient-to-br from-zinc-900 to-black border border-white/10 rounded-[50px] p-8 md:p-16 text-center relative overflow-hidden">
+      <div class="absolute top-0 left-0 w-64 h-64 bg-blue-500/10 rounded-full -translate-x-1/2 -translate-y-1/2"></div>
+      <div class="absolute bottom-0 right-0 w-96 h-96 bg-purple-500/10 rounded-full translate-x-1/3 translate-y-1/3"></div>
+      
+      <div class="relative z-10">
+        <span class="text-blue-400 font-bold uppercase tracking-[0.3em] text-xs mb-6 block">ROI Comprobado</span>
+        <h2 id="inversion-title" class="text-4xl md:text-6xl font-black tracking-tighter mb-8 leading-tight">Invierta en activos digitales, <br> <span class="text-zinc-300 italic">no en gastos de marketing.</span></h2>
+        <p class="text-zinc-300 text-lg mb-12 max-w-2xl mx-auto italic leading-relaxed">
+          Un sitio web de alto rendimiento no es un costo, es un activo que aprecia con el tiempo. Mientras los anuncios pagados se detienen cuando deja de pagar, su web optimizada sigue generando leads orgánicos 24/7.
+        </p>
+        
+        <a href="/planes/" class="px-10 py-4 bg-gradient-to-r from-white to-zinc-200 text-black font-black rounded-full uppercase tracking-widest text-sm hover:scale-105 transition-transform inline-block hover:shadow-2xl">
+          <i class="fas fa-chart-bar mr-2"></i> Ver Planes y Tarifas
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sección: Soluciones Específicas (CORREGIDA - sin competencia con Venezuela) -->
+<section class="py-24 px-6 bg-[#f5f5f7]">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
+    
+    <div class="card-impact bg-white p-8 md:p-12 rounded-[40px] border border-zinc-100 group shadow-sm hover:shadow-xl transition-all">
+      <span class="text-xs font-bold text-zinc-400 uppercase tracking-[0.2em] block mb-6">Referentes de Diseño</span>
+      <h3 class="text-3xl font-black mb-6 tracking-tight italic text-black">Librería de Estructuras Comprobadas</h3>
+      <p class="text-zinc-600 mb-8 leading-relaxed">
+        Explore nuestra selección de arquitecturas visuales de alto rendimiento. Modelos desarrollados en WordPress + Elementor, optimizados para conversión y velocidad de carga extrema (Core Web Vitals 90+).
+      </p>
+      <div class="mb-8">
+        <h4 class="font-bold text-zinc-800 mb-3">Industrias disponibles:</h4>
+        <div class="flex flex-wrap gap-2">
+          <span class="bg-zinc-100 text-zinc-700 px-3 py-1 rounded-full text-xs font-medium">E-commerce</span>
+          <span class="bg-zinc-100 text-zinc-700 px-3 py-1 rounded-full text-xs font-medium">Consultoría</span>
+          <span class="bg-zinc-100 text-zinc-700 px-3 py-1 rounded-full text-xs font-medium">Servicios Profesionales</span>
+          <span class="bg-zinc-100 text-zinc-700 px-3 py-1 rounded-full text-xs font-medium">Inmobiliaria</span>
+        </div>
+      </div>
+      <a href="/portafolio/" class="text-black font-bold border-b-2 border-black pb-1 hover:text-zinc-600 transition-all uppercase text-xs tracking-widest inline-flex items-center">
+        Ver catálogo de soluciones <i class="fas fa-arrow-right ml-2 text-xs"></i>
+      </a>
+    </div>
+
+    <div class="card-impact bg-white p-8 md:p-12 rounded-[40px] border border-zinc-100 group shadow-sm hover:shadow-xl transition-all">
+      <span class="text-xs font-bold text-zinc-400 uppercase tracking-[0.2em] block mb-6">Flexibilidad Internacional</span>
+      <h3 class="text-3xl font-black mb-6 tracking-tight italic text-black">Planes de Pago Globales</h3>
+      <p class="text-zinc-600 mb-8 leading-relaxed">
+        Adaptamos nuestras soluciones a las necesidades de cada mercado internacional. Entendemos que cada región tiene particularidades financieras y operativas.
+      </p>
+      
+      <div class="bg-gradient-to-r from-green-50 to-emerald-50 p-6 rounded-2xl mb-8 border border-green-100">
+        <h4 class="font-bold text-green-800 mb-2">Adaptación por mercado:</h4>
+        <ul class="text-green-700 text-sm space-y-2">
+          <li class="flex items-center"><i class="fas fa-globe-americas text-green-500 mr-2"></i> <strong>Latinoamérica:</strong> Soluciones escalables para crecimiento regional</li>
+          <li class="fas fa-flag-usa text-green-500 mr-2"></i> <strong>USA & España:</strong> Estrategias para mercados competitivos</li>
+          <li class="flex items-center"><i class="fas fa-handshake text-green-500 mr-2"></i> <strong>Flexibilidad:</strong> Adaptamos procesos a su operación</li>
+        </ul>
+      </div>
+      
+      <a href="/servicios/" class="text-black font-bold border-b-2 border-black pb-1 hover:text-zinc-600 transition-all uppercase text-xs tracking-widest inline-flex items-center">
+        Conocer más detalles <i class="fas fa-info-circle ml-2 text-xs"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Sección: Siguiente Paso -->
+<section class="py-24 px-6 bg-white" id="siguiente-paso" aria-labelledby="siguiente-title">
+  <div class="max-w-4xl mx-auto text-center">
+    <div data-aos="fade-up" class="bg-gradient-to-br from-blue-50 to-zinc-50 p-8 md:p-12 rounded-3xl border border-blue-100">
+      <span class="text-blue-600 font-bold uppercase tracking-[0.3em] text-xs mb-6 block">Paso a Paso</span>
+      <h2 id="siguiente-title" class="text-4xl md:text-5xl font-black tracking-tighter mb-8 leading-tight">¿Cuál es el siguiente paso?</h2>
+      
+      <div class="grid md:grid-cols-3 gap-8 mb-12">
+        <div class="text-center">
+          <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center mx-auto mb-6">
+            <span class="text-white font-bold text-2xl">1</span>
+          </div>
+          <h3 class="text-xl font-bold mb-4">Consulta Estratégica</h3>
+          <p class="text-zinc-600">30 minutos para analizar su situación actual y objetivos</p>
+        </div>
+        
+        <div class="text-center">
+          <div class="w-20 h-20 bg-gradient-to-br from-green-500 to-green-700 rounded-full flex items-center justify-center mx-auto mb-6">
+            <span class="text-white font-bold text-2xl">2</span>
+          </div>
+          <h3 class="text-xl font-bold mb-4">Propuesta Personalizada</h3>
+          <p class="text-zinc-600">Recibe un plan de acción con timeline y inversión clara</p>
+        </div>
+        
+        <div class="text-center">
+          <div class="w-20 h-20 bg-gradient-to-br from-purple-500 to-purple-700 rounded-full flex items-center justify-center mx-auto mb-6">
+            <span class="text-white font-bold text-2xl">3</span>
+          </div>
+          <h3 class="text-xl font-bold mb-4">Inicio del Proyecto</h3>
+          <p class="text-zinc-600">Comienza la construcción de su máquina de ventas digital</p>
+        </div>
+      </div>
+      
+      <div class="bg-white p-8 rounded-3xl shadow-lg mb-10">
+        <h3 class="text-2xl font-bold mb-6">¿Listo para dar el primer paso?</h3>
+        <p class="text-zinc-600 mb-8 max-w-2xl mx-auto italic">
+          La consulta estratégica es <strong class="text-black">100% gratuita</strong> y sin compromiso.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="https://wa.me/584124058904?text=Quiero%20agendar%20una%20consulta%20estratégica%20gratuita%20con%20Maketo%20Global" 
+             class="px-10 py-5 bg-gradient-to-r from-green-500 to-green-600 text-white font-black rounded-full hover:scale-105 transition-all duration-300 text-lg shadow-lg hover:shadow-xl">
+            <i class="fab fa-whatsapp mr-2"></i> Agendar por WhatsApp
+          </a>
+        </div>
+        
+        <p class="text-zinc-500 text-sm mt-6 italic">
+          Horarios disponibles: Lunes a Viernes 9am - 6pm (GMT-4)
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sección: FAQ -->
+<section class="py-24 px-6 bg-white" aria-labelledby="faq-title">
+  <div class="max-w-4xl mx-auto">
+    <h2 id="faq-title" class="text-4xl md:text-5xl font-black mb-12 tracking-tight italic text-center">Consultas Estratégicas Frecuentes</h2>
+    
+    <div class="space-y-6">
+      <details class="group border-b border-zinc-100 pb-6" data-aos="fade-up" >
+        <summary class="flex justify-between items-center cursor-pointer list-none font-bold text-xl hover:text-zinc-800 transition-colors" >
+          <span>1. ¿Cómo trabajamos a nivel global con empresas en diferentes zonas horarias?</span>
+          <span class="transition group-open:rotate-180 text-zinc-400 ml-4"><i class="fas fa-chevron-down text-sm"></i></span>
+        </summary>
+        <div class="overflow-hidden transition-all duration-300" >
+          <div class="mt-6 text-zinc-600 leading-relaxed" >
+            <p class="italic mb-4">Operamos con <strong>flujos de trabajo asíncronos optimizados para colaboración internacional</strong>. No importa si está en Madrid, Miami o Santiago, su proyecto avanza 24/7 con reportes de progreso diarios y comunicación fluida.</p>
+          </div>
+        </div>
+      </details>
+
+      <details class="group border-b border-zinc-100 pb-6" data-aos="fade-up" data-aos-delay="50" >
+        <summary class="flex justify-between items-center cursor-pointer list-none font-bold text-xl hover:text-zinc-800 transition-colors" >
+          <span>2. ¿Qué garantizan en términos de velocidad y Core Web Vitals?</span>
+          <span class="transition group-open:rotate-180 text-zinc-400 ml-4"><i class="fas fa-chevron-down text-sm"></i></span>
+        </summary>
+        <div class="overflow-hidden transition-all duration-300" >
+          <div class="mt-6 text-zinc-600 leading-relaxed">
+            <p class="italic mb-4">Garantizamos que su web cargará en <strong>menos de 2 segundos en cualquier continente</strong> y cumplirá con los estándares de Google Core Web Vitals mediante optimización de imágenes, lazy loading, minificación de recursos, CDN global y hosting premium.</p>
+          </div>
+        </div>
+      </details>
+
+      <details class="group border-b border-zinc-100 pb-6" data-aos="fade-up" data-aos-delay="100" >
+        <summary class="flex justify-between items-center cursor-pointer list-none font-bold text-xl hover:text-zinc-800 transition-colors" >
+          <span>3. ¿Qué métodos de pago internacionales aceptan?</span>
+          <span class="transition group-open:rotate-180 text-zinc-400 ml-4"><i class="fas fa-chevron-down text-sm"></i></span>
+        </summary>
+        <div class="overflow-hidden transition-all duration-300" >
+          <div class="mt-6 text-zinc-600 leading-relaxed">
+            <p class="italic mb-4">Aceptamos <strong>múltiples plataformas internacionales seguras</strong> incluyendo PayPal, Binance (USDT), Zelle, tarjetas internacionales y transferencias bancarias globales para eliminar cualquier barrera financiera.</p>
+          </div>
+        </div>
+      </details>
+
+      <details class="group border-b border-zinc-100 pb-6" data-aos="fade-up" data-aos-delay="150" >
+        <summary class="flex justify-between items-center cursor-pointer list-none font-bold text-xl hover:text-zinc-800 transition-colors">
+          <span>4. ¿Cómo preparan las webs para la era de la Inteligencia Artificial?</span>
+          <span class="transition group-open:rotate-180 text-zinc-400 ml-4"><i class="fas fa-chevron-down text-sm"></i></span>
+        </summary>
+        <div class="overflow-hidden transition-all duration-300">
+          <div class="mt-6 text-zinc-600 leading-relaxed" >
+            <p class="italic mb-4">Implementamos <strong>Generative Engine Optimization (GEO)</strong> con schema markup avanzado (JSON-LD), estructura semántica y contenido optimizado para que su web sea recomendada por asistentes de IA como ChatGPT y Bard.</p>
+          </div>
+        </div>
+      </details>
+
+      <details class="group border-b border-zinc-100 pb-6" data-aos="fade-up" data-aos-delay="200">
+        <summary class="flex justify-between items-center cursor-pointer list-none font-bold text-xl hover:text-zinc-800 transition-colors" >
+          <span>5. ¿Ofrecen soporte y evolución después del lanzamiento?</span>
+          <span class="transition group-open:rotate-180 text-zinc-400 ml-4"><i class="fas fa-chevron-down text-sm"></i></span>
+        </summary>
+        <div class="overflow-hidden transition-all duration-300" >
+          <div class="mt-6 text-zinc-600 leading-relaxed" >
+            <p class="italic mb-4">Sí, nuestra relación <strong>no termina con la entrega</strong>. Ofrecemos varios niveles de soporte incluyendo actualizaciones de seguridad, backups automáticos, optimizaciones mensuales y reportes de performance para mantener su activo digital siempre actualizado.</p>
+          </div>
+        </div>
+      </details>
+    </div>
+    
+    <div class="text-center mt-16">
+      <p class="text-zinc-500 mb-8 italic">¿Tiene otra pregunta específica sobre su proyecto?</p>
+      <a href="https://wa.me/584124058904?text=Tengo%20una%20pregunta%20específica%20sobre%20mi%20proyecto%20web:" 
+         class="btn-dark bg-gradient-to-r from-black to-zinc-800 text-white px-10 py-4">
+        <i class="fas fa-question-circle mr-2"></i> Hacer pregunta personalizada
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Cierre: Acción Final -->
+<section class="py-32 md:py-40 px-6 text-center bg-gradient-to-b from-black to-zinc-900 text-white" aria-labelledby="cierre-title">
+  <div data-aos="fade-up" data-aos-delay="200" class="max-w-5xl mx-auto">
+    <span class="text-zinc-400 font-bold uppercase tracking-[0.4em] text-xs mb-10 block">Decisión Crítica</span>
+    
+    <h2 id="cierre-title" class="text-5xl md:text-[90px] lg:text-[100px] font-black tracking-tighter mb-12 leading-[0.9]">
+      ¿Será el líder <br class="hidden md:block"> 
+      <span class="bg-gradient-to-r from-white to-zinc-300 bg-clip-text text-transparent">o el recuerdo?</span>
+    </h2>
+    
+    <p class="text-2xl md:text-3xl text-zinc-400 mb-14 leading-tight italic max-w-3xl mx-auto">
+      Usted decide: seguir siendo invisible o <span class="text-white font-bold">tomar el control total de su mercado digital</span> hoy mismo.
+    </p>
+    
+    <div class="mb-20">
+      <a href="https://wa.me/584124058904?text=Estoy%20listo%20para%20tomar%20control%20de%20mi%20mercado%20digital%20con%20Maketo%20Global" 
+         class="btn-dark bg-gradient-to-r from-white to-zinc-200 text-black  md:text-2xl px-10 py-4 inline-block hover:shadow-2xl border-0">
+        <i class="fas fa-crown mr-3"></i> Hablar con un estratega 
+      </a>
+      <p class="text-zinc-500 text-sm mt-6 italic">Consulta gratuita de 30 minutos - Sin compromiso</p>
+    </div>
+  </div>
+</section>
+
+<section class="py-12 bg-white dark:bg-black">
+  <div class="max-w-3xl mx-auto px-6">
+    
+    <div class="flex items-center justify-between mb-10">
+      <div class="flex items-center gap-3">
+        <span class="text-4xl font-semibold tracking-tight text-slate-900 dark:text-white">4.9</span>
+        <div>
+          <div class="flex text-orange-400 w-20">
+            <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg fill="currentColor" class="text-slate-300 dark:text-slate-700" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <p class="text-[10px] uppercase tracking-[0.1em] font-medium text-slate-400 mt-0.5">27 Verified Reviews</p>
+        </div>
+      </div>
+      <div class="hidden sm:block">
+        <span class="text-xs font-medium text-blue-600 hover:opacity-70 cursor-pointer">Google Business</span>
+      </div>
+    </div>
+
+    <div class="space-y-8">
+      <div class="border-b border-slate-100 dark:border-slate-800 pb-8 last:border-0">
+        <div class="flex items-center gap-1 mb-2">
+            <span class="text-[13px] font-bold text-slate-800 dark:text-slate-200">Alex R.</span>
+            <span class="text-slate-300 mx-1">•</span>
+            <span class="text-[12px] text-slate-400">Hace 1 mes</span>
+        </div>
+        <p class="text-[15px] leading-relaxed text-slate-600 dark:text-slate-400 font-light">
+          Excelente servicio. La optimización de mi sitio superó las expectativas en términos de velocidad y conversión.
+        </p>
+      </div>
+
+      <div class="border-b border-slate-100 dark:border-slate-800 pb-8 last:border-0">
+        <div class="flex items-center gap-1 mb-2">
+            <span class="text-[13px] font-bold text-slate-800 dark:text-slate-200">Elena M.</span>
+            <span class="text-slate-300 mx-1">•</span>
+            <span class="text-[12px] text-slate-400">Hace 2 semanas</span>
+        </div>
+        <p class="text-[15px] leading-relaxed text-slate-600 dark:text-slate-400 font-light">
+          Expertos en SEO internacional. Logramos posicionarnos en mercados que antes no alcanzábamos.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Scripts -->
+<script src="menu-loader.js" defer></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  // Inicializar AOS (animaciones al scroll)
+  AOS.init({ 
+    duration: 800, 
+    once: true,
+    offset: 100,
+    delay: 50
+  });
+  
+  // Google Tag Manager
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5ZK3M5QT');
+  
+  // Google Analytics
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-5CN6E2EFS2');
+</script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5CN6E2EFS2"></script>
+
+<!-- Script para animación del hero con scroll -->
+<script>
+window.addEventListener('DOMContentLoaded', () => {
+  // Precargar video para mejor experiencia
+  const video = document.getElementById('hero-vid');
+  if (video) {
+    video.load();
+  }
+});
+
+window.addEventListener('scroll', () => {
+  const section = document.getElementById('hero-section');
+  const img = document.getElementById('hero-img');
+  const vid = document.getElementById('hero-vid');
+  const title = document.getElementById('group-title');
+  const desc = document.getElementById('group-desc');
+
+  if (!section || !img || !vid || !title || !desc) return;
+
+  // Calculamos el progreso del scroll dentro de la sección (0 a 1)
+  const scrollPos = window.scrollY;
+  const sectionTop = section.offsetTop;
+  const sectionHeight = section.offsetHeight;
+  const windowHeight = window.innerHeight;
+  
+  // Progreso desde que entramos a la sección
+  const progress = Math.min(Math.max((scrollPos - sectionTop) / (sectionHeight - windowHeight), 0), 1);
+
+  // 1. Transición de Fondo: Imagen -> Video
+  // El video empieza a aparecer desde el 10% del scroll
+  let vidOpacity = Math.min(Math.max((progress - 0.1) * 2, 0), 1);
+  vid.style.opacity = vidOpacity;
+  
+  // La imagen se desvanece gradualmente
+  img.style.opacity = 1 - Math.min(progress * 1.5, 1);
+  img.style.transform = `scale(${1.05 + progress * 0.15})`; // Efecto zoom suave
+
+  // 2. Transición de Texto: Título -> Descripción
+  if (progress < 0.4) {
+    // Fase Título visible
+    title.style.opacity = 1 - (progress * 2.2);
+    title.style.transform = `translateY(-${progress * 60}px)`;
+    
+    desc.style.opacity = 0;
+    desc.style.pointerEvents = "none";
+    desc.style.transform = "translateY(20px) scale(0.98)";
+  } else {
+    // Fase Descripción visible
+    title.style.opacity = 0;
+    
+    let descOpacity = Math.min(Math.max((progress - 0.4) * 2.5, 0), 1);
+    desc.style.opacity = descOpacity;
+    desc.style.transform = `translateY(${(1 - progress) * 30}px) scale(1)`;
+    
+    // Solo activar interacción cuando sea suficientemente visible
+    if (descOpacity > 0.7) {
+      desc.style.pointerEvents = "auto";
+    } else {
+      desc.style.pointerEvents = "none";
+    }
+  }
+});
+
+// Mejorar accesibilidad del FAQ
+document.querySelectorAll('details').forEach((detail) => {
+  detail.addEventListener('toggle', function() {
+    if (this.open) {
+      this.setAttribute('aria-expanded', 'true');
+    } else {
+      this.setAttribute('aria-expanded', 'false');
+    }
+  });
+  
+  // Inicializar atributos ARIA
+  detail.setAttribute('aria-expanded', detail.open ? 'true' : 'false');
+});
+</script>
+
+<!-- Estructura para Google Tag Manager (noscript) -->
+<noscript>
+  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZK3M5QT" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+
+</body>
+</html>
