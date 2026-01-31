@@ -6,7 +6,7 @@ const headerHTML = `
         <div class="header-right">
             <nav id="main-menu" role="navigation">
                 <ul>
-                    <li><a href="/global/">Global</a></li>  
+                    <li><a href="/https://maketo.web/">Inicio</a></li>  
                     <li><a href="/web-a-credito/">Financiamiento</a></li>
                     <li><a href="/servicios/">Servicios</a></li>
                    <li><a href="/planes/">Planes</a></li>
