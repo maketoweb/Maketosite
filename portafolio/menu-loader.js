@@ -1,5 +1,4 @@
 
-   // Contenido del Header (Inyección HTML) - Incluye SPAN para el icono de la hamburguesa/X
 const headerHTML = `
     <header>
         <div class="logo"><a href="/">
@@ -41,25 +40,25 @@ const footerHTML = `
     <div class="footer-column">
         <h4>Explora</h4>
         <ul>
-            <li><a href="/blog">Blog de SEO y Diseño</a></li>
-            <li><a href="/nosotros">Nosotros</a></li>
-            <li><a href="/servicios">Servicios </a></li>
+            <li><a href="/blog/">Blog de SEO y Diseño</a></li>
+            <li><a href="/nosotros/">Nosotros</a></li>
+            <li><a href="/servicios/">Servicios </a></li>
         </ul>
     </div>
 
     <div class="footer-column">
-        <h4>Planes Flex</h4>
+        <h4>Planes</h4>
         <ul>
-            < <li><a href="/Ecommerce.html">Ecommerce</a></li>
+             <li><a href="/planes/">Planes</a></li>
             <li><a href="/portafolio/">Portafolio</a></li>
-            <li><a href="/web-a-credito/">Financiamiento 0%</a></li>
+            <li><a href="/web-a-credito/">Financiamiento </a></li>
         </ul>
     </div>
 
     <div class="footer-column">
-        <h4>Legal y Contacto</h4>
+        <h4>Asuntos</h4>
         <ul>
-            <li><a href="/planes/">Planes</a></li>
+            <li><a href="/vzla/">Venezuela</a></li>
             <li><a href="/politica-legal.html">Politica Legal</a></li>
           
         </ul>
