@@ -44,15 +44,15 @@ const footerHTML = `
     <div class="footer-column">
         <h4>Planes Flex</h4>
         <ul>
-            <li><a href="/ecommerce/">Diseño Web Venezuela</a></li>
-            <li><a href="/global/">Maketo Global</a></li>
+            <li><a href="/vzla/">Diseño Web Venezuela</a></li>
+            <li><a href="/PLANES/">Planes</a></li>
             <li><a href="/web-a-credito/">Financiamiento 0%</a></li>
         </ul>
     </div>
     <div class="footer-column">
         <h4>Legal y Contacto</h4>
         <ul>
-            <li><a href="/planes/">Planes</a></li>
+          
             <li><a href="/politica-legal">Politica legal</a></li>
            
         </ul>
