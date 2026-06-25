@@ -1,10 +1,25 @@
 User-agent: *
 Allow: /
 
-User-agent: Google-Extended
-Disallow: /
+User-agent: GPTBot
+Allow: /
 
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
 
 Sitemap: https://maketo.site/sitemap.xml
-
-
