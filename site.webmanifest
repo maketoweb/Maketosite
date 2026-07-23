@@ -1,0 +1,16 @@
+{
+  "name": "Maketo Web - Sistema de Clientes Recurrentes",
+  "short_name": "Maketo",
+  "description": "Sistema para que tus clientes de Instagram y WhatsApp vuelvan a comprarte. App propia con tu marca, pedidos organizados y notificaciones push.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#7c3aed",
+  "icons": [
+    {
+      "src": "imagen/favicon.png",
+      "sizes": "any",
+      "type": "image/png"
+    }
+  ]
+}
