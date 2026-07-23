@@ -1,0 +1,8 @@
+{
+  "name": "maketo-site",
+  "version": "1.0.0",
+  "description": "Maketo Web - Sistema de Clientes Recurrentes",
+  "scripts": {
+    "build": "echo 'Static site - no build needed'"
+  }
+}
