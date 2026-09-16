@@ -1,325 +1,251 @@
 <!DOCTYPE html>
-
-<html lang="es"><head>
+<html lang="es">
+<head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>App de Pedidos Propia para Clientes Recurrentes | Maketo Web</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        fontFamily: {
-          sans: ['Plus Jakarta Sans', 'sans-serif'],
-        },
-        colors: {
-          primary: '#7c3aed',
-          surface: '#faf8ff',
-        }
-      }
-    }
-  }
-</script>
-<!-- Remix Icons (modern, reales) -->
+<title>Maketo — Software, Páginas Web y Apps para Comercios y PYMES</title>
+<link rel="stylesheet" href="/dist/output.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" />
-<!-- Plus Jakarta Sans Font -->
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link rel="canonical" href="https://maketo.site">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    
-    <meta property="og:title" content="Tu Negocio con Clientes Recurrentes y App Propia | Maketo Web">
-    <meta name="description" content="La app de pedidos propia para negocios que quieren clientes recurrentes. Convierte a tus clientes de Instagram y WhatsApp en compradores que vuelven con notificaciones push.">
-<meta name="keywords" content="clientes recurrentes, app para mi negocio, notificaciones push para negocios, sistema de pedidos, retención de clientes, fidelización de clientes, maketo web">
-<meta property="og:description" content="Sistema para que tus clientes de Instagram y WhatsApp vuelvan a comprarte. App propia, pedidos organizados y notificaciones push. Maketo Web.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://maketo.site">
-    <meta property="og:image" content="https://maketo.site/imagen/tuapp.png">
-    
-    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-     <meta name="google-site-verification" content="XFhQKekxGVM6qDoErVnyQon-pJq4BqCyz_3W16qK90Y" />
-    <meta name="theme-color" content="#7c3aed">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://cdn.jsdelivr.net">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://wa.me">
-    
-    <link rel="icon" href="/imagen/favicon.png" type="image/png" sizes="100x100">
-    <link rel="apple-touch-icon" href="/imagen/favicon.png" sizes="100x100">
-  
-     <link rel="manifest" href="./site.webmanifest">
+<link rel="alternate" hreflang="es" href="https://maketo.site/">
+<link rel="alternate" hreflang="es-VE" href="https://maketo.site/">
+<link rel="alternate" hreflang="es-CO" href="https://maketo.site/">
+<link rel="alternate" hreflang="es-MX" href="https://maketo.site/">
+<link rel="alternate" hreflang="es-AR" href="https://maketo.site/">
+<link rel="alternate" hreflang="es-CL" href="https://maketo.site/">
+<link rel="alternate" hreflang="es-PE" href="https://maketo.site/">
+<link rel="alternate" hreflang="es-EC" href="https://maketo.site/">
+<link rel="alternate" hreflang="x-default" href="https://maketo.site/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="description" content="Maketo — Software, páginas web y apps para comercios y PYMES en Latinoamérica. Tiendas online, pedidos, reservas, automatización de procesos. Hecho a tu medida por Henderson Ochoa.">
+<meta name="keywords" content="desarrollo web para comercios, página web para mi negocio, tienda online, sistema de pedidos, app web, software para PYMES, automatización de procesos, presencia web profesional, desarrollo web Latinoamérica, Maketo">
+<meta property="og:title" content="Maketo — Software y Páginas Web para Comercios y PYMES | Latinoamérica">
+<meta property="og:description" content="Ayudamos a comercios y PYMES a tener presencia web profesional y automatizar sus procesos. Tiendas online, pedidos, reservas y más.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://maketo.site">
+<meta property="og:image" content="https://maketo.site/imagen/tuapp.png">
+<meta property="og:locale" content="es_VE">
+<meta property="og:site_name" content="Maketo - Desarrollo de Software a Medida">
+<meta property="og:image:alt" content="Maketo - Desarrollo de Software a Medida para Empresas en Latinoamérica">
+<meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="google-site-verification" content="XFhQKekxGVM6qDoErVnyQon-pJq4BqCyz_3W16qK90Y" />
+<meta name="theme-color" content="#3B82F6">
+<meta name="author" content="Henderson Ochoa, Maketo">
+<meta name="geo.region" content="VE-G">
+<meta name="geo.placename" content="Valencia">
+<meta name="geo.position" content="10.1750;-68.0030">
+<meta name="ICBM" content="10.1750, -68.0030">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="icon" href="/imagen/favicon.png" type="image/png" sizes="100x100">
+<link rel="apple-touch-icon" href="/imagen/favicon.png" sizes="100x100">
+<link rel="manifest" href="./site.webmanifest">
 
-<!-- Critical CSS for above-the-fold content -->
-     <style>
-       body{opacity:0}
-       .js-loaded body{opacity:1}
-       @font-face{font-family:'Plus Jakarta Sans';font-display:swap}
-     </style>
-     <script>
-       document.documentElement.classList.add('js-loaded');
-     </script>
+<style>
+  @font-face{font-family:'Plus Jakarta Sans';font-display:swap}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Maketo",
+  "alternateName": ["Maketo Web", "Maketo"],
+  "url": "https://maketo.site",
+  "logo": "https://maketo.site/imagen/logo.png",
+  "description": "Maketo desarrolla software, páginas web y apps para comercios y PYMES en Latinoamérica. Tiendas online, plataformas de pedidos, sistemas de reservas, apps web y automatización de procesos.",
+  "founder": {
+    "@type": "Person",
+    "name": "Henderson Ochoa",
+    "image": "https://maketo.site/imagen/henderson.webp",
+    "jobTitle": "Desarrollador de Software"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Valencia",
+    "addressRegion": "Carabobo",
+    "addressCountry": "VE"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+584124058904",
+    "contactType": "sales",
+    "availableLanguage": ["Spanish", "English"]
+  },
+  "sameAs": [
+    "https://instagram.com/maketo.web",
+    "https://facebook.com/maketoweboficial",
+    "https://linkedin.com/company/maketoweb"
+  ],
+  "knowsAbout": [
+    "desarrollo de software a medida",
+    "e-commerce",
+    "tiendas online",
+    "plataformas de pedidos",
+    "sistemas de reservas",
+    "apps web PWA",
+    "software empresarial",
+    "desarrollo web",
+    "páginas web corporativas",
+    "automatización de procesos"
+  ]
+}
+</script>
 
-    <!-- JSON-LD Schemas -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Maketo Web",
-      "alternateName": ["Maketo Web", "Sistema Maketo Web", "Maketo"],
-      "url": "https://maketo.site",
-      "logo": "https://maketo.site/imagen/logo.png",
-      "description": "Maketo Web: Sistema para que tus clientes de Instagram y WhatsApp vuelvan a comprarte. App propia, pedidos organizados y notificaciones push.",
-      "founder": {
-        "@type": "Person",
-        "name": "Henderson Ochoa"
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Valencia",
-        "addressRegion": "Carabobo",
-        "addressCountry": "VE"
-      },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+584124058904",
-        "contactType": "sales",
-        "availableLanguage": ["Spanish", "English"]
-      },
-      "sameAs": [
-        "https://instagram.com/maketo.web",
-        "https://facebook.com/maketoweboficial",
-        "https://linkedin.com/company/maketoweb"
-      ],
-      "knowsAbout": [
-        "clientes recurrentes",
-        "app para mi negocio",
-        "notificaciones push para negocios",
-        "sistema de pedidos online",
-        "retención de clientes",
-        "fidelización de clientes",
-        "diseño de páginas web",
-        "desarrollo WordPress",
-        "sitios web profesionales",
-        "Maketo Web"
-      ]
-    }
-    </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Maketo - Desarrollo de Software a Medida",
+  "description": "Desarrollamos software, apps web, e-commerce, plataformas de pedidos, sistemas de reservas y soluciones empresariales personalizadas para negocios en Latinoamérica.",
+  "url": "https://maketo.site",
+  "telephone": "+584124058904",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Valencia",
+    "addressRegion": "Carabobo",
+    "addressCountry": "VE"
+  },
+  "priceRange": "$$",
+  "serviceType": [
+    "Desarrollo de Software a Medida",
+    "Plataformas E-commerce y Tiendas Online",
+    "Plataformas de Pedidos Digitales",
+    "Sistemas de Reservas Online",
+    "Desarrollo de Apps Web PWA",
+    "Páginas Web Corporativas",
+    "Software Empresarial Personalizado",
+    "Automatización de Procesos"
+  ],
+  "areaServed": [
+    {"@type": "Country", "name": "Venezuela"},
+    {"@type": "Country", "name": "Colombia"},
+    {"@type": "Country", "name": "México"},
+    {"@type": "Country", "name": "Perú"},
+    {"@type": "Country", "name": "Chile"},
+    {"@type": "Country", "name": "Argentina"},
+    {"@type": "Country", "name": "Ecuador"}
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Servicios de Desarrollo Maketo",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Desarrollo de Software a Medida para Empresas"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Plataformas E-commerce y Tiendas Online"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Plataformas de Pedidos Digitales"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Sistemas de Reservas Online"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Desarrollo de Apps Web (PWA)"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Páginas Web Corporativas y Landing Pages"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Automatización de Procesos Empresariales"}}
+    ]
+  }
+}
+</script>
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Maketo Web",
-      "image": "https://maketo.site/imagen/tuapp.png",
-      "url": "https://maketo.site",
-      "telephone": "+584124058904",
-      "description": "Maketo Web: Sistema para que tus clientes de Instagram y WhatsApp vuelvan a comprarte. App propia, pedidos organizados y notificaciones push.",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Valencia",
-        "addressRegion": "Carabobo",
-        "addressCountry": "VE"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 10.1750,
-        "longitude": -68.0030
-      },
-      "priceRange": "$$",
-      "openingHours": "Mo-Fr 08:00-18:00",
-      "areaServed": [
-        {"@type": "Country", "name": "Venezuela"},
-        {"@type": "Country", "name": "Colombia"},
-        {"@type": "Country", "name": "México"},
-        {"@type": "Country", "name": "Perú"},
-        {"@type": "Country", "name": "Chile"},
-        {"@type": "Country", "name": "Argentina"},
-        {"@type": "Country", "name": "Ecuador"}
-      ]
-    }
-    </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://maketo.site/"}
+  ]
+}
+</script>
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "Maketo Web - Sistema de Clientes Recurrentes",
-      "applicationCategory": "BusinessApplication",
-      "operatingSystem": "Web, Android, iOS",
-      "description": "Sistema para que tus clientes de Instagram y WhatsApp vuelvan a comprarte. App propia, pedidos organizados y notificaciones push.",
-      "url": "https://maketo.site",
-      "author": {
-        "@type": "Organization",
-        "name": "Maketo Web",
-        "url": "https://maketo.site"
-      },
-      "offers": {
-        "@type": "Offer",
-        "price": "200",
-        "priceCurrency": "USD",
-        "description": "Desde 200$ de instalación. Mantenimiento desde 30$/mes."
-      },
-      "featureList": [
-        "Clientes recurrentes automáticos",
-        "App propia con tu marca",
-        "Pedidos organizados por WhatsApp",
-        "Notificaciones push directas",
-        "Sistema de puntos acumulables",
-        "Tracking de pedidos en tiempo real",
-        "Panel de administración completo",
-        "SEO local integrado",
-        "Dominio propio personalizado"
-      ],
-      "screenshot": "https://maketo.site/imagen/dashboard.png"
-    }
-    </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Maketo",
+  "url": "https://maketo.site",
+  "description": "Software, páginas web, tiendas online, apps y automatización para comercios y PYMES en Latinoamérica.",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://maketo.site/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
 
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "Maketo Web - Diseño de Páginas Web Profesionales",
-      "description": "Diseñamos páginas web profesionales y funcionales para empresas de cualquier ramo: abogados, psicólogos, médicos, laboratorios, odontólogos, construcciones. WordPress a la medida.",
-      "url": "https://maketo.site",
-      "telephone": "+584124058904",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Valencia",
-        "addressRegion": "Carabobo",
-        "addressCountry": "VE"
-      },
-      "priceRange": "$$",
-      "serviceType": [
-        "Diseño de páginas web",
-        "Desarrollo WordPress",
-        "Sitios web profesionales",
-        "Landing pages",
-        "Páginas web para abogados",
-        "Páginas web para médicos",
-        "Páginas web para psicólogos",
-        "Páginas web para laboratorios",
-        "Páginas web para odontólogos",
-        "Páginas web para construcción"
-      ],
-      "areaServed": [
-        {"@type": "Country", "name": "Venezuela"},
-        {"@type": "Country", "name": "Colombia"},
-        {"@type": "Country", "name": "México"},
-        {"@type": "Country", "name": "Perú"},
-        {"@type": "Country", "name": "Chile"},
-        {"@type": "Country", "name": "Argentina"},
-        {"@type": "Country", "name": "Ecuador"}
-      ],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Servicios de Diseño Web",
-        "itemListElement": [
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Página web profesional WordPress"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Sistema de clientes recurrentes con app propia"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Notificaciones push para negocios"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "SEO local para negocios"}}
-        ]
-      }
-    }
-    </script>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://maketo.site/"}
-      ]
-    }
-    </script>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Maketo Web",
-      "url": "https://maketo.site",
-      "description": "Sistema de clientes recurrentes con app propia, notificaciones push y SEO para negocios en Latinoamérica.",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://maketo.site/?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
-    }
-    </script>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Henderson Ochoa",
-      "jobTitle": "CEO y Fundador",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "Maketo Web",
-        "url": "https://maketo.site"
-      },
-      "url": "https://maketo.site",
-      "knowsAbout": [
-        "sistemas de clientes recurrentes",
-        "desarrollo web",
-        "aplicaciones móviles para negocios",
-        "SEO local",
-        "notificaciones push",
-        "fidelización de clientes"
-      ],
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Valencia",
-        "addressRegion": "Carabobo",
-        "addressCountry": "VE"
-      }
-    }
-    </script>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Review",
-      "author": {
-        "@type": "Person",
-        "name": "Damiana Di Santo"
-      },
-      "reviewBody": "Trabajar con Maketo Web para crear mi página web ha sido una experiencia increíble. Desde el principio entendió perfectamente mi visión y logró transformar todas mis ideas en una página profesional, elegante y funcional. Estoy demasiado feliz con el resultado y definitivamente lo recomiendo.",
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5",
-        "bestRating": "5"
-      },
-      "itemReviewed": {
-        "@type": "Organization",
-        "name": "Maketo Web"
-      }
-    }
-    </script>
-
-    <meta name="geo.region" content="VE-G">
-    <meta name="geo.placename" content="Valencia">
-    <meta name="geo.position" content="10.1750;-68.0030">
-    <meta name="ICBM" content="10.1750, -68.0030">
-    <meta name="author" content="Henderson Ochoa, Maketo Web">
-    <meta property="og:image:alt" content="Maketo Web - Sistema para Clientes Recurrentes Venezuela">
-    <meta property="og:locale" content="es_VE">
-    <meta property="og:site_name" content="Maketo Web - Clientes Recurrentes Venezuela">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Maketo - Desarrollo de Software a Medida",
+  "image": "https://maketo.site/imagen/logo.png",
+  "url": "https://maketo.site",
+  "telephone": "+584124058904",
+  "email": "maketostudio@gmail.com",
+  "description": "Desarrollo de software, páginas web, tiendas online, apps y automatización para comercios y PYMES en Latinoamérica.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Valencia",
+    "addressLocality": "Valencia",
+    "addressRegion": "Carabobo",
+    "postalCode": "2001",
+    "addressCountry": "VE"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 10.1750,
+    "longitude": -68.0030
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "opens": "08:00",
+    "closes": "18:00"
+  },
+  "priceRange": "$$",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "reviewCount": "1"
+  },
+  "sameAs": [
+    "https://instagram.com/maketo.web",
+    "https://facebook.com/maketoweboficial",
+    "https://linkedin.com/company/maketoweb"
+  ]
+}
+</script>
 
 <style data-purpose="custom-layout-styles">
-    body {
-      background-color: #ffffff;
-      color: #1a1a1a;
-      overflow-x: hidden;
-    }
-    .hero-gradient {
-      background: radial-gradient(circle at top right, rgba(124, 58, 237, 0.05), transparent);
-    }
+  body {
+    background-color: #F5F5F7;
+    color: #1a1a1a;
+    overflow-x: hidden;
+  }
+  .bento-card {
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.04), 0 1px 4px rgba(0,0,0,0.02);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .bento-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.04);
+  }
+  .gradient-purple { background: linear-gradient(135deg, #8B5CF6, #A78BFA); }
+  .gradient-blue { background: linear-gradient(135deg, #3B82F6, #60A5FA); }
+  .gradient-pink { background: linear-gradient(135deg, #EC4899, #F472B6); }
+  .gradient-green { background: linear-gradient(135deg, #22C55E, #4ADE80); }
+  .gradient-orange { background: linear-gradient(135deg, #F97316, #FB923C); }
+  .gradient-yellow { background: linear-gradient(135deg, #F59E0B, #FBBF24); }
+  .gradient-cyan { background: linear-gradient(135deg, #06B6D4, #22D3EE); }
+  .gradient-dark { background: linear-gradient(135deg, #1E293B, #334155); }
+  .gradient-red { background: linear-gradient(135deg, #EF4444, #F87171); }
+  .gradient-emerald { background: linear-gradient(135deg, #10B981, #34D399); }
+  .icon-bubble {
+    width: 48px; height: 48px; border-radius: 16px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .scrollbar-hide::-webkit-scrollbar{display:none}
+  .scrollbar-hide{-ms-overflow-style:none;scrollbar-width:none}
 </style>
 
-    <script>
-  // Menú móvil (nuevo SOLO para index.html)
-
+<script>
   document.addEventListener('DOMContentLoaded', () => {
     const toggle = document.getElementById('menuToggle');
     const menu = document.getElementById('main-menu');
@@ -349,906 +275,570 @@
       });
     });
 
-    // Cerrar al cambiar de tamaño (evita menús "pegados")
     window.addEventListener('resize', () => {
       if (window.innerWidth > 900) closeMenu();
     });
+
+    // Scroll animations for bento cards and timeline steps
+    const animateElements = document.querySelectorAll('.animate-on-scroll');
+    animateElements.forEach((el, i) => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(30px)';
+      el.style.transition = `opacity 0.6s ease ${i * 0.1}s, transform 0.6s ease ${i * 0.1}s`;
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.1 });
+
+    animateElements.forEach(el => observer.observe(el));
   });
 </script>
 </head>
 <body class="font-sans">
 
-<!-- BEGIN: MainHeader (Menú nuevo para index.html) -->
-<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
-  <nav class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
-      <a class="flex items-center gap-2" href="/" aria-label="Maketo Web">
-        <img alt="Maketo Web - Sistema para Clientes Recurrentes" class="h-10 w-auto" src="/imagen/logo.png"/>
-        <span class="text-xl tracking-tight text-blue-500 font-black">maketo web</span>
-      </a>
-
-    <div class="hidden md:flex items-center gap-8 font-semibold text-gray-700 text-sm" aria-label="Navegación">
-      <a class="relative hover:text-primary transition-colors" href="/">Inicio</a>
-      <a class="relative hover:text-primary transition-colors" href="/como-funciona.html">Cómo Funciona</a>
-      <a class="relative hover:text-primary transition-colors" href="#demos">Demo</a>
+<!-- Header -->
+<header class="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[calc(100%-2rem)] max-w-5xl">
+  <nav class="bg-white/80 backdrop-blur-xl rounded-[20px] px-5 py-3 flex items-center justify-between shadow-[0_4px_24px_rgba(0,0,0,0.06)] border border-white/60">
+    <a class="flex items-center gap-2" href="/" aria-label="Maketo">
+      <img alt="Maketo" class="h-8 w-auto" src="/imagen/logo.png"/>
+      <span class="text-lg tracking-tight text-primary font-black">maketo</span>
+    </a>
+    <div class="hidden md:flex items-center gap-6 font-semibold text-gray-600 text-sm">
+      <a class="hover:text-primary transition-colors" href="#servicios">Servicios</a>
+      <a class="hover:text-primary transition-colors" href="#proyectos">Proyectos</a>
+      <a class="hover:text-primary transition-colors" href="#como-funciona">Cómo Funciona</a>
     </div>
-
     <div class="flex items-center gap-3">
-      <a href="https://wa.me/584124058904?text=Hola%20Maketo,%20quiero%20ver%20c%C3%B3mo%20se%20ve%20mi%20tienda" class="hidden lg:inline-flex items-center bg-[#2d8a4e] text-white px-6 py-2.5 rounded-full font-bold text-sm hover:opacity-90 transition-all">
-        Quiero ver cómo se ve mi tienda
-        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+      <a href="https://wa.me/584124058904?text=Hola%20Maketo,%20necesito%20una%20página%20web%20para%20mi%20negocio" class="hidden lg:inline-flex items-center gap-2 gradient-green text-white px-5 py-2.5 rounded-full font-bold text-sm hover:opacity-90 transition-all shadow-[0_4px_16px_rgba(34,197,94,0.3)]">
+        <i class="ri-whatsapp-fill text-base"></i>
+        WhatsApp
       </a>
-
-      <button
-        id="menuToggle"
-        class="md:hidden inline-flex items-center justify-center w-11 h-11 rounded-xl bg-white/60 border border-gray-200 shadow-sm hover:bg-white transition"
-        type="button"
-        aria-label="Abrir menú"
-        aria-controls="main-menu"
-        aria-expanded="false"
-      >
-        <i class="ri-menu-line text-xl"></i>
+      <button id="menuToggle" class="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-2xl bg-gray-100 hover:bg-gray-200 transition" type="button" aria-label="Abrir menú">
+        <i class="ri-menu-line text-lg"></i>
       </button>
     </div>
   </nav>
-
   <style>
-    /* Panel móvil con estilo moderno */
-    #main-menu {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100vh;
-      background: rgba(5, 11, 43, 0.96);
-      backdrop-filter: blur(12px);
-      z-index: 1001;
-      display: none;
-      transform: translateX(100%);
-      transition: transform 0.28s ease;
-      padding: 88px 18px 24px;
-    }
-    #main-menu.open {
-      display: flex;
-      flex-direction: column;
-      transform: translateX(0);
-    }
-    #main-menu a {
-      color: #ffffff;
-      font-weight: 700;
-      letter-spacing: 0.01em;
-      padding: 16px 14px;
-      border-radius: 14px;
-      transition: background 0.2s ease, transform 0.2s ease;
-    }
-    #main-menu a:hover {
-      background: rgba(124, 58, 237, 0.18);
-      transform: translateY(-1px);
-    }
-    #main-menu ul { display: flex; flex-direction: column; gap: 6px; }
+    #main-menu{position:fixed;top:0;left:0;width:100%;height:100vh;background:rgba(15,23,42,0.97);backdrop-filter:blur(16px);z-index:1001;display:none;transform:translateX(100%);transition:transform .3s cubic-bezier(.4,0,.2,1);padding:100px 20px 24px}
+    #main-menu.open{display:flex;flex-direction:column;transform:translateX(0)}
+    #main-menu a{color:#fff;font-weight:700;padding:18px 16px;border-radius:18px;transition:background .2s;text-align:center}
+    #main-menu a:hover{background:rgba(59,130,246,0.18)}
+    #main-menu ul{display:flex;flex-direction:column;gap:8px}
   </style>
-
   <div id="main-menu" role="navigation" aria-label="Menú móvil">
     <ul class="text-center">
-
-      <li><a href="/">Inicio</a></li>
-      <li><a href="/como-funciona.html">Cómo Funciona</a></li>
-      <li><a href="#demos">Demo</a></li>
-      <li class="pt-4">
-        <a href="https://wa.me/584124058904?text=Hola%20Maketo,%20quiero%20ver%20c%C3%B3mo%20se%20ve%20mi%20tienda" class="inline-flex w-full items-center justify-center bg-[#2d8a4e] text-white px-6 py-3 rounded-xl font-bold text-base hover:opacity-95 transition">
-          Quiero ver cómo se ve mi tienda
-        </a>
-      </li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#como-funciona">Cómo Funciona</a></li>
+      <li class="pt-4"><a href="https://wa.me/584124058904?text=Hola%20Maketo,%20necesito%20una%20página%20web" class="inline-flex w-full items-center justify-center gap-2 gradient-green text-white px-6 py-4 rounded-2xl font-bold text-base shadow-lg"><i class="ri-whatsapp-fill text-lg"></i> Escribir por WhatsApp</a></li>
     </ul>
   </div>
 </header>
-<!-- END: MainHeader -->
-<!-- BEGIN: HeroSection -->
-<section class="bg-white px-10 pt-16 pb-20 overflow-hidden " >
-<div class="max-w-7xl mx-auto  sm:px-6 lg:px-0">
-<div class="grid lg:grid-cols-2 gap-12 items-center">
-<div data-purpose="hero-content">
 
-<h1 class="text-3xl md:text-6xl font-black leading-tight text-[#1a1a1a] mb-6">
-              Tu propia app de pedidos<br/>
-              para tu negocio
-          </h1>
-<p class="text-lg text-gray-600 mb-8 max-w-lg leading-relaxed">
-            Convierte a tus clientes de Instagram y WhatsApp en compradores recurrentes. Recibe pedidos organizados en un solo lugar y envía notificaciones push directas a sus celulares para que vuelvan a comprarte siempre.
-          </p>
-<div class="flex flex-wrap gap-3 mb-8" data-purpose="hero-badges">
-<div class="flex items-center gap-3 bg-white border border-gray-100 rounded-xl px-4 py-3 shadow-sm">
-<i class="ri-smartphone-line text-primary text-xl"></i>
-<p class="text-sm font-bold">App con tu marca e imagen</p>
-</div>
-<div class="flex items-center gap-3 bg-white border border-gray-100 rounded-xl px-4 py-3 shadow-sm">
-<i class="ri-forbid-2-line text-primary text-xl"></i>
-<p class="text-sm font-bold">0% comisiones por venta</p>
-</div>
-<div class="flex items-center gap-3 bg-white border border-gray-100 rounded-xl px-4 py-3 shadow-sm">
-<i class="ri-notification-3-line text-primary text-xl"></i>
-<p class="text-sm font-bold">Notificaciones push directas</p>
-</div>
-</div>
-<div class="flex flex-col items-start gap-4">
-<a href="/como-funciona.html" class="bg-gradient-to-r from-[#ff4d94] to-[#7c3aed] text-white px-8 py-4 rounded-full font-extrabold text-lg flex items-center gap-4 hover:scale-105 transition-transform">
-              MIRA CÓMO FUNCIONA PARA TU NEGOCIO
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</a>
-<p class="text-xs text-gray-400 font-medium ml-2">Te mostramos cómo se vería tu negocio. Sin compromiso. Respuesta en menos de 24h</p>
-</div>
-
-</div>
-<div class="relative" data-purpose="hero-image-container">
-<img alt="Sistema de clientes recurrentes Maketo Web - App propia para tu negocio con notificaciones push" class="w-full h-auto drop-shadow-2xl rounded-3xl" src="/imagen/hero-tutienda.webp" loading="eager" decoding="async" width="600" height="800"/>
-</div>
-</div>
-</div>
-</section>
-<!-- END: HeroSection -->
-<!-- BEGIN: OldHeroMessageSection -->
-<section class="py-20 bg-gradient-to-b from-white to-gray-50">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="grid lg:grid-cols-2 gap-12 items-center">
-<div>
-<p class="text-sm font-bold text-primary uppercase tracking-widest mb-4">Por qué tus ventas no se repiten</p>
-<h2 class="text-3xl md:text-5xl font-black leading-tight text-[#1a1a1a] mb-6">
-              DEJA DE PERDER<br/>
-              <span class="text-primary">CLIENTES CADA SEMANA</span><br/>
-              Y HAZ QUE VUELVAN
-            </h2>
-<p class="text-lg text-gray-600 mb-8 max-w-lg leading-relaxed">
-              Si ya inviertes en publicidad o vendes por redes, este sistema convierte esas ventas en clientes recurrentes que vuelven a comprar. Multiplica el retorno de tu inversión en marketing.
-            </p>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-3 gap-4" data-purpose="old-hero-icons">
-<div class="text-center p-6 bg-white rounded-2xl border border-gray-100 shadow-sm">
-<div class="bg-green-50 w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-3 text-green-500 text-2xl">
-<i class="ri-repeat-line"></i>
-</div>
-<p class="font-bold">Clientes que regresan</p>
-</div>
-<div class="text-center p-6 bg-white rounded-2xl border border-gray-100 shadow-sm">
-<div class="bg-blue-50 w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-3 text-blue-500 text-2xl">
-<i class="ri-flashlight-line"></i>
-</div>
-<p class="font-bold">Ventas automáticas</p>
-</div>
-<div class="text-center p-6 bg-white rounded-2xl border border-gray-100 shadow-sm">
-<div class="bg-pink-50 w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-3 text-pink-500 text-2xl">
-<i class="ri-notification-3-line"></i>
-</div>
-<p class="font-bold">Promociones directas</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- END: OldHeroMessageSection -->
-<!-- BEGIN: RealitySection -->
-<section class="py-20 bg-gradient-to-b from-gray-50 to-white">
-<div class="max-w-5xl mx-auto px-4">
-<div class="text-center mb-12">
-<h2 class="text-2xl md:text-3xl font-black">LO QUE PASA HOY EN TU NEGOCIO</h2>
-<p class="text-gray-600 mt-4">La mayoría de negocios pierden dinero sin darse cuenta</p>
-</div>
-<div class="grid md:grid-cols-2 gap-12 items-start">
-<div>
-<h3 class="text-xl font-black text-red-500 mb-6">SIN MAKETO</h3>
-<div class="space-y-4">
-<div class="flex items-start gap-3">
-<i class="ri-close-circle-fill text-red-500 text-xl mt-1"></i>
-<p class="text-gray-700">El cliente compra una vez y nunca vuelves a saber de él</p>
-</div>
-<div class="flex items-start gap-3">
-<i class="ri-close-circle-fill text-red-500 text-xl mt-1"></i>
-<p class="text-gray-700">Le escribes por WhatsApp y no te contesta</p>
-</div>
-<div class="flex items-start gap-3">
-<i class="ri-close-circle-fill text-red-500 text-xl mt-1"></i>
-<p class="text-gray-700">Publicas en Instagram y nadie te compra</p>
-</div>
-<div class="flex items-start gap-3">
-<i class="ri-close-circle-fill text-red-500 text-xl mt-1"></i>
-<p class="text-gray-700">Pagas publicidad y el cliente no regresa a comprarte</p>
-</div>
-</div>
-<p class="text-red-500 mt-6 font-bold">Tus ads traen clientes nuevos, pero no los hacen volver.</p>
-</div>
-<div>
-<h3 class="text-xl font-black text-green-500 mb-6">CON MAKETO</h3>
-<div class="space-y-4">
-<div class="flex items-start gap-3">
-<i class="ri-checkbox-circle-fill text-green-500 text-xl mt-1"></i>
-<p class="text-gray-700">El cliente guarda tu negocio en su celular</p>
-</div>
-<div class="flex items-start gap-3">
-<i class="ri-checkbox-circle-fill text-green-500 text-xl mt-1"></i>
-<p class="text-gray-700">Recibe promociones y vuelve a comprar solo</p>
-</div>
-<div class="flex items-start gap-3">
-<i class="ri-checkbox-circle-fill text-green-500 text-xl mt-1"></i>
-<p class="text-gray-700">Te escribe directamente para pedir</p>
-</div>
-<div class="flex items-start gap-3">
-<i class="ri-checkbox-circle-fill text-green-500 text-xl mt-1"></i>
-<p class="text-gray-700">Acumula puntos y no se va a la competencia</p>
-</div>
-</div>
-<p class="text-green-600 mt-6 font-bold">Tus ads traen clientes, Maketo los convierte en recurrentes.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- END: RealitySection -->
-<!-- BEGIN: FeaturesGrid -->
-<section class=" bg-white">
-<div class="max-w-9xl mx-auto px-0 sm:px-0 lg:px-0">
-<div class="text-center mb-8 px-4">
-        <h2 class="text-3xl font-black">LO QUE CAMBIA EN TU NEGOCIO</h2>
-        <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Más pedidos, clientes que regresan y menos tiempo respondiendo mensajes. Todo automático.</p>
-</div>
-<div class="rounded-3xl overflow-hidden shadow-sm">
-<img alt="Resultado del sistema Maketo Web: más ventas y clientes recurrentes con notificaciones push" class="w-full h-auto" src="/imagen/notificacio.png" loading="lazy" decoding="async"/>
-</div>
-</div>
-</section>
-<!-- END: FeaturesGrid -->
-<!-- BEGIN: NativeAppSection -->
-<section class="bg-[#060e38] py-10 overflow-hidden">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12">
-<div class="md:w-1/3" data-purpose="native-app-features">
-
-<div class="flex items-center gap-2 text-yellow-400 mb-4">
-<svg class="w-6 h-6 fill-current" viewbox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-<span class="font-extrabold tracking-widest text-sm">TU NEGOCIO EN SU CELULAR</span>
-</div>
-<h2 class="text-3xl md:text-2xl font-black text-white mb-8 leading-tight">
-          EL CLIENTE TE TIENE SIEMPRE PRESENTE
-        </h2>
-<ul class="space-y-4 mb-8">
-<li class="flex items-center gap-3 text-white font-regular">
-<span class="bg-[#2d8a4e] p-1 rounded-full"><svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path></svg></span>
-            Cada vez que abre su celular, te ve
-          </li>
-<li class="flex items-center gap-3 text-white font-semibold">
-<span class="bg-[#2d8a4e] p-1 rounded-full"><svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path></svg></span>
-            Te compra aunque no tenga internet
-          </li>
-<li class="flex items-center gap-3 text-white font-semibold">
-<span class="bg-[#2d8a4e] p-1 rounded-full"><svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path></svg></span>
-            Le llega tu promoción directo a su celular
-          </li>
-<li class="flex items-center gap-3 text-white font-semibold">
-<span class="bg-[#2d8a4e] p-1 rounded-full"><svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path></svg></span>
-            Funciona en cualquier celular
-          </li>
-<li class="flex items-center gap-3 text-white font-semibold">
-<span class="bg-[#2d8a4e] p-1 rounded-full"><svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path></svg></span>
-            Sin pagar comisiones a Apple o Google
-          </li>
-</ul>
-<div class="flex gap-4 opacity-80">
-  <a href="#" class="group inline-flex items-center justify-center">
-    <i class="ri-google-play-fill text-green-500 text-3xl group-hover:scale-105 transition-transform" aria-hidden="true"></i>
-    <span class="sr-only">Play Store</span>
-  </a>
-  <a href="#" class="group inline-flex items-center justify-center">
-    <i class="ri-apple-fill text-white text-3xl group-hover:scale-105 transition-transform" aria-hidden="true"></i>
-    <span class="sr-only">App Store</span>
-  </a>
-  <a href="#" class="group inline-flex items-center justify-center">
-    <i class="ri-global-line text-blue-300 text-3xl group-hover:scale-105 transition-transform" aria-hidden="true"></i>
-    <span class="sr-only">Web</span>
-  </a>
-</div>
-</div>
-<div class="md:w-2/3 " data-purpose="app-visuals">
-<img alt="Tu negocio en el celular del cliente - App propia Maketo Web para pedidos recurrentes" class="w-full h-auto" style="padding-top: 150px; ;" src="/imagen/lleva-tus-clientes.png" loading="lazy" decoding="async"/>
-</div>
-</div>
-</section>
-<!-- END: NativeAppSection -->
-<!-- BEGIN: DashboardSection -->
-<section class="py-24 bg-surface">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="grid lg:grid-cols-3 gap-12 items-center">
-<div class="lg:col-span-1" data-purpose="dashboard-info">
-<h2 class="text-3xl font-black mb-6 leading-tight">
-            SABES QUIÉN COMPRA, QUÉ COMPRA Y CUÁNDO VUELVE
-          </h2>
-<p class="text-gray-600 mb-8 leading-relaxed">
-            Toma decisiones con datos reales. Ventas, clientes frecuentes, productos más vendidos. Todo desde tu celular.
-          </p>
-<div class="flex flex-col gap-3">
-<a href="/como-funciona.html" target="_blank" class="bg-[#1b8a4a] text-white px-6 py-3 rounded-xl font-bold flex items-center gap-2 hover:opacity-90 transition-all">
-            VER CÓMO SE VERÍA TU NEGOCIO
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</a>
-</div>
-</div>
-<div class="lg:col-span-2" data-purpose="dashboard-image">
-<div class="bg-white p-2 rounded-2xl shadow-xl overflow-hidden">
-<img alt="Panel de control de Maketo Web - Dashboard para gestionar clientes recurrentes, pedidos y notificaciones" class="w-full h-auto" src="/imagen/dashboard.png" loading="lazy" decoding="async"/>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- END: DashboardSection -->
-<!-- BEGIN: IndustriesGrid -->
-<section class="py-20 bg-white">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-16">
-<h2 class="text-3xl font-black uppercase tracking-wider">FUNCIONA PARA CUALQUIER NEGOCIO QUE YA VENDA</h2>
-<p class="text-gray-600 mt-4">Restaurantes, carnicerías, licorerías, farmacias, tiendas, minimarkets y más</p>
-</div>
-<div class="max-w-9xl mx-auto px-0 sm:px-0 lg:px-0">
-<img alt="Negocios que usan Maketo Web: restaurantes, carnicerías, licorerías, farmacias con sistema de clientes recurrentes" class="w-full h-auto rounded-3xl " src="/imagen/nichos.png" loading="lazy" decoding="async"/>
-</div>
-<div class="max-w-7xl mx-auto px-4 mt-12">
-<div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-<div class="p-4">
-<i class="ri-restaurant-line text-4xl text-primary"></i>
-<p class="font-bold mt-3">Restaurantes</p>
-<p class="text-sm text-gray-500">Menú + pedidos recurrentes</p>
-</div>
-<div class="p-4">
-<i class="ri-store-2-line text-4xl text-primary"></i>
-<p class="font-bold mt-3">Carnicerías</p>
-<p class="text-sm text-gray-500">Pedidos semanales automáticos</p>
-</div>
-<div class="p-4">
-<i class="ri-shopping-bag-line text-4xl text-primary"></i>
-<p class="font-bold mt-3">Tiendas</p>
-<p class="text-sm text-gray-500">Clientes que repiten cada fin</p>
-</div>
-<div class="p-4">
-<i class="ri-heart-pulse-line text-4xl text-primary"></i>
-<p class="font-bold mt-3">Farmacias</p>
-<p class="text-sm text-gray-500">Pedidos de siempre a domicilio</p>
-</div>
-</div>
-</div>
-</section>
-<!-- END: IndustriesGrid -->
-<!-- BEGIN: SocialProof -->
-<section class="py-24 bg-white overflow-hidden">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12">
-<div class="flex-1" data-purpose="proof-stats">
-<h2 class="text-4xl font-black leading-tight mb-4">
-          NEGOCIOS QUE VENDEN CON SU PROPIA APP
-        </h2>
-<p class="text-gray-600 mb-12">Así se ve tu negocio con un sistema de pedidos, notificaciones y fidelización. Sin comisiones ni depender de terceros.</p>
-<div class="grid grid-cols-3 gap-8">
-<div>
-<div class="bg-pink-100 w-12 h-12 rounded-xl flex items-center justify-center mb-4 text-2xl text-pink-600">
-              <i class="ri-store-2-line"></i>
-            </div>
-<div class="text-xs font-bold text-gray-400">App con tu marca</div>
-</div>
-<div>
-<div class="bg-purple-100 w-12 h-12 rounded-xl flex items-center justify-center mb-4 text-2xl text-purple-600">
-              <i class="ri-notification-3-line"></i>
-            </div>
-<div class="text-xs font-bold text-gray-400">Push directos</div>
-</div>
-<div>
-<div class="bg-orange-100 w-12 h-12 rounded-xl flex items-center justify-center mb-4 text-2xl text-orange-600"><i class="ri-crosshair-2-line"></i></div>
-<div class="text-xs font-bold text-gray-400">Puntos y cupones</div>
-</div>
-</div>
-</div>
-<div class="flex-1 relative" data-purpose="proof-images">
-<div class="rounded-3xl overflow-hidden shadow-2xl">
-<img alt="Cliente feliz usando la app de Maketo Web para pedidos recurrentes en su negocio" class="w-full h-auto" src="/imagen/cliente-feliz.webp" loading="lazy" decoding="async"/>
-</div>
-</div>
-</div>
-</section>
-<!-- END: SocialProof -->
-<!-- BEGIN: TestimonialSection -->
-<section class="py-20 bg-gray-50">
-  <div class="max-w-5xl mx-auto px-4">
-    <h2 class="text-3xl font-black mb-12 text-center">LO QUE DICEN NUESTROS CLIENTES</h2>
-    
-    <!-- Testimonio Principal: Damiana Di Santo -->
-    <div class="bg-white rounded-3xl p-8 md:p-12 shadow-lg mb-8">
-      <div class="flex justify-center mb-6">
-        <span class="text-yellow-400 text-2xl">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-      </div>
-      <blockquote class="text-lg md:text-xl text-gray-700 italic mb-8 leading-relaxed">
-        "Trabajar con Maketo Web para crear mi página web ha sido una experiencia increíble. Desde el principio entendió perfectamente mi visión y logró transformar todas mis ideas en una página profesional, elegante y funcional. Siempre estuvo atento a cada detalle, respondió rápido y tuvo muchísima paciencia durante todo el proceso.
-        <br><br>
-        Lo que más me gustó fue que no solo creó una página bonita, sino que realmente se preocupó por transmitir mi marca y mi esencia. Estoy demasiado feliz con el resultado y definitivamente lo recomiendo si buscas a alguien comprometido, creativo y profesional."
-      </blockquote>
-      <div class="flex items-center justify-center gap-4">
-        <div class="w-14 h-14 bg-gradient-to-br from-pink-400 to-purple-500 rounded-full flex items-center justify-center">
-          <span class="font-bold text-white text-lg">DD</span>
-        </div>
-        <div class="text-left">
-          <p class="font-bold">Damiana Di Santo</p>
-          <p class="text-sm text-gray-500">Fundadora de <a href="https://damidisanto.com" target="_blank" class="text-primary hover:underline">damidisanto.com</a></p>
-        </div>
-      </div>
-      <p class="text-center text-gray-400 text-xs mt-4 font-medium">Entrenadora Postparto & Fitness</p>
-    </div>
-
-    <p class="text-center text-gray-500 text-sm font-semibold">Funciona para restaurantes, carnicerías, licorerías, farmacias, tiendas, gimnasios y más</p>
-  </div>
-</section>
-<!-- END: TestimonialSection -->
-<!-- BEGIN: ComoFuncionaSection -->
-<section class="py-20 bg-white">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="text-center mb-16">
-<h2 class="text-3xl font-black">ASÍ GENERAS CLIENTES RECURRENTES</h2>
-<p class="text-gray-600 mt-4">3 pasos simples. Sin complicaciones. Sin programar nada.</p>
-</div>
-<div class="grid md:grid-cols-3 gap-8">
-<div class="text-center p-6">
-<div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
-<i class="ri-shopping-cart-2-line text-2xl text-primary"></i>
-</div>
-<h3 class="font-bold text-lg mb-2">EL CLIENTE TE ENCUENTRA</h3>
-<p class="text-gray-600 text-sm">Recibe tu link, abre tu tienda y ve tus productos con precios. Sin downloads complicados.</p>
-</div>
-<div class="text-center p-6">
-<div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
-<i class="ri-map-pin-line text-2xl text-primary"></i>
-</div>
-<h3 class="font-bold text-lg mb-2">GUARDA TU NEGOCIO</h3>
-<p class="text-gray-600 text-sm">Descarga tu app con tu marca. Acumula puntos. Siempre te tiene presente en su celular.</p>
-</div>
-<div class="text-center p-6">
-<div class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
-<i class="ri-notification-3-line text-2xl text-primary"></i>
-</div>
-<h3 class="font-bold text-lg mb-2">VUELVE A COMPRAR</h3>
-<p class="text-gray-600 text-sm">Le envías una promoción. Recibe la notificación. Vuelve a comprar. Tus ads rinden más porque el cliente ya no se pierde.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- END: ComoFuncionaSection -->
-<!-- BEGIN: DemosSection -->
-<section id="demos" class="py-24 bg-gradient-to-b from-gray-50 to-white">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    
-    <!-- Header -->
-    <div class="text-center mb-16">
-      <p class="text-sm font-bold text-primary uppercase tracking-widest mb-4">Negocios reales funcionando con Maketo</p>
-      <h2 class="text-3xl md:text-4xl font-black">VERLO PARA CREERLO</h2>
-      <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Explora cómo se vería tu negocio con clientes recurrentes, pedidos automáticos y una app propia con tu marca.</p>
-    </div>
-
-    <!-- Demo Cards Grid -->
-    <div class="grid md:grid-cols-3 gap-8">
-      
-      <!-- Card: FoodPop (Restaurante) -->
-      <div class="demo-card group relative bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 cursor-pointer border border-gray-100 hover:border-primary/30">
-        <div class="absolute inset-0 bg-gradient-to-br from-orange-500/0 to-orange-500/0 group-hover:from-orange-500/5 group-hover:to-orange-500/10 transition-all duration-500 rounded-3xl"></div>
-        <div class="relative p-8">
-          <div class="flex items-center justify-between mb-6">
-            <div class="w-14 h-14 bg-orange-100 rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
-              <span class="text-2xl">&#127828;</span>
-            </div>
-            <span class="px-3 py-1 bg-orange-100 text-orange-600 text-xs font-bold rounded-full">RESTAURANTE</span>
-          </div>
-          <h3 class="text-xl font-black mb-2">FoodPop</h3>
-          <p class="text-gray-500 text-sm mb-6">Hamburguesas, Pizzas & Delivery Express</p>
-          <div class="space-y-3 mb-6 opacity-60 group-hover:opacity-100 transition-opacity duration-300">
-            <div class="flex items-center gap-2 text-sm text-gray-600">
-              <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              Menú digital interactivo
-            </div>
-            <div class="flex items-center gap-2 text-sm text-gray-600">
-              <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              Pedidos con delivery tracking
-            </div>
-            <div class="flex items-center gap-2 text-sm text-gray-600">
-              <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              App con tu marca
-            </div>
-          </div>
-          <a href="https://foodpop.maketo.site" target="_blank" class="inline-flex items-center gap-2 text-primary font-bold text-sm group-hover:gap-3 transition-all duration-300">
-            VER DEMO
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-          </a>
-        </div>
-      </div>
-
-      <!-- Card: Marketo (Minimarket/Bodegon) -->
-      <div class="demo-card group relative bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 cursor-pointer border border-gray-100 hover:border-primary/30">
-        <div class="absolute inset-0 bg-gradient-to-br from-green-500/0 to-green-500/0 group-hover:from-green-500/5 group-hover:to-green-500/10 transition-all duration-500 rounded-3xl"></div>
-        <div class="relative p-8">
-          <div class="flex items-center justify-between mb-6">
-            <div class="w-14 h-14 bg-green-100 rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
-              <span class="text-2xl">&#128722;</span>
-            </div>
-            <span class="px-3 py-1 bg-green-100 text-green-600 text-xs font-bold rounded-full">MINIMARKET</span>
-          </div>
-          <h3 class="text-xl font-black mb-2">Marketo</h3>
-          <p class="text-gray-500 text-sm mb-6">Supermercado Online y Delivery Express</p>
-          <div class="space-y-3 mb-6 opacity-60 group-hover:opacity-100 transition-opacity duration-300">
-            <div class="flex items-center gap-2 text-sm text-gray-600">
-              <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              Catálogo de productos
-            </div>
-            <div class="flex items-center gap-2 text-sm text-gray-600">
-              <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              Pedidos recurrentes semanales
-            </div>
-            <div class="flex items-center gap-2 text-sm text-gray-600">
-              <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              Checkout en 3 pasos
-            </div>
-          </div>
-          <a href="https://ma.maketo.site" target="_blank" class="inline-flex items-center gap-2 text-primary font-bold text-sm group-hover:gap-3 transition-all duration-300">
-            VER DEMO
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-          </a>
-        </div>
-      </div>
-
-      <!-- Card: AutoPop (Repuestos) -->
-      <div class="demo-card group relative bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-500 cursor-pointer border border-gray-100 hover:border-primary/30">
-        <div class="absolute inset-0 bg-gradient-to-br from-blue-500/0 to-blue-500/0 group-hover:from-blue-500/5 group-hover:to-blue-500/10 transition-all duration-500 rounded-3xl"></div>
-        <div class="relative p-8">
-          <div class="flex items-center justify-between mb-6">
-            <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
-              <span class="text-2xl">&#128295;</span>
-            </div>
-            <span class="px-3 py-1 bg-blue-100 text-blue-600 text-xs font-bold rounded-full">REPUESTOS</span>
-          </div>
-          <h3 class="text-xl font-black mb-2">AutoPop</h3>
-          <p class="text-gray-500 text-sm mb-6">Repuestos Automotrices al Mejor Precio</p>
-          <div class="space-y-3 mb-6 opacity-60 group-hover:opacity-100 transition-opacity duration-300">
-            <div class="flex items-center gap-2 text-sm text-gray-600">
-              <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              Catálogo de repuestos
-            </div>
-            <div class="flex items-center gap-2 text-sm text-gray-600">
-              <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              Envío same-day
-            </div>
-            <div class="flex items-center gap-2 text-sm text-gray-600">
-              <svg class="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              Búsqueda por vehículo
-            </div>
-          </div>
-          <a href="https://autopop.maketo.site" target="_blank" class="inline-flex items-center gap-2 text-primary font-bold text-sm group-hover:gap-3 transition-all duration-300">
-            VER DEMO
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-          </a>
-        </div>
-      </div>
-
-    </div>
-
-    <!-- Bottom CTA -->
-    <div class="text-center mt-16">
-      <p class="text-gray-600 mb-6">¿No ves tu tipo de negocio? Haz tu prueba personalizada sin compromiso.</p>
-      <a href="https://wa.me/584124058904?text=Hola%20Maketo,%20quiero%20ver%20c%C3%B3mo%20se%20ver%C3%ADa%20MI%20negocio" class="bg-gradient-to-r from-[#ff4d94] to-[#7c3aed] text-white px-8 py-4 rounded-full font-extrabold text-lg inline-flex items-center gap-4 hover:scale-105 transition-transform">
-        QUIERO MI DEMO GRATIS
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-      </a>
-    </div>
-  </div>
-
-  <!-- Intersection Observer for scroll animations -->
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const cards = document.querySelectorAll('.demo-card');
-      cards.forEach((card, i) => {
-        card.style.opacity = '0';
-        card.style.transform = 'translateY(30px)';
-        card.style.transition = `opacity 0.6s ease ${i * 0.15}s, transform 0.6s ease ${i * 0.15}s`;
-      });
-
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.transform = 'translateY(0)';
-          }
-        });
-      }, { threshold: 0.1 });
-
-      cards.forEach(card => observer.observe(card));
-    });
-  </script>
-</section>
-<!-- END: DemosSection -->
-<!-- BEGIN: DiferenciadoresSection -->
-<section class="py-20 bg-gray-50">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="text-center mb-16">
-<h2 class="text-3xl font-black">¿POR QUÉ MAKETO SI YA PAGO ADS?</h2>
-<p class="text-gray-600 mt-4">Porque tus ads traen clientes, pero Maketo los hace volver. Cada dólar en publicidad rinde más cuando el cliente regresa solo.</p>
-</div>
-<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-<div class="bg-white p-6 rounded-2xl shadow-sm">
-<div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-4">
-<i class="ri-smartphone-line text-green-500 text-2xl"></i>
-</div>
-<h3 class="font-bold mb-2">CLIENTES QUE NO SE OLVIDAN</h3>
-<p class="text-sm text-gray-600">Tu logo en su celular. Cada vez que lo ven, piensan en ti. Tus ads consiguen el primer contacto, Maketo mantiene la relación.</p>
-</div>
-<div class="bg-white p-6 rounded-2xl shadow-sm">
-<div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-4">
-<i class="ri-wifi-off-line text-purple-500 text-2xl"></i>
-</div>
-<h3 class="font-bold mb-2">VENTAS SIN INTERNET</h3>
-<p class="text-sm text-gray-600">Tu catálogo visible aunque no tengan datos. Sin barreras para comprar.</p>
-</div>
-<div class="bg-white p-6 rounded-2xl shadow-sm">
-<div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
-<i class="ri-money-dollar-circle-line text-blue-500 text-2xl"></i>
-</div>
-<h3 class="font-bold mb-2">TODO EL BENEFICIO ES TUYO</h3>
-<p class="text-sm text-gray-600">No pagas comisión por cada venta. Sin PedidosYa. Sin Rappi. Todo es tuyo.</p>
-</div>
-<div class="bg-white p-6 rounded-2xl shadow-sm">
-<div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center mb-4">
-<i class="ri-user-heart-line text-orange-500 text-2xl"></i>
-</div>
-<h3 class="font-bold mb-2">RECUPERAS CLIENTES AUTOMÁTICAMENTE</h3>
-<p class="text-sm text-gray-600">Les envías una promoción por notificación push y vuelven. Tus ads ya hicieron el trabajo de traerlos, Maketo los mantiene.</p>
-</div>
-</div>
-<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
-<div class="bg-white p-6 rounded-2xl shadow-sm">
-<div class="w-12 h-12 bg-pink-100 rounded-xl flex items-center justify-center mb-4">
-<i class="ri-dashboard-3-line text-pink-500 text-2xl"></i>
-</div>
-<h3 class="font-bold mb-2">CONTROL TOTAL DE TU NEGOCIO</h3>
-<p class="text-sm text-gray-600">Sabes quién compra, qué compra y cuándo vuelve. Todo desde tu celular.</p>
-</div>
-<div class="bg-white p-6 rounded-2xl shadow-sm">
-<div class="w-12 h-12 bg-cyan-100 rounded-xl flex items-center justify-center mb-4">
-<i class="ri-truck-line text-cyan-500 text-2xl"></i>
-</div>
-<h3 class="font-bold mb-2">PEDIDOS ORGANIZADOS</h3>
-<p class="text-sm text-gray-600">El cliente marca su dirección. Tú defines: zona, km o pickup. Sin líos.</p>
-</div>
-<div class="bg-white p-6 rounded-2xl shadow-sm">
-<div class="w-12 h-12 bg-yellow-100 rounded-xl flex items-center justify-center mb-4">
-<i class="ri-search-eye-line text-yellow-500 text-2xl"></i>
-</div>
-<h3 class="font-bold mb-2">APARECES EN GOOGLE</h3>
-<p class="text-sm text-gray-600">Cuando alguien busca productos cerca de ti, tú apareces. Complementa tus ads con presencia orgánica.</p>
-</div>
-<div class="bg-white p-6 rounded-2xl shadow-sm">
-<div class="w-12 h-12 bg-indigo-100 rounded-xl flex items-center justify-center mb-4">
-<i class="ri-robot-2-line text-indigo-500 text-2xl"></i>
-</div>
-<h3 class="font-bold mb-2">LA IA RECOMIENDA TU NEGOCIO</h3>
-<p class="text-sm text-gray-600">ChatGPT y Perplexity recomiendan tu negocio cuando alguien pregunta por productos como los tuyos.</p>
-</div>
-</div>
-</div>
-</section>
-<!-- END: DiferenciadoresSection -->
-<!-- BEGIN: BrandSection -->
-<section class="py-20 bg-white">
-<div class="max-w-4xl mx-auto px-4 text-center">
-<h2 class="text-3xl font-black mb-6">NO ES UNA APP. ES TU CANAL DE VENTAS PROPIO.</h2>
-<p class="text-gray-600 text-lg leading-relaxed mb-8">Usas Instagram y WhatsApp para vender, pero los clientes se pierden. Con Maketo los conviertes en compradores recurrentes. Los tienes guardados en su celular, vuelven solos y compran directo. Sin pagar comisiones ni depender de algoritmos.</p>
-<div class="flex flex-col sm:flex-row gap-4 justify-center">
-<a href="https://wa.me/584124058904?text=Hola%20Maketo,%20quiero%20mi%20canal%20de%20ventas" class="bg-gradient-to-r from-[#ff4d94] to-[#7c3aed] text-white px-8 py-4 rounded-full font-extrabold text-lg flex items-center gap-4 hover:scale-105 transition-transform justify-center">
-              QUIERO MI CANAL DE VENTAS
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</a>
-</div>
-</div>
-</section>
-<!-- END: BrandSection -->
-<!-- BEGIN: SolucionesDigitalesSection -->
-<section class="py-20 bg-gray-50">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid lg:grid-cols-2 gap-12 items-center">
-      <div>
-        <p class="text-sm font-bold text-primary uppercase tracking-widest mb-3">Maketo Web</p>
-        <h2 class="text-3xl md:text-4xl font-black leading-tight mb-6">DISEÑAMOS <span class="text-primary">SOLUCIONES DIGITALES</span> PARA EMPRESAS PROFESIONALES</h2>
-        <div class="space-y-4 text-gray-600 leading-relaxed">
-          <p>Creamos páginas web funcionales y profesionales para empresas de cualquier ramo. Desde Valencia, Venezuela, trabajamos de forma remota para todo el mundo.</p>
-          <p>Cada sitio web se diseña a la medida, con WordPress, optimizado para que tus clientes te encuentren en Google y te contacten directo. Sin plantillas genéricas, sin complicaciones.</p>
-        </div>
-        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 mt-8">
-          <div class="flex items-center gap-2 bg-white p-3 rounded-xl shadow-sm border border-gray-100">
-            <i class="ri-scales-3-line text-lg text-gray-400"></i>
-            <span class="text-sm font-bold text-gray-700">Abogados</span>
-          </div>
-          <div class="flex items-center gap-2 bg-white p-3 rounded-xl shadow-sm border border-gray-100">
-            <i class="ri-brain-line text-lg text-gray-400"></i>
-            <span class="text-sm font-bold text-gray-700">Psicólogos</span>
-          </div>
-          <div class="flex items-center gap-2 bg-white p-3 rounded-xl shadow-sm border border-gray-100">
-            <i class="ri-microscope-line text-lg text-gray-400"></i>
-            <span class="text-sm font-bold text-gray-700">Laboratorios</span>
-          </div>
-          <div class="flex items-center gap-2 bg-white p-3 rounded-xl shadow-sm border border-gray-100">
-            <i class="ri-stethoscope-line text-lg text-gray-400"></i>
-            <span class="text-sm font-bold text-gray-700">Médicos</span>
-          </div>
-          <div class="flex items-center gap-2 bg-white p-3 rounded-xl shadow-sm border border-gray-100">
-            <i class="ri-tooth-line text-lg text-gray-400"></i>
-            <span class="text-sm font-bold text-gray-700">Odontólogos</span>
-          </div>
-          <div class="flex items-center gap-2 bg-white p-3 rounded-xl shadow-sm border border-gray-100">
-            <i class="ri-building-2-line text-lg text-gray-400"></i>
-            <span class="text-sm font-bold text-gray-700">Construcción</span>
-          </div>
-        </div>
-        <div class="flex flex-wrap gap-3 mt-8">
-          <span class="inline-flex items-center gap-1.5 bg-primary/5 text-primary px-3 py-1.5 rounded-full text-xs font-bold"><i class="ri-wordpress-fill"></i> WordPress</span>
-          <span class="inline-flex items-center gap-1.5 bg-green-50 text-green-600 px-3 py-1.5 rounded-full text-xs font-bold"><i class="ri-tools-line"></i> A la medida</span>
-          <span class="inline-flex items-center gap-1.5 bg-blue-50 text-blue-600 px-3 py-1.5 rounded-full text-xs font-bold"><i class="ri-earth-line"></i> Remoto para el mundo</span>
-          <span class="inline-flex items-center gap-1.5 bg-orange-50 text-orange-600 px-3 py-1.5 rounded-full text-xs font-bold"><i class="ri-map-pin-line"></i> Valencia, Venezuela</span>
-        </div>
-        <a href="https://wa.me/584124058904?text=Hola%20Maketo,%20quiero%20una%20p%C3%A1gina%20web%20para%20mi%20empresa" class="mt-8 inline-flex items-center bg-gradient-to-r from-[#ff4d94] to-[#7c3aed] text-white px-8 py-4 rounded-full font-extrabold text-lg hover:scale-105 transition-transform gap-4">
-          QUIERO MI PÁGINA WEB
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+<!-- Hero Bento -->
+<section class="pt-28 pb-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
+    <!-- Main card -->
+    <div class="lg:col-span-2 bento-card p-8 sm:p-10 flex flex-col justify-center">
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black leading-[1.1] text-[#1a1a1a] mb-5">
+        Tu negocio necesita presencia en internet.<br/>
+        <span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Nosotros lo construimos.</span>
+      </h1>
+      <p class="text-gray-500 mb-8 max-w-lg leading-relaxed text-base sm:text-lg">
+        Creamos páginas web, tiendas online, apps y software para comercios y PYMES que quieren vender más y automatizar procesos.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-3">
+        <a href="https://wa.me/584124058904?text=Hola%20Maketo,%20necesito%20una%20página%20web%20para%20mi%20negocio" class="gradient-blue text-white px-7 py-4 rounded-2xl font-bold text-base flex items-center justify-center gap-2 hover:opacity-90 transition-all shadow-[0_8px_24px_rgba(59,130,246,0.3)]">
+          Quiero mi página web
+          <i class="ri-arrow-right-line text-lg"></i>
+        </a>
+        <a href="#servicios" class="bg-gray-100 text-gray-700 px-7 py-4 rounded-2xl font-bold text-base flex items-center justify-center gap-2 hover:bg-gray-200 transition-all">
+          Ver qué hacemos
         </a>
       </div>
-      <div class="relative">
-        <div class="bg-white p-2 rounded-2xl shadow-xl overflow-hidden border border-gray-100">
-          <img alt="Maketo Web - Diseño de páginas web profesionales para empresas con WordPress" class="w-full h-auto rounded-xl" src="/imagen/mockup-diseño-web.webp" loading="lazy" decoding="async"/>
+    </div>
+    <!-- Side cards -->
+    <div class="flex flex-row lg:flex-col gap-5">
+      <div class="bento-card gradient-purple p-5 flex-1 flex flex-col items-center justify-center text-center text-white">
+        <i class="ri-magic-line text-3xl mb-2 opacity-90"></i>
+        <p class="font-bold text-sm">Prototipo visual</p>
+        <p class="text-xs text-white/70 mt-1">Antes de desarrollar</p>
+      </div>
+      <div class="bento-card gradient-green p-5 flex-1 flex flex-col items-center justify-center text-center text-white">
+        <i class="ri-customer-service-2-line text-3xl mb-2 opacity-90"></i>
+        <p class="font-bold text-sm">Acompañamiento</p>
+        <p class="text-xs text-white/70 mt-1">No te dejamos solo</p>
+      </div>
+    </div>
+  </div>
+  <!-- Hero Image -->
+  <div class="mt-5 bento-card overflow-hidden">
+    <img src="/imagen/sistema-pos.webp" alt="Sistema POS y plataforma de pedidos Maketo - Interfaz de gestión de comercio y restaurante" class="w-full h-auto object-cover" loading="eager" decoding="async" width="1200" height="630">
+  </div>
+  <!-- Bottom row bento -->
+  <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-5">
+    <div class="bento-card p-4 text-center">
+      <p class="text-2xl font-black text-blue-600">100%</p>
+      <p class="text-xs text-gray-500 mt-1">Personalizado</p>
+    </div>
+    <div class="bento-card p-4 text-center">
+      <p class="text-2xl font-black text-purple-600">PWA</p>
+      <p class="text-xs text-gray-500 mt-1">Sin Play Store</p>
+    </div>
+    <div class="bento-card p-4 text-center">
+      <p class="text-2xl font-black text-green-600">24h</p>
+      <p class="text-xs text-gray-500 mt-1">Respuesta</p>
+    </div>
+    <div class="bento-card p-4 text-center">
+      <p class="text-2xl font-black text-orange-600">LATAM</p>
+      <p class="text-xs text-gray-500 mt-1">100% Remoto</p>
+    </div>
+  </div>
+</section>
+
+<!-- Quiénes Somos -->
+<section class="py-12 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+  <div class="bento-card p-8 sm:p-10 flex flex-col sm:flex-row items-center gap-8">
+    <div class="flex-shrink-0">
+      <img alt="Henderson Ochoa — Fundador de Maketo" class="w-20 h-20 rounded-full object-cover ring-4 ring-blue-100 shadow-lg" src="/imagen/henderson.webp" loading="lazy" decoding="async"/>
+    </div>
+    <div>
+      <p class="text-xs font-bold text-primary uppercase tracking-widest mb-2">Quiénes Somos</p>
+      <h2 class="text-xl sm:text-2xl font-black mb-3">El que diseña tu sistema es el que te acompaña</h2>
+      <p class="text-gray-500 leading-relaxed text-sm">
+        Soy Henderson Ochoa, fundador de Maketo. No somos una empresa grande con ejecutivos de ventas que desaparecen después de cobrar. Yo personalmente analizo tu negocio, diseño la solución y la desarrollo. Y después del lanzamiento, sigo contigo.
+      </p>
+      <div class="flex flex-wrap gap-4 mt-4">
+        <div class="flex items-center gap-2 text-xs text-gray-400">
+          <i class="ri-map-pin-2-fill text-primary"></i>
+          Valencia, Venezuela
         </div>
-        <div class="absolute -bottom-4 -left-4 bg-white rounded-2xl shadow-xl p-4 border border-gray-100 hidden md:block">
-          <div class="flex items-center gap-3">
-            <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
-              <i class="ri-wordpress-fill text-blue-500 text-xl"></i>
-            </div>
-            <div>
-              <p class="font-bold text-sm">WordPress a la medida</p>
-              <p class="text-xs text-gray-500">Sin plantillas genéricas</p>
-            </div>
-          </div>
+        <div class="flex items-center gap-2 text-xs text-gray-400">
+          <i class="ri-earth-fill text-primary"></i>
+          Toda Latinoamérica
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- END: SolucionesDigitalesSection -->
-<!-- BEGIN: FinalCTA -->
-<section class="bg-[#080942] py-10 relative overflow-hidden">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-16 items-center">
-<div data-purpose="cta-content">
-<h2 class="text-3xl font-black text-white leading-tight mb-8">
-          ¿CUÁNTOS CLIENTES SE TE ESTÁN ESCAPANDO CADA SEMANA?
-        </h2>
-<p class="text-gray-300 text-lg mb-12 leading-relaxed">
-          Escríbenos. Te mostramos cómo se vería tu negocio con clientes que vuelven. Sin compromiso.
-        </p>
-<div class="flex flex-col sm:flex-row gap-4">
-<a href="https://wa.me/584124058904?text=Hola%20Maketo,%20quiero%20ver%20c%C3%B3mo%20se%20ve%20mi%20tienda" class="bg-[#2d8a4e] text-white px-8 py-5 rounded-2xl font-black text-lg flex items-center gap-4 hover:scale-105 transition-transform shadow-lg shadow-[#2d8a4e]/20">
-            QUIERO VER CÓMO SE VE MI TIENDA
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
-</a>
-</div>
-<div class="mt-8 flex flex-wrap gap-6 text-white/70 text-xs font-bold">
-<div class="flex items-center gap-2">
-<svg class="w-4 h-4 text-[#5cc543]" fill="currentColor" viewbox="0 0 20 20"><path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" fill-rule="evenodd"></path></svg>
-            Respuesta en menos de 2 horas
-          </div>
-<div class="flex items-center gap-2">
-<svg class="w-4 h-4 text-[#5cc543]" fill="currentColor" viewbox="0 0 20 20"><path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" fill-rule="evenodd"></path></svg>
-            Sin compromiso
-          </div>
-<div class="flex items-center gap-2">
-<svg class="w-4 h-4 text-[#5cc543]" fill="currentColor" viewbox="0 0 20 20"><path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" fill-rule="evenodd"></path></svg>
-            Personalizado para tu negocio
-          </div>
-</div>
-</div>
-<div class="relative" data-purpose="cta-image">
-<img alt="Tu negocio con clientes recurrentes usando Maketo Web - Sistema completo de fidelización" class="w-full h-auto scale-110 translate-x-4" src="/imagen/footer.webp" loading="lazy" decoding="async"/>
-</div>
-</div>
+
+<!-- Banner Cliente Feliz -->
+<section class="py-8 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+  <div class="bento-card overflow-hidden">
+    <img src="/imagen/cliente-feliz.webp" alt="Cliente satisfecho con su sistema Maketo - Testimonio de negocio exitoso en Latinoamérica" class="w-full h-auto object-cover" loading="lazy" decoding="async" width="1200" height="400">
+  </div>
 </section>
-<!-- END: FinalCTA -->
 
-<!-- FAQ Section -->
-<section class="py-20 bg-gradient-to-b from-white to-gray-50" itemscope itemtype="https://schema.org/FAQPage">
-  <div class="max-w-4xl mx-auto px-4">
-<h2 class="text-3xl md:text-4xl font-black text-center mb-4">PREGUNTAS QUE IMPORTAN</h2>
-<p class="text-gray-600 text-center mb-12">Lo que los dueños de negocio se preguntan antes de decidir</p>
+<!-- Servicios Bento Grid -->
+<section id="servicios" class="py-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+  <div class="text-center mb-12">
+    <p class="text-xs font-bold text-primary uppercase tracking-widest mb-3">Lo Que Hacemos</p>
+    <h2 class="text-2xl sm:text-3xl font-black">TODO LO QUE TU NEGOCIO NECESITA</h2>
+  </div>
 
-    <div class="space-y-4">
-      <details class="group bg-white rounded-2xl shadow-sm border border-gray-100 open:shadow-md transition-all">
-        <summary class="flex items-center justify-between cursor-pointer p-6 font-bold text-gray-800">
-          <span>¿Cómo hago que mis clientes vuelvan a comprar?</span>
-          <i class="ri-add-line text-primary text-xl group-open:rotate-180 transition-transform"></i>
-        </summary>
-        <div class="px-6 pb-6 text-gray-600">
-          Maketo Web instala tu negocio en el celular del cliente. El guarda tu app, acumula puntos y cada vez que le envías una promoción, vuelve a comprar. Tus ads trajeron ese cliente, Maketo lo mantiene.
-        </div>
-      </details>
-
-      <details class="group bg-white rounded-2xl shadow-sm border border-gray-100 open:shadow-md transition-all">
-        <summary class="flex items-center justify-between cursor-pointer p-6 font-bold text-gray-800">
-          <span>¿Cuánto cuesta?</span>
-          <i class="ri-add-line text-primary text-xl group-open:rotate-180 transition-transform"></i>
-        </summary>
-        <div class="px-6 pb-6 text-gray-600 space-y-3">
-          <p>Nuestro modelo de negocio estandarizado nos permite ofrecerte un sistema que normalmente vale <strong>3.000$</strong> desde <strong class="text-primary font-bold">200$</strong> de instalación.</p>
-          <p>El mantenimiento mensual de toda la estructura, funcionalidades y actualizaciones es desde <strong class="text-primary font-bold">30$</strong> al mes.</p>
-          <p><strong>Trabajamos con toda Latinoamérica</strong> — Colombia, México, Perú, Chile, Argentina, Ecuador, Venezuela, y más.</p>
-          <p class="text-sm"><strong>Recibimos pagos por:</strong> PayPal, Binance,Nequi , Pago Móvil (Venezuela) y transferencias bancarias a tasa BCV.</p>
-          <p class="text-xs text-gray-400 mt-2">Sin comisiones ocultas. Sin contratos largos. Precio único para cualquier nicho: carnicería, repuestos, restaurante, farmacia, etc.</p>
-        </div>
-      </details>
-
-      <details class="group bg-white rounded-2xl shadow-sm border border-gray-100 open:shadow-md transition-all">
-        <summary class="flex items-center justify-between cursor-pointer p-6 font-bold text-gray-800">
-          <span>¿Puedo ver cómo funcionaría para mi negocio?</span>
-          <i class="ri-add-line text-primary text-xl group-open:rotate-180 transition-transform"></i>
-        </summary>
-        <div class="px-6 pb-6 text-gray-600">
-          Sí. Te mostramos una demo personalizada con tu marca y tus productos. Para que veas exactamente cómo se vería funcionando.
-        </div>
-      </details>
-
-      <details class="group bg-white rounded-2xl shadow-sm border border-gray-100 open:shadow-md transition-all">
-        <summary class="flex items-center justify-between cursor-pointer p-6 font-bold text-gray-800">
-          <span>¿Necesito saber de tecnología?</span>
-          <i class="ri-add-line text-primary text-xl group-open:rotate-180 transition-transform"></i>
-        </summary>
-        <div class="px-6 pb-6 text-gray-600">
-          No. Nosotros configuramos todo. Tú solo subes tus productos y precios. Y te enseñamos a usar todo.
-        </div>
-      </details>
-
-      <details class="group bg-white rounded-2xl shadow-sm border border-gray-100 open:shadow-md transition-all">
-        <summary class="flex items-center justify-between cursor-pointer p-6 font-bold text-gray-800">
-          <span>¿Funciona para mi tipo de negocio?</span>
-          <i class="ri-add-line text-primary text-xl group-open:rotate-180 transition-transform"></i>
-        </summary>
-        <div class="px-6 pb-6 text-gray-600">
-          Sí. Funciona para restaurantes, carnicerías, licorerías, farmacias, tiendas, minimarkets, gimnasios, salones, consultorios y más. Cada uno tiene su sistema especializado.
-        </div>
-      </details>
-
-      <details class="group bg-white rounded-2xl shadow-sm border border-gray-100 open:shadow-md transition-all">
-        <summary class="flex items-center justify-between cursor-pointer p-6 font-bold text-gray-800">
-          <span>¿Dejo de depender de Instagram y WhatsApp?</span>
-          <i class="ri-add-line text-primary text-xl group-open:rotate-180 transition-transform"></i>
-        </summary>
-        <div class="px-6 pb-6 text-gray-600">
-          No dejas de usarlas, pero dejas de depender de ellas. Sigues vendiendo en Instagram y WhatsApp, pero ahora esos clientes quedan guardados en tu app. Vuelven solos. Sin que tengas que publicar ni escribirles cada vez.
-        </div>
-      </details>
-
-      <details class="group bg-white rounded-2xl shadow-sm border border-gray-100 open:shadow-md transition-all">
-        <summary class="flex items-center justify-between cursor-pointer p-6 font-bold text-gray-800">
-          <span>¿Cómo hago que mis ads rindan más?</span>
-          <i class="ri-add-line text-primary text-xl group-open:rotate-180 transition-transform"></i>
-        </summary>
-        <div class="px-6 pb-6 text-gray-600">
-          Con notificaciones push. Les envías ofertas directas a su móvil para que vuelvan a comprar. Tus ads traen clientes nuevos, Maketo los convierte en recurrentes.
-        </div>
-      </details>
-
-      <details class="group bg-white rounded-2xl shadow-sm border border-gray-100 open:shadow-md transition-all">
-        <summary class="flex items-center justify-between cursor-pointer p-6 font-bold text-gray-800">
-          <span>¿Cómo puedo pagar?</span>
-          <i class="ri-add-line text-primary text-xl group-open:rotate-180 transition-transform"></i>
-        </summary>
-        <div class="px-6 pb-6 text-gray-600">
-          Recibimos pagos por <strong>PayPal, Binance, Pago Móvil</strong> (Venezuela) y <strong>transferencias bancarias a tasa BCV</strong>. Trabajamos con toda Latinoamérica, sin importar el país donde estés.
-        </div>
-      </details>
-
-      <details class="group bg-white rounded-2xl shadow-sm border border-gray-100 open:shadow-md transition-all">
-        <summary class="flex items-center justify-between cursor-pointer p-6 font-bold text-gray-800">
-          <span>¿En qué países trabajan?</span>
-          <i class="ri-add-line text-primary text-xl group-open:rotate-180 transition-transform"></i>
-        </summary>
-        <div class="px-6 pb-6 text-gray-600">
-          Trabajamos con <strong>toda Latinoamérica</strong>: Venezuela, Colombia, México, Perú, Chile, Argentina, Ecuador y más. También atendemos Estados Unidos y España. Si tienes negocio en Latinoamérica, nosotros te ayudamos.
-        </div>
-      </details>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+    <!-- Páginas Web -->
+    <div class="bento-card p-6 group">
+      <div class="icon-bubble gradient-blue text-white mb-4 shadow-[0_4px_16px_rgba(59,130,246,0.3)]">
+        <i class="ri-global-line text-xl"></i>
+      </div>
+      <h3 class="font-bold text-base mb-2">Páginas Web Profesionales</h3>
+      <p class="text-gray-400 text-sm leading-relaxed">Sitio web corporativo o landing page. Rápido, profesional y con botón de WhatsApp para que te contacten al instante.</p>
     </div>
+
+    <!-- E-commerce -->
+    <div class="bento-card p-6 group">
+      <div class="icon-bubble gradient-green text-white mb-4 shadow-[0_4px_16px_rgba(34,197,94,0.3)]">
+        <i class="ri-shopping-cart-2-line text-xl"></i>
+      </div>
+      <h3 class="font-bold text-base mb-2">Tiendas Online</h3>
+      <p class="text-gray-400 text-sm leading-relaxed">Tu tienda en internet con catálogo de productos, carrito de compras y gestión de inventario.</p>
+    </div>
+
+    <!-- Plataformas de pedidos -->
+    <div class="bento-card p-6 group">
+      <div class="icon-bubble gradient-orange text-white mb-4 shadow-[0_4px_16px_rgba(249,115,22,0.3)]">
+        <i class="ri-restaurant-2-line text-xl"></i>
+      </div>
+      <h3 class="font-bold text-base mb-2">Plataformas de Pedidos</h3>
+      <p class="text-gray-400 text-sm leading-relaxed">Sistema para que tus clientes hagan pedidos desde su celular. Menú digital, carrito, opciones de entrega o recogida.</p>
+    </div>
+
+    <!-- Sistemas de reservas -->
+    <div class="bento-card p-6 group">
+      <div class="icon-bubble gradient-purple text-white mb-4 shadow-[0_4px_16px_rgba(139,92,246,0.3)]">
+        <i class="ri-calendar-check-line text-xl"></i>
+      </div>
+      <h3 class="font-bold text-base mb-2">Sistemas de Reservas</h3>
+      <p class="text-gray-400 text-sm leading-relaxed">Para consultorios, clínicas, salones, gimnasios. Tu cliente reserva desde su celular, tú recibes la notificación.</p>
+    </div>
+
+    <!-- Apps web PWA -->
+    <div class="bento-card p-6 group">
+      <div class="icon-bubble gradient-cyan text-white mb-4 shadow-[0_4px_16px_rgba(6,182,212,0.3)]">
+        <i class="ri-smartphone-line text-xl"></i>
+      </div>
+      <h3 class="font-bold text-base mb-2">Apps Web (PWA)</h3>
+      <p class="text-gray-400 text-sm leading-relaxed">Tu propia app sin Apple Store ni Play Store. Se instala desde el navegador, funciona offline y envía notificaciones push.</p>
+    </div>
+
+    <!-- Menú QR -->
+    <div class="bento-card p-6 group">
+      <div class="icon-bubble gradient-yellow text-white mb-4 shadow-[0_4px_16px_rgba(245,158,11,0.3)]">
+        <i class="ri-qr-code-line text-xl"></i>
+      </div>
+      <h3 class="font-bold text-base mb-2">Menú QR y Pedidos</h3>
+      <p class="text-gray-400 text-sm leading-relaxed">Menú digital con código QR. El cliente escanea, elige y pide desde su celular. Sin descargar nada.</p>
+    </div>
+
+    <!-- Software a medida -->
+    <div class="bento-card p-6 group">
+      <div class="icon-bubble gradient-red text-white mb-4 shadow-[0_4px_16px_rgba(239,68,68,0.3)]">
+        <i class="ri-code-s-slash-line text-xl"></i>
+      </div>
+      <h3 class="font-bold text-base mb-2">Software a Medida</h3>
+      <p class="text-gray-400 text-sm leading-relaxed">Si tu negocio tiene un proceso que no encaja en ningún software, lo construimos desde cero. CRM, inventarios, gestión.</p>
+    </div>
+
+    <!-- Automatización -->
+    <div class="bento-card p-6 group">
+      <div class="icon-bubble gradient-pink text-white mb-4 shadow-[0_4px_16px_rgba(236,72,153,0.3)]">
+        <i class="ri-flashlight-line text-xl"></i>
+      </div>
+      <h3 class="font-bold text-base mb-2">Automatización</h3>
+      <p class="text-gray-400 text-sm leading-relaxed">Automatizamos tareas repetitivas: confirmaciones por WhatsApp, recordatorios, reportes, seguimiento de clientes.</p>
+    </div>
+
+    <!-- Integración WhatsApp -->
+    <div class="bento-card p-6 group">
+      <div class="icon-bubble gradient-emerald text-white mb-4 shadow-[0_4px_16px_rgba(16,185,129,0.3)]">
+        <i class="ri-whatsapp-fill text-xl"></i>
+      </div>
+      <h3 class="font-bold text-base mb-2">Integración WhatsApp</h3>
+      <p class="text-gray-400 text-sm leading-relaxed">Todo lo que construimos se conecta con WhatsApp. Confirmaciones, notificaciones, recordatorios.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Banner Notificaciones -->
+<section class="py-8 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+  <div class="bento-card overflow-hidden">
+    <img src="/imagen/notificacio.png" alt="Sistema de notificaciones push Maketo - Ejemplo de notificación de oferta especial para clientes" class="w-full h-auto object-cover" loading="lazy" decoding="async" width="1200" height="400">
+  </div>
+</section>
+
+<!-- Cómo Funciona Bento -->
+<section id="como-funciona" class="py-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+  <div class="text-center mb-12">
+    <p class="text-xs font-bold text-primary uppercase tracking-widest mb-3">Proceso</p>
+    <h2 class="text-2xl sm:text-3xl font-black">CÓMO FUNCIONA</h2>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+    <div class="bento-card p-6 text-center">
+      <div class="w-14 h-14 gradient-blue rounded-2xl flex items-center justify-center text-white font-black text-xl mx-auto mb-4 shadow-[0_4px_16px_rgba(59,130,246,0.3)]">1</div>
+      <h3 class="font-bold text-sm mb-2">Nos cuentas qué necesitas</h3>
+      <p class="text-gray-400 text-xs leading-relaxed">Escríbenos por WhatsApp o correo. Cuéntanos qué hace tu negocio y qué necesitas resolver.</p>
+    </div>
+    <div class="bento-card p-6 text-center">
+      <div class="w-14 h-14 gradient-purple rounded-2xl flex items-center justify-center text-white font-black text-xl mx-auto mb-4 shadow-[0_4px_16px_rgba(139,92,246,0.3)]">2</div>
+      <h3 class="font-bold text-sm mb-2">Te mostramos cómo se verá</h3>
+      <p class="text-gray-400 text-xs leading-relaxed">Diseñamos un prototipo visual para que veas exactamente cómo funcionará antes de escribir código.</p>
+    </div>
+    <div class="bento-card p-6 text-center">
+      <div class="w-14 h-14 gradient-green rounded-2xl flex items-center justify-center text-white font-black text-xl mx-auto mb-4 shadow-[0_4px_16px_rgba(34,197,94,0.3)]">3</div>
+      <h3 class="font-bold text-sm mb-2">Lo construimos y probamos</h3>
+      <p class="text-gray-400 text-xs leading-relaxed">Desarrollamos tu sistema, probamos cada funcionalidad y te mantenemos al tanto del avance.</p>
+    </div>
+    <div class="bento-card p-6 text-center">
+      <div class="w-14 h-14 gradient-orange rounded-2xl flex items-center justify-center text-white font-black text-xl mx-auto mb-4 shadow-[0_4px_16px_rgba(249,115,22,0.3)]">4</div>
+      <h3 class="font-bold text-sm mb-2">Lanzamos y te acompañamos</h3>
+      <p class="text-gray-400 text-xs leading-relaxed">Publicamos tu sistema, te enseñamos a usarlo y seguimos contigo. Si algo se rompe, nos escribes.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Banner Nichos -->
+<section class="py-8 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+  <div class="bento-card overflow-hidden">
+    <img src="/imagen/nichos.png" alt="Nichos de mercado que atiende Maketo - Restaurantes, farmacias, tiendas, clínicas, gimnasios y más negocios en Latinoamérica" class="w-full h-auto object-cover" loading="lazy" decoding="async" width="1200" height="400">
+  </div>
+</section>
+
+<!-- Proyectos -->
+<section id="proyectos" class="py-16 max-w-6xl mx-auto">
+  <div class="px-4 sm:px-6 lg:px-8">
+    <p class="text-xs font-bold text-primary uppercase tracking-widest mb-3">Proyectos</p>
+    <h2 class="text-2xl sm:text-3xl font-black mb-2">ASÍ SE VEN LOS SISTEMAS QUE CONSTRUIMOS</h2>
+    <p class="text-gray-400 text-sm mb-10 max-w-xl">Desliza para ver los que ya están funcionando.</p>
+  </div>
+
+  <!-- Carousel -->
+  <div class="relative">
+    <!-- Gradient fade edges -->
+    <div class="absolute left-0 top-0 bottom-0 w-6 bg-gradient-to-r from-[#F5F5F7] to-transparent z-10 pointer-events-none sm:hidden"></div>
+    <div class="absolute right-0 top-0 bottom-0 w-6 bg-gradient-to-l from-[#F5F5F7] to-transparent z-10 pointer-events-none sm:hidden"></div>
+
+    <div id="projectsCarousel" class="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-4 scrollbar-hide pl-4 pr-4 sm:pl-6 sm:pr-6 lg:pl-8 lg:pr-8" style="-webkit-overflow-scrolling:touch;scroll-behavior:smooth;overscroll-behavior-x:contain">
+      <div class="group flex-shrink-0 w-[85vw] sm:w-[70vw] md:w-[380px] snap-start bento-card overflow-hidden">
+        <div class="gradient-pink h-2"></div>
+        <img src="/imagen/damidisanto.webp" alt="Proyecto damidisanto.com - Sitio web para entrenadora fitness con programas de entrenamiento y club de membresía" class="w-full h-48 object-cover" loading="lazy" decoding="async" width="380" height="192">
+        <div class="p-6">
+          <span class="text-[10px] font-bold text-pink-500 uppercase tracking-wider">Marca Personal</span>
+          <h3 class="font-bold text-base mt-2 mb-2">dami disanto</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">Sitio web para entrenadora fitness. Programas de entrenamiento, club de membresía y venta de planes.</p>
+          <a href="https://damidisanto.com" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 mt-4 text-xs font-bold text-pink-500 hover:text-pink-600 transition-colors" aria-label="Ver proyecto damidisanto.com">
+            Ver proyecto <i class="ri-arrow-right-s-line"></i>
+          </a>
+        </div>
+      </div>
+      <div class="group flex-shrink-0 w-[85vw] sm:w-[70vw] md:w-[380px] snap-start bento-card overflow-hidden">
+        <div class="gradient-orange h-2"></div>
+        <img src="/imagen/foodpop.webp" alt="Proyecto foodpop.maketo.site - Plataforma de pedidos para restaurante con menú digital interactivo y carrito de compras" class="w-full h-48 object-cover" loading="lazy" decoding="async" width="380" height="192">
+        <div class="p-6">
+          <span class="text-[10px] font-bold text-orange-500 uppercase tracking-wider">Restaurante</span>
+          <h3 class="font-bold text-base mt-2 mb-2">foodpop</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">Plataforma de pedidos. Menú digital interactivo con categorías, carrito y sistema de pedidos en tiempo real.</p>
+          <a href="https://foodpop.maketo.site/" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 mt-4 text-xs font-bold text-orange-500 hover:text-orange-600 transition-colors" aria-label="Ver proyecto foodpop.maketo.site">
+            Ver proyecto <i class="ri-arrow-right-s-line"></i>
+          </a>
+        </div>
+      </div>
+      <div class="group flex-shrink-0 w-[85vw] sm:w-[70vw] md:w-[380px] snap-start bento-card overflow-hidden">
+        <div class="gradient-blue h-2"></div>
+        <div class="p-6">
+          <span class="text-[10px] font-bold text-blue-500 uppercase tracking-wider">App Web</span>
+          <h3 class="font-bold text-base mt-2 mb-2">mini market</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">Plataforma web a medida con interfaz personalizada para gestión de pedidos y atención al cliente.</p>
+          <a href="https://ma.maketo.site/" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 mt-4 text-xs font-bold text-blue-500 hover:text-blue-600 transition-colors" aria-label="Ver proyecto ma.maketo.site">
+            Ver proyecto <i class="ri-arrow-right-s-line"></i>
+          </a>
+        </div>
+      </div>
+      <div class="group flex-shrink-0 w-[85vw] sm:w-[70vw] md:w-[380px] snap-start bento-card overflow-hidden">
+        <div class="gradient-yellow h-2"></div>
+        <img src="/imagen/market-coffee.webp" alt="Proyecto marketcoffeesweet.com - Tienda online de café y productos gourmet con catálogo visual y proceso de compra optimizado" class="w-full h-48 object-cover" loading="lazy" decoding="async" width="380" height="192">
+        <div class="p-6">
+          <span class="text-[10px] font-bold text-amber-600 uppercase tracking-wider">E-commerce</span>
+          <h3 class="font-bold text-base mt-2 mb-2">market coffee sweet</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">Tienda online de café y productos gourmet con catálogo visual y proceso de compra optimizado.</p>
+          <a href="https://marketcoffeesweet.com" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 mt-4 text-xs font-bold text-amber-600 hover:text-amber-700 transition-colors" aria-label="Ver proyecto marketcoffeesweet.com">
+            Ver proyecto <i class="ri-arrow-right-s-line"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Dots + Nav -->
+    <div class="flex items-center justify-center gap-4 mt-6 px-4">
+      <button id="prevProject" class="w-10 h-10 rounded-full bg-white border border-gray-200 flex items-center justify-center hover:border-primary hover:text-primary transition-all text-gray-400 shadow-sm" aria-label="Anterior"><i class="ri-arrow-left-s-line text-lg"></i></button>
+      <div class="flex gap-2" id="projectDots"></div>
+      <button id="nextProject" class="w-10 h-10 rounded-full gradient-blue text-white flex items-center justify-center hover:opacity-90 transition-all shadow-[0_4px_16px_rgba(59,130,246,0.3)]" aria-label="Siguiente"><i class="ri-arrow-right-s-line text-lg"></i></button>
+    </div>
+  </div>
+
+  <script>
+    (function(){
+      var c=document.getElementById('projectsCarousel');
+      var cards=c?c.children:[];
+      var prev=document.getElementById('prevProject');
+      var next=document.getElementById('nextProject');
+      var dots=document.getElementById('projectDots');
+      var idx=0;
+      var isDragging=false;
+      var startX=0;
+      var scrollStart=0;
+
+      if(!c||!prev||!next||!dots)return;
+
+      function cardWidth(){
+        var card=cards[0];
+        if(!card)return 300;
+        var s=getComputedStyle(card);
+        return card.offsetWidth+parseFloat(s.marginRight||0)+parseFloat(s.marginLeft||0)+16;
+      }
+
+      function maxIndex(){
+        return Math.max(0,cards.length-(window.innerWidth>=768?2:1));
+      }
+
+      function mkDots(){
+        dots.innerHTML='';
+        var t=maxIndex()+1;
+        for(var i=0;i<t;i++){
+          var d=document.createElement('button');
+          d.className='rounded-full transition-all duration-300 '+(i===idx?'bg-primary w-6 h-2':'bg-gray-300 w-2 h-2');
+          d.setAttribute('aria-label','Proyecto '+(i+1));
+          d.dataset.index=i;
+          d.addEventListener('click',function(){go(parseInt(this.dataset.index))});
+          dots.appendChild(d);
+        }
+      }
+
+      function go(i){
+        idx=Math.max(0,Math.min(i,maxIndex()));
+        c.scrollTo({left:idx*cardWidth(),behavior:'smooth'});
+        updateDots();
+      }
+
+      function updateDots(){
+        var ds=dots.querySelectorAll('button');
+        ds.forEach(function(d,j){
+          d.className='rounded-full transition-all duration-300 '+(j===idx?'bg-primary w-6 h-2':'bg-gray-300 w-2 h-2');
+        });
+      }
+
+      function snapToNearest(){
+        var cw=cardWidth();
+        var ni=Math.round(c.scrollLeft/cw);
+        ni=Math.max(0,Math.min(ni,maxIndex()));
+        if(ni!==idx){idx=ni;updateDots()}
+        // Snap to exact position
+        c.scrollTo({left:idx*cw,behavior:'smooth'});
+      }
+
+      prev.addEventListener('click',function(){go(idx-1)});
+      next.addEventListener('click',function(){go(idx+1)});
+
+      // Touch drag for precise tracking
+      c.addEventListener('touchstart',function(e){
+        isDragging=true;
+        startX=e.touches[0].clientX;
+        scrollStart=c.scrollLeft;
+      },{passive:true});
+
+      c.addEventListener('touchend',function(){
+        isDragging=false;
+        snapToNearest();
+      },{passive:true});
+
+      // Scroll listener for real-time dot update
+      var scrollTimer;
+      c.addEventListener('scroll',function(){
+        clearTimeout(scrollTimer);
+        scrollTimer=setTimeout(function(){
+          if(!isDragging)snapToNearest();
+        },80);
+      },{passive:true});
+
+      mkDots();
+      window.addEventListener('resize',function(){mkDots();go(Math.min(idx,maxIndex()))});
+    })();
+  </script>
+</section>
+
+<!-- Ventajas Bento -->
+<section class="py-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+  <div class="text-center mb-12">
+    <p class="text-xs font-bold text-primary uppercase tracking-widest mb-3">Por Qué Maketo</p>
+    <h2 class="text-2xl sm:text-3xl font-black">¿POR QUÉ ELEGIRNOS?</h2>
+  </div>
+
+  <div class="grid md:grid-cols-3 gap-5">
+    <div class="bento-card overflow-hidden">
+      <div class="gradient-blue h-1.5"></div>
+      <div class="p-7 text-center">
+        <div class="icon-bubble gradient-blue text-white mx-auto mb-4 shadow-[0_4px_16px_rgba(59,130,246,0.3)]"><i class="ri-settings-3-line text-xl"></i></div>
+        <h3 class="font-bold text-base mb-2">100% Personalizado</h3>
+        <p class="text-gray-400 text-sm leading-relaxed">No usamos plantillas. Todo se diseña según la lógica de tu negocio, tus procesos y tus clientes.</p>
+      </div>
+    </div>
+    <div class="bento-card overflow-hidden">
+      <div class="gradient-green h-1.5"></div>
+      <div class="p-7 text-center">
+        <div class="icon-bubble gradient-green text-white mx-auto mb-4 shadow-[0_4px_16px_rgba(34,197,94,0.3)]"><i class="ri-hand-heart-line text-xl"></i></div>
+        <h3 class="font-bold text-base mb-2">Interfaz Fácil</h3>
+        <p class="text-gray-400 text-sm leading-relaxed">Interfaces claras y modernas. Tu personal la usa sin complicaciones desde el primer día.</p>
+      </div>
+    </div>
+    <div class="bento-card overflow-hidden">
+      <div class="gradient-purple h-1.5"></div>
+      <div class="p-7 text-center">
+        <div class="icon-bubble gradient-purple text-white mx-auto mb-4 shadow-[0_4px_16px_rgba(139,92,246,0.3)]"><i class="ri-shield-check-line text-xl"></i></div>
+        <h3 class="font-bold text-base mb-2">Acompañamiento Real</h3>
+        <p class="text-gray-400 text-sm leading-relaxed">No te dejamos solo después del lanzamiento. Si algo se rompe, nos escribes y lo resolvemos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Banner Tu App -->
+<section class="py-8 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+  <div class="bento-card overflow-hidden">
+    <img src="/imagen/tuapp.webp" alt="Tu app personalizada con Maketo - Aplicación móvil para tu negocio con notificaciones push y pedidos online" class="w-full h-auto object-cover" loading="lazy" decoding="async" width="1200" height="400">
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+  <div class="bento-card gradient-dark p-10 sm:p-14 text-center relative overflow-hidden">
+    <div class="absolute inset-0 opacity-10">
+      <div class="absolute top-0 left-0 w-80 h-80 bg-blue-500 rounded-full filter blur-[100px] -translate-x-1/2 -translate-y-1/2"></div>
+      <div class="absolute bottom-0 right-0 w-80 h-80 bg-green-500 rounded-full filter blur-[100px] translate-x-1/2 translate-y-1/2"></div>
+    </div>
+    <div class="relative z-10">
+      <h2 class="text-2xl sm:text-3xl font-black text-white mb-4">¿Listo para tener tu presencia en internet?</h2>
+      <p class="text-gray-300 text-sm sm:text-base mb-8 max-w-xl mx-auto leading-relaxed">Escríbenos, cuéntanos qué necesitas. Te asesoramos gratis, sin compromiso.</p>
+      <a href="https://wa.me/584124058904?text=Hola%20Maketo,%20necesito%20una%20página%20web%20para%20mi%20negocio" class="gradient-green text-white px-8 py-4 rounded-2xl font-bold text-base inline-flex items-center gap-3 hover:opacity-90 transition-all shadow-[0_8px_24px_rgba(34,197,94,0.3)]">
+        <i class="ri-whatsapp-fill text-lg"></i>
+        Escribir por WhatsApp
+      </a>
+      <div class="mt-8 flex flex-wrap justify-center gap-5 text-white/50 text-xs font-bold">
+        <div class="flex items-center gap-1.5"><i class="ri-check-line text-green-400"></i> Respuesta en menos de 2 horas</div>
+        <div class="flex items-center gap-1.5"><i class="ri-check-line text-green-400"></i> Prototipo visual sin costo</div>
+        <div class="flex items-center gap-1.5"><i class="ri-check-line text-green-400"></i> Toda Latinoamérica</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="py-16 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+  <h2 class="text-2xl sm:text-3xl font-black text-center mb-3">PREGUNTAS FRECUENTES</h2>
+  <p class="text-gray-400 text-center text-sm mb-10">Resolvemos las dudas más comunes</p>
+  <div class="space-y-3">
+    <details class="group bento-card overflow-hidden open:shadow-lg transition-all">
+      <summary class="flex items-center justify-between cursor-pointer p-5 font-bold text-gray-700 text-sm"><span>¿Qué tipo de software desarrollan?</span><i class="ri-add-line text-primary text-lg group-open:rotate-180 transition-transform"></i></summary>
+      <div class="px-5 pb-5 text-gray-500 text-sm leading-relaxed">Desarrollamos páginas web, tiendas online, plataformas de pedidos, sistemas de reservas, apps web sin Apple Store ni Play Store, y cualquier software personalizado que tu negocio necesite.</div>
+    </details>
+    <details class="group bento-card overflow-hidden open:shadow-lg transition-all">
+      <summary class="flex items-center justify-between cursor-pointer p-5 font-bold text-gray-700 text-sm"><span>¿Cuánto cuesta?</span><i class="ri-add-line text-primary text-lg group-open:rotate-180 transition-transform"></i></summary>
+      <div class="px-5 pb-5 text-gray-500 text-sm leading-relaxed">Depende de la complejidad del proyecto. No manejamos precios fijos. Trabajamos de forma transparente: nos cuentas qué necesitas y te damos una cotización clara.</div>
+    </details>
+    <details class="group bento-card overflow-hidden open:shadow-lg transition-all">
+      <summary class="flex items-center justify-between cursor-pointer p-5 font-bold text-gray-700 text-sm"><span>¿Cuánto tarda?</span><i class="ri-add-line text-primary text-lg group-open:rotate-180 transition-transform"></i></summary>
+      <div class="px-5 pb-5 text-gray-500 text-sm leading-relaxed">Una landing page en 5-7 días. Una tienda online en 10-15 días. Sistemas de pedidos o reservas en 15-25 días. Siempre con prototipo visual primero.</div>
+    </details>
+    <details class="group bento-card overflow-hidden open:shadow-lg transition-all">
+      <summary class="flex items-center justify-between cursor-pointer p-5 font-bold text-gray-700 text-sm"><span>¿Necesito una app en Apple Store o Play Store?</span><i class="ri-add-line text-primary text-lg group-open:rotate-180 transition-transform"></i></summary>
+      <div class="px-5 pb-5 text-gray-500 text-sm leading-relaxed">No. Desarrollamos apps web (PWA) que se instalan desde el navegador. Funcionan como app nativa, con notificaciones push y offline.</div>
+    </details>
+    <details class="group bento-card overflow-hidden open:shadow-lg transition-all">
+      <summary class="flex items-center justify-between cursor-pointer p-5 font-bold text-gray-700 text-sm"><span>¿Puedo ver cómo funcionaría antes de decidir?</span><i class="ri-add-line text-primary text-lg group-open:rotate-180 transition-transform"></i></summary>
+      <div class="px-5 pb-5 text-gray-500 text-sm leading-relaxed">Sí. Creamos un prototipo visual personalizado sin compromiso y sin costo.</div>
+    </details>
+    <details class="group bento-card overflow-hidden open:shadow-lg transition-all">
+      <summary class="flex items-center justify-between cursor-pointer p-5 font-bold text-gray-700 text-sm"><span>¿Necesito saber de tecnología?</span><i class="ri-add-line text-primary text-lg group-open:rotate-180 transition-transform"></i></summary>
+      <div class="px-5 pb-5 text-gray-500 text-sm leading-relaxed">No. Nosotros configuramos todo y te enseñamos a usarlo. Interfaces intuitivas desde el primer día.</div>
+    </details>
+    <details class="group bento-card overflow-hidden open:shadow-lg transition-all">
+      <summary class="flex items-center justify-between cursor-pointer p-5 font-bold text-gray-700 text-sm"><span>¿Funciona para mi tipo de negocio?</span><i class="ri-add-line text-primary text-lg group-open:rotate-180 transition-transform"></i></summary>
+      <div class="px-5 pb-5 text-gray-500 text-sm leading-relaxed">Sí. Restaurantes, licorerías, farmacias, tiendas, clínicas, consultorios, gimnasios, hoteles, ferreterías y cualquier negocio.</div>
+    </details>
+    <details class="group bento-card overflow-hidden open:shadow-lg transition-all">
+      <summary class="flex items-center justify-between cursor-pointer p-5 font-bold text-gray-700 text-sm"><span>¿En qué países trabajan?</span><i class="ri-add-line text-primary text-lg group-open:rotate-180 transition-transform"></i></summary>
+      <div class="px-5 pb-5 text-gray-500 text-sm leading-relaxed"><strong>Toda Latinoamérica</strong>: Venezuela, Colombia, México, Perú, Chile, Argentina, Ecuador y más. También Estados Unidos y España. Todo es remoto.</div>
+    </details>
+    <details class="group bento-card overflow-hidden open:shadow-lg transition-all">
+      <summary class="flex items-center justify-between cursor-pointer p-5 font-bold text-gray-700 text-sm"><span>¿Qué pasa si necesito cambios después?</span><i class="ri-add-line text-primary text-lg group-open:rotate-180 transition-transform"></i></summary>
+      <div class="px-5 pb-5 text-gray-500 text-sm leading-relaxed">Estamos contigo después del lanzamiento. Si necesitas ajustes, nuevas funcionalidades o tienes problemas, nos escribes y lo resolvemos.</div>
+    </details>
   </div>
 </section>
 
@@ -1258,131 +848,64 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "¿Cómo hago que mis clientes vuelvan a comprar?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Maketo Web instala tu negocio en el celular del cliente. El guarda tu app, acumula puntos y cada vez que le envías una promoción, vuelve a comprar. Sin que pagues publicidad."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "¿Cuánto cuesta el sistema?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Sistema desde 200 dólares de instalación y mantenimiento mensual desde 30 dólares. Trabajamos con toda Latinoamérica. Recibimos pagos por PayPal, Binance, Nequi, Pago Móvil y transferencias a tasa BCV."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "¿Puedo ver cómo funcionaría para mi negocio?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Sí. Te mostramos una demo personalizada con tu marca y tus productos para que veas exactamente cómo se vería funcionando."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "¿Funciona para mi tipo de negocio?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Sí. Funciona para carnicerías, restaurantes, repuestos, farmacias, tiendas, minimarkets, gimnasios, salones, consultorios y más."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "¿Dejo de depender de Instagram y WhatsApp?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No dejas de usarlas, pero dejas de depender de ellas. Sigues vendiendo en Instagram y WhatsApp, pero esos clientes quedan guardados en tu app y vuelven solos."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "¿Cómo hago que mis ads rindan más?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Con notificaciones push. Les envías ofertas directas a su móvil para que vuelvan a comprar. Tus ads traen clientes nuevos, Maketo los convierte en recurrentes."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "¿Cómo puedo pagar?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Recibimos pagos por PayPal, Binance, Pago Móvil (Venezuela) y transferencias bancarias a tasa BCV. Trabajamos con toda Latinoamérica."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "¿En qué países trabajan?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Trabajamos con toda Latinoamérica: Venezuela, Colombia, México, Perú, Chile, Argentina, Ecuador. También Estados Unidos y España."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "¿Necesito saber de tecnología?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. Nosotros configuramos todo. Tú solo subes tus productos y precios."
-      }
-    }
+    {"@type":"Question","name":"¿Qué tipo de software desarrollan?","acceptedAnswer":{"@type":"Answer","text":"Desarrollamos páginas web, tiendas online, plataformas de pedidos, sistemas de reservas, apps web sin Apple Store ni Play Store, y cualquier software personalizado que tu negocio necesite."}},
+    {"@type":"Question","name":"¿Cuánto cuesta?","acceptedAnswer":{"@type":"Answer","text":"Depende de la complejidad del proyecto. Trabajamos de forma transparente: nos cuentas qué necesitas y te damos una cotización clara y sin sorpresas."}},
+    {"@type":"Question","name":"¿Cuánto tarda?","acceptedAnswer":{"@type":"Answer","text":"Una landing page en 5-7 días, una tienda online en 10-15 días, sistemas de pedidos o reservas en 15-25 días. Siempre empezamos con un prototipo visual."}},
+    {"@type":"Question","name":"¿Necesito una app en Apple Store o Play Store?","acceptedAnswer":{"@type":"Answer","text":"No. Desarrollamos apps web (PWA) que se instalan desde el navegador. Funcionan como app nativa, con notificaciones push y offline."}},
+    {"@type":"Question","name":"¿Puedo ver cómo funcionaría antes de decidir?","acceptedAnswer":{"@type":"Answer","text":"Sí. Creamos un prototipo visual personalizado sin compromiso y sin costo."}},
+    {"@type":"Question","name":"¿Necesito saber de tecnología?","acceptedAnswer":{"@type":"Answer","text":"No. Nosotros configuramos todo y te enseñamos a usarlo. Interfaces intuitivas desde el primer día."}},
+    {"@type":"Question","name":"¿Funciona para mi tipo de negocio?","acceptedAnswer":{"@type":"Answer","text":"Sí. Restaurantes, licorerías, farmacias, tiendas, clínicas, consultorios, gimnasios, hoteles, ferreterías y cualquier negocio."}},
+    {"@type":"Question","name":"¿En qué países trabajan?","acceptedAnswer":{"@type":"Answer","text":"Toda Latinoamérica: Venezuela, Colombia, México, Perú, Chile, Argentina, Ecuador y más. También Estados Unidos y España."}},
+    {"@type":"Question","name":"¿Qué pasa si necesito cambios después?","acceptedAnswer":{"@type":"Answer","text":"Estamos contigo después del lanzamiento. Si necesitas ajustes, nuevas funcionalidades o tienes problemas, nos escribes y lo resolvemos."}}
   ]
 }
 </script>
 
-<!-- Footer Optimizado -->
-<footer class="bg-black text-white py-16">
-  <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-4 gap-8">
-    <div class="md:col-span-2">
-      <div class="flex items-center gap-2 mb-4">
-        <img alt="Maketo Web" src="/imagen/logo.png" class="h-10"/>
-        <span class="text-2xl font-black text-white">maketo web</span>
+<!-- Footer -->
+<footer class="mt-8 pb-8 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+  <div class="bento-card p-8 sm:p-10">
+    <div class="grid md:grid-cols-4 gap-8">
+      <div class="md:col-span-2">
+        <div class="flex items-center gap-2 mb-3"><img alt="Maketo" src="/imagen/logo.png" class="h-8"/><span class="text-xl font-black">maketo</span></div>
+        <p class="text-gray-400 text-sm mb-4 max-w-sm">Creamos páginas web, tiendas online, apps y software para comercios y PYMES en Latinoamérica.</p>
+        <div class="flex gap-3">
+          <a href="https://instagram.com/maketo.web" target="_blank" aria-label="Instagram" class="w-9 h-9 rounded-xl bg-gray-100 flex items-center justify-center text-gray-400 hover:text-pink-500 hover:bg-pink-50 transition"><i class="ri-instagram-fill text-base"></i></a>
+          <a href="https://facebook.com/maketoweboficial" target="_blank" aria-label="Facebook" class="w-9 h-9 rounded-xl bg-gray-100 flex items-center justify-center text-gray-400 hover:text-blue-600 hover:bg-blue-50 transition"><i class="ri-facebook-fill text-base"></i></a>
+          <a href="https://linkedin.com/company/maketoweb" target="_blank" aria-label="LinkedIn" class="w-9 h-9 rounded-xl bg-gray-100 flex items-center justify-center text-gray-400 hover:text-blue-500 hover:bg-blue-50 transition"><i class="ri-linkedin-fill text-base"></i></a>
+          <a href="https://wa.me/+584124058904" target="_blank" aria-label="WhatsApp" class="w-9 h-9 rounded-xl bg-gray-100 flex items-center justify-center text-gray-400 hover:text-green-500 hover:bg-green-50 transition"><i class="ri-whatsapp-fill text-base"></i></a>
+        </div>
       </div>
-      <p class="text-gray-300 mb-4 max-w-sm">
-        Sistema para hacer que tus clientes de Instagram y WhatsApp vuelvan a comprarte automáticamente. Sin comisiones.
-      </p>
-      <div class="flex gap-4">
-        <a href="https://instagram.com/maketo.web" target="_blank" aria-label="Instagram" class="text-gray-300 hover:text-pink-500 transition"><i class="ri-instagram-fill text-xl"></i></a>
-        <a href="https://facebook.com/maketoweboficial" target="_blank" aria-label="Facebook" class="text-gray-300 hover:text-blue-600 transition"><i class="ri-facebook-fill text-xl"></i></a>
-        <a href="https://linkedin.com/company/maketoweb" target="_blank" aria-label="LinkedIn" class="text-gray-300 hover:text-blue-700 transition"><i class="ri-linkedin-fill text-xl"></i></a>
-        <a href="https://wa.me/+584124058904" target="_blank" aria-label="WhatsApp" class="text-gray-300 hover:text-green-500 transition"><i class="ri-whatsapp-fill text-xl"></i></a>
+      <div>
+        <h4 class="font-bold mb-3 text-sm">Servicios</h4>
+        <ul class="space-y-2 text-gray-400 text-xs">
+          <li><a href="#servicios" class="hover:text-primary transition">Páginas Web</a></li>
+          <li><a href="#servicios" class="hover:text-primary transition">Tiendas Online</a></li>
+          <li><a href="#servicios" class="hover:text-primary transition">Plataformas de Pedidos</a></li>
+          <li><a href="#servicios" class="hover:text-primary transition">Sistemas de Reservas</a></li>
+          <li><a href="#servicios" class="hover:text-primary transition">Apps Web (PWA)</a></li>
+          <li><a href="#servicios" class="hover:text-primary transition">Software a Medida</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold mb-3 text-sm">Contacto</h4>
+        <ul class="space-y-2 text-gray-400 text-xs">
+          <li class="flex items-center gap-2"><i class="ri-phone-fill text-green-500"></i> +58 412-405-8904</li>
+          <li class="flex items-center gap-2"><i class="ri-whatsapp-fill text-green-500"></i> WhatsApp</li>
+          <li class="flex items-center gap-2"><i class="ri-mail-fill text-primary"></i> maketostudio@gmail.com</li>
+          <li class="flex items-center gap-2"><i class="ri-earth-fill text-primary"></i> Toda Latinoamérica</li>
+        </ul>
+        <p class="text-[11px] text-gray-300 mt-3">Colombia, México, Perú, Chile, Argentina, Ecuador, Venezuela</p>
       </div>
     </div>
-    <div>
-      <h4 class="font-bold mb-4 text-primary">Servicios</h4>
-      <ul class="space-y-2 text-gray-300 text-sm">
-        <li><a href="/" class="hover:text-white transition">Sistema de clientes recurrentes</a></li>
-        <li><a href="/como-funciona.html" class="hover:text-white transition">Cómo funciona Maketo</a></li>
-        <li><a href="#demos" class="hover:text-white transition">Ver demos</a></li>
-        <li><a href="/" class="hover:text-white transition">Notificaciones push</a></li>
-        <li><a href="/" class="hover:text-white transition">SEO local para negocios</a></li>
-      </ul>
+    <div class="mt-8 pt-6 border-t border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-3 text-gray-300 text-xs">
+      <p>&copy; 2025 Maketo. Todos los derechos reservados.</p>
+      <a href="/politica-legal.html" class="hover:text-primary transition">Política Legal</a>
     </div>
-    <div>
-      <h4 class="font-bold mb-4 text-primary">Contacto</h4>
-      <ul class="space-y-2 text-gray-300 text-sm">
-        <li class="flex items-center gap-2"><i class="ri-phone-fill text-green-500"></i> +58 412-405-8904</li>
-        <li class="flex items-center gap-2"><i class="ri-whatsapp-fill text-green-500"></i> WhatsApp</li>
-        <li class="flex items-center gap-2"><i class="ri-earth-fill text-primary"></i> Toda Latinoamérica</li>
-      </ul>
-      <p class="text-xs text-gray-400 mt-3">Colombia, México, Perú, Chile, Argentina, Ecuador, Venezuela</p>
-    </div>
-  </div>
-  <div class="max-w-7xl mx-auto px-4 mt-12 pt-8 border-t border-gray-800 text-center text-gray-400 text-sm">
-    <p>&copy; 2025 Maketo Web. Todos los derechos reservados. | <a href="/politica-legal.html" class="hover:text-white">Política Legal</a></p>
   </div>
 </footer>
 
 <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5ZK3M5QT');</script>
-<!-- End Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-5ZK3M5QT');</script>
 
-</body></html>
+</body>
+</html>
