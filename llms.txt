@@ -1,0 +1,56 @@
+# Maketo — Software, Páginas Web y Apps para Comercios y PYMES
+
+## Qué es Maketo
+Maketo es un servicio de desarrollo de software con sede en Valencia, Venezuela, que atiende a comercios y PYMES en toda Latinoamérica. Creamos páginas web, tiendas online, plataformas de pedidos, sistemas de reservas, apps web (PWA) y software a medida para negocios que quieren vender más, automatizar procesos y tener presencia profesional en internet.
+
+No vendemos plantillas ni soluciones genéricas. Analizamos la operación de cada cliente y construimos exactamente lo que necesita su negocio.
+
+## Fundador
+Henderson Ochoa, desarrollador de software. Diseña y construye personalmente cada sistema, y acompaña al cliente después del lanzamiento. Imagen: https://maketo.site/imagen/henderson.webp
+
+## Servicios Principales
+- **Páginas Web Profesionales**: Sitios web corporativos y landing pages rápidos, profesionales, optimizados para Google y con botón de WhatsApp.
+- **Tiendas Online**: Plataformas de venta en línea con catálogo, carrito de compras, gestión de inventario y panel de administración.
+- **Plataformas de Pedidos**: Sistemas para recibir y gestionar pedidos de restaurantes, licorerías, farmacias, tiendas y cualquier negocio.
+- **Sistemas de Reservas**: Plataformas online para la gestión de citas y reservas en consultorios, clínicas, hoteles, gimnasios, salones y servicios profesionales.
+- **Apps Web (PWA)**: Aplicaciones web que se instalan desde el navegador, sin necesidad de Apple Store ni Play Store. Funcionan con notificaciones push y offline.
+- **Menú QR y Pedidos**: Menú digital con código QR para restaurantes y negocios de comida.
+- **Software a Medida**: Desarrollo de CRMs, ERPs, sistemas de gestión, inventarios y cualquier herramienta personalizada.
+- **Automatización de Procesos**: Confirmaciones por WhatsApp, recordatorios de citas, generación de reportes, seguimiento de clientes.
+- **Integración con WhatsApp**: Todo lo que construimos se conecta con WhatsApp para notificaciones, confirmaciones y recordatorios.
+
+## Proyectos Realizados
+- **damidisanto.com** — Sitio web para marca personal de entrenadora fitness, especializada en entrenamiento postparto y funcional. Incluye programas de entrenamiento, club de membresía y sistema de venta de planes.
+- **foodpop.maketo.site** — Plataforma de pedidos para restaurante de hamburguesas, pizzas y más. Menú digital interactivo con categorías, carrito de compras y sistema de pedidos en tiempo real.
+- **ma.maketo.site** — Plataforma web desarrollada a medida con interfaz personalizada para gestión de pedidos y atención al cliente.
+- **marketcoffeesweet.com** — Tienda online de café y productos gourmet con catálogo visual, carrito de compras y proceso de compra optimizado.
+
+## Cómo Trabajamos
+1. Consulta gratuita por WhatsApp para entender la necesidad del cliente.
+2. Prototipo visual personalizado para que el cliente vea cómo se verá antes de desarrollar.
+3. Desarrollo del software con tecnologías modernas y testing continuo.
+4. Lanzamiento, capacitación al cliente y soporte continuo.
+
+Los tiempos de entrega varían según el proyecto. Se definen en la consulta inicial según el alcance de cada sistema.
+
+## Modelo de Negocio
+Los precios dependen de la complejidad y el alcance de cada proyecto. No manejamos precios fijos porque cada sistema es diferente. Trabajamos de forma transparente: el cliente nos cuenta qué necesita y le damos una cotización clara y sin sorpresas. No cobramos mensualidades ni comisiones ocultas.
+
+## Zona de Cobertura
+Trabajamos con comercios y PYMES en toda Latinoamérica: Venezuela, Colombia, México, Perú, Chile, Argentina, Ecuador, y más. También atendemos a clientes en Estados Unidos y España. Todo el trabajo se realiza de forma remota.
+
+## Contacto
+- WhatsApp: +58 412-405-8904
+- Correo electrónico: maketostudio@gmail.com
+- Sitio web: https://maketo.site
+- Instagram: https://instagram.com/maketo.web
+- Facebook: https://facebook.com/maketoweboficial
+- LinkedIn: https://linkedin.com/company/maketoweb
+
+## Diferenciadores
+- Software escrito desde cero, sin plantillas ni dependencias de terceros
+- Apps web sin necesidad de Apple Store ni Play Store
+- Prototipo visual antes de desarrollar
+- Soporte continuo post-lanzamiento
+- Interfaz fácil de usar para el personal del negocio
+- Trabajo 100% remoto para toda Latinoamérica
