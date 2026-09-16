@@ -211,39 +211,7 @@
 }
 </script>
 
-<style data-purpose="custom-layout-styles">
-  body {
-    background-color: #F5F5F7;
-    color: #1a1a1a;
-    overflow-x: hidden;
-  }
-  .bento-card {
-    background: #fff;
-    border-radius: 24px;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.04), 0 1px 4px rgba(0,0,0,0.02);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  .bento-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 20px 60px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.04);
-  }
-  .gradient-purple { background: linear-gradient(135deg, #8B5CF6, #A78BFA); }
-  .gradient-blue { background: linear-gradient(135deg, #3B82F6, #60A5FA); }
-  .gradient-pink { background: linear-gradient(135deg, #EC4899, #F472B6); }
-  .gradient-green { background: linear-gradient(135deg, #22C55E, #4ADE80); }
-  .gradient-orange { background: linear-gradient(135deg, #F97316, #FB923C); }
-  .gradient-yellow { background: linear-gradient(135deg, #F59E0B, #FBBF24); }
-  .gradient-cyan { background: linear-gradient(135deg, #06B6D4, #22D3EE); }
-  .gradient-dark { background: linear-gradient(135deg, #1E293B, #334155); }
-  .gradient-red { background: linear-gradient(135deg, #EF4444, #F87171); }
-  .gradient-emerald { background: linear-gradient(135deg, #10B981, #34D399); }
-  .icon-bubble {
-    width: 48px; height: 48px; border-radius: 16px;
-    display: flex; align-items: center; justify-content: center;
-  }
-  .scrollbar-hide::-webkit-scrollbar{display:none}
-  .scrollbar-hide{-ms-overflow-style:none;scrollbar-width:none}
-</style>
+
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
@@ -324,13 +292,7 @@
       </button>
     </div>
   </nav>
-  <style>
-    #main-menu{position:fixed;top:0;left:0;width:100%;height:100vh;background:rgba(15,23,42,0.97);backdrop-filter:blur(16px);z-index:1001;display:none;transform:translateX(100%);transition:transform .3s cubic-bezier(.4,0,.2,1);padding:100px 20px 24px}
-    #main-menu.open{display:flex;flex-direction:column;transform:translateX(0)}
-    #main-menu a{color:#fff;font-weight:700;padding:18px 16px;border-radius:18px;transition:background .2s;text-align:center}
-    #main-menu a:hover{background:rgba(59,130,246,0.18)}
-    #main-menu ul{display:flex;flex-direction:column;gap:8px}
-  </style>
+  
   <div id="main-menu" role="navigation" aria-label="Menú móvil">
     <ul class="text-center">
       <li><a href="#servicios">Servicios</a></li>
@@ -345,7 +307,7 @@
 <section class="pt-28 pb-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
   <div class="grid grid-cols-1 lg:grid-cols-3 gap-5">
     <!-- Main card -->
-    <div class="lg:col-span-2 bento-card p-8 sm:p-10 flex flex-col justify-center">
+    <div class="hero-card lg:col-span-2 bento-card p-8 sm:p-10 flex flex-col justify-center">
       <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black leading-[1.1] text-[#1a1a1a] mb-5">
         Tu negocio necesita presencia en internet.<br/>
         <span class="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Nosotros lo construimos.</span>
@@ -429,7 +391,7 @@
 </section>
 
 <!-- Banner Cliente Feliz -->
-<section class="py-8 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+<section class="banner-section py-8 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
   <div class="bento-card overflow-hidden">
     <img src="/imagen/cliente-feliz.webp" alt="Cliente satisfecho con su sistema Maketo - Testimonio de negocio exitoso en Latinoamérica" class="w-full h-auto object-cover" loading="lazy" decoding="async" width="1200" height="400">
   </div>
@@ -442,7 +404,7 @@
     <h2 class="text-2xl sm:text-3xl font-black">TODO LO QUE TU NEGOCIO NECESITA</h2>
   </div>
 
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+  <div class="services-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
     <!-- Páginas Web -->
     <div class="bento-card p-6 group">
       <div class="icon-bubble gradient-blue text-white mb-4 shadow-[0_4px_16px_rgba(59,130,246,0.3)]">
@@ -527,7 +489,7 @@
 </section>
 
 <!-- Banner Notificaciones -->
-<section class="py-8 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+<section class="banner-section py-8 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
   <div class="bento-card overflow-hidden">
     <img src="/imagen/notificacio.png" alt="Sistema de notificaciones push Maketo - Ejemplo de notificación de oferta especial para clientes" class="w-full h-auto object-cover" loading="lazy" decoding="async" width="1200" height="400">
   </div>
@@ -565,7 +527,7 @@
 </section>
 
 <!-- Banner Nichos -->
-<section class="py-8 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+<section class="banner-section py-8 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
   <div class="bento-card overflow-hidden">
     <img src="/imagen/nichos.png" alt="Nichos de mercado que atiende Maketo - Restaurantes, farmacias, tiendas, clínicas, gimnasios y más negocios en Latinoamérica" class="w-full h-auto object-cover" loading="lazy" decoding="async" width="1200" height="400">
   </div>
@@ -586,7 +548,7 @@
     <div class="absolute right-0 top-0 bottom-0 w-6 bg-gradient-to-l from-[#F5F5F7] to-transparent z-10 pointer-events-none sm:hidden"></div>
 
     <div id="projectsCarousel" class="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-4 scrollbar-hide pl-4 pr-4 sm:pl-6 sm:pr-6 lg:pl-8 lg:pr-8" style="-webkit-overflow-scrolling:touch;scroll-behavior:smooth;overscroll-behavior-x:contain">
-      <div class="group flex-shrink-0 w-[85vw] sm:w-[70vw] md:w-[380px] snap-start bento-card overflow-hidden">
+      <div class="project-card group flex-shrink-0 w-[85vw] sm:w-[70vw] md:w-[380px] snap-start bento-card overflow-hidden">
         <div class="gradient-pink h-2"></div>
         <img src="/imagen/damidisanto.webp" alt="Proyecto damidisanto.com - Sitio web para entrenadora fitness con programas de entrenamiento y club de membresía" class="w-full h-48 object-cover" loading="lazy" decoding="async" width="380" height="192">
         <div class="p-6">
@@ -598,7 +560,7 @@
           </a>
         </div>
       </div>
-      <div class="group flex-shrink-0 w-[85vw] sm:w-[70vw] md:w-[380px] snap-start bento-card overflow-hidden">
+      <div class="project-card group flex-shrink-0 w-[85vw] sm:w-[70vw] md:w-[380px] snap-start bento-card overflow-hidden">
         <div class="gradient-orange h-2"></div>
         <img src="/imagen/foodpop.webp" alt="Proyecto foodpop.maketo.site - Plataforma de pedidos para restaurante con menú digital interactivo y carrito de compras" class="w-full h-48 object-cover" loading="lazy" decoding="async" width="380" height="192">
         <div class="p-6">
@@ -610,7 +572,7 @@
           </a>
         </div>
       </div>
-      <div class="group flex-shrink-0 w-[85vw] sm:w-[70vw] md:w-[380px] snap-start bento-card overflow-hidden">
+      <div class="project-card group flex-shrink-0 w-[85vw] sm:w-[70vw] md:w-[380px] snap-start bento-card overflow-hidden">
         <div class="gradient-blue h-2"></div>
         <div class="p-6">
           <span class="text-[10px] font-bold text-blue-500 uppercase tracking-wider">App Web</span>
@@ -621,7 +583,7 @@
           </a>
         </div>
       </div>
-      <div class="group flex-shrink-0 w-[85vw] sm:w-[70vw] md:w-[380px] snap-start bento-card overflow-hidden">
+      <div class="project-card group flex-shrink-0 w-[85vw] sm:w-[70vw] md:w-[380px] snap-start bento-card overflow-hidden">
         <div class="gradient-yellow h-2"></div>
         <img src="/imagen/market-coffee.webp" alt="Proyecto marketcoffeesweet.com - Tienda online de café y productos gourmet con catálogo visual y proceso de compra optimizado" class="w-full h-48 object-cover" loading="lazy" decoding="async" width="380" height="192">
         <div class="p-6">
@@ -769,7 +731,7 @@
 </section>
 
 <!-- Banner Tu App -->
-<section class="py-8 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+<section class="banner-section py-8 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
   <div class="bento-card overflow-hidden">
     <img src="/imagen/tuapp.webp" alt="Tu app personalizada con Maketo - Aplicación móvil para tu negocio con notificaciones push y pedidos online" class="w-full h-auto object-cover" loading="lazy" decoding="async" width="1200" height="400">
   </div>
