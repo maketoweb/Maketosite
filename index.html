@@ -4,9 +4,25 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Maketo — Software, Páginas Web y Apps para Comercios y PYMES</title>
-<link rel="stylesheet" href="/dist/output.css">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          sans: ['Plus Jakarta Sans', 'sans-serif'],
+        },
+        colors: {
+          primary: '#3B82F6',
+          surface: '#F8FAFC',
+        }
+      }
+    }
+  }
+</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" />
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/styles.css">
 <link rel="canonical" href="https://maketo.site">
 <link rel="alternate" hreflang="es" href="https://maketo.site/">
 <link rel="alternate" hreflang="es-VE" href="https://maketo.site/">
@@ -292,16 +308,16 @@
       </button>
     </div>
   </nav>
-  
-  <div id="main-menu" role="navigation" aria-label="Menú móvil">
-    <ul class="text-center">
-      <li><a href="#servicios">Servicios</a></li>
-      <li><a href="#proyectos">Proyectos</a></li>
-      <li><a href="#como-funciona">Cómo Funciona</a></li>
-      <li class="pt-4"><a href="https://wa.me/584124058904?text=Hola%20Maketo,%20necesito%20una%20página%20web" class="inline-flex w-full items-center justify-center gap-2 gradient-green text-white px-6 py-4 rounded-2xl font-bold text-base shadow-lg"><i class="ri-whatsapp-fill text-lg"></i> Escribir por WhatsApp</a></li>
-    </ul>
-  </div>
 </header>
+
+<div id="main-menu" role="navigation" aria-label="Menú móvil">
+  <ul class="text-center">
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#proyectos">Proyectos</a></li>
+    <li><a href="#como-funciona">Cómo Funciona</a></li>
+    <li class="pt-4"><a href="https://wa.me/584124058904?text=Hola%20Maketo,%20necesito%20una%20página%20web" class="inline-flex w-full items-center justify-center gap-2 gradient-green text-white px-6 py-4 rounded-2xl font-bold text-base shadow-lg"><i class="ri-whatsapp-fill text-lg"></i> Escribir por WhatsApp</a></li>
+  </ul>
+</div>
 
 <!-- Hero Bento -->
 <section class="pt-28 pb-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
@@ -548,7 +564,7 @@
     <div class="absolute right-0 top-0 bottom-0 w-6 bg-gradient-to-l from-[#F5F5F7] to-transparent z-10 pointer-events-none sm:hidden"></div>
 
     <div id="projectsCarousel" class="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-4 scrollbar-hide pl-4 pr-4 sm:pl-6 sm:pr-6 lg:pl-8 lg:pr-8" style="-webkit-overflow-scrolling:touch;scroll-behavior:smooth;overscroll-behavior-x:contain">
-      <div class="project-card group flex-shrink-0 w-[85vw] sm:w-[70vw] md:w-[380px] snap-start bento-card overflow-hidden">
+      <div class="project-card group flex-shrink-0 w-[calc(100vw-3rem)] sm:w-[70vw] md:w-[380px] snap-start bento-card overflow-hidden">
         <div class="gradient-pink h-2"></div>
         <img src="/imagen/damidisanto.webp" alt="Proyecto damidisanto.com - Sitio web para entrenadora fitness con programas de entrenamiento y club de membresía" class="w-full h-48 object-cover" loading="lazy" decoding="async" width="380" height="192">
         <div class="p-6">
@@ -560,7 +576,7 @@
           </a>
         </div>
       </div>
-      <div class="project-card group flex-shrink-0 w-[85vw] sm:w-[70vw] md:w-[380px] snap-start bento-card overflow-hidden">
+      <div class="project-card group flex-shrink-0 w-[calc(100vw-3rem)] sm:w-[70vw] md:w-[380px] snap-start bento-card overflow-hidden">
         <div class="gradient-orange h-2"></div>
         <img src="/imagen/foodpop.webp" alt="Proyecto foodpop.maketo.site - Plataforma de pedidos para restaurante con menú digital interactivo y carrito de compras" class="w-full h-48 object-cover" loading="lazy" decoding="async" width="380" height="192">
         <div class="p-6">
@@ -572,7 +588,7 @@
           </a>
         </div>
       </div>
-      <div class="project-card group flex-shrink-0 w-[85vw] sm:w-[70vw] md:w-[380px] snap-start bento-card overflow-hidden">
+      <div class="project-card group flex-shrink-0 w-[calc(100vw-3rem)] sm:w-[70vw] md:w-[380px] snap-start bento-card overflow-hidden">
         <div class="gradient-blue h-2"></div>
         <div class="p-6">
           <span class="text-[10px] font-bold text-blue-500 uppercase tracking-wider">App Web</span>
@@ -583,7 +599,7 @@
           </a>
         </div>
       </div>
-      <div class="project-card group flex-shrink-0 w-[85vw] sm:w-[70vw] md:w-[380px] snap-start bento-card overflow-hidden">
+      <div class="project-card group flex-shrink-0 w-[calc(100vw-3rem)] sm:w-[70vw] md:w-[380px] snap-start bento-card overflow-hidden">
         <div class="gradient-yellow h-2"></div>
         <img src="/imagen/market-coffee.webp" alt="Proyecto marketcoffeesweet.com - Tienda online de café y productos gourmet con catálogo visual y proceso de compra optimizado" class="w-full h-48 object-cover" loading="lazy" decoding="async" width="380" height="192">
         <div class="p-6">
