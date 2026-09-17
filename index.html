@@ -287,8 +287,8 @@
 <body class="font-sans">
 
 <!-- Header -->
-<header class="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[calc(100%-2rem)] max-w-5xl">
-  <nav class="bg-white/80 backdrop-blur-xl rounded-[20px] px-5 py-3 flex items-center justify-between shadow-[0_4px_24px_rgba(0,0,0,0.06)] border border-white/60">
+<header class="fixed top-4 inset-x-0 z-50 flex justify-center px-4 pointer-events-none">
+  <nav class="pointer-events-auto bg-white/80 backdrop-blur-xl rounded-[20px] px-5 py-3 flex items-center justify-between shadow-[0_4px_24px_rgba(0,0,0,0.06)] border border-white/60 w-full max-w-5xl">
     <a class="flex items-center gap-2" href="/" aria-label="Maketo">
       <img alt="Maketo" class="h-8 w-auto" src="/imagen/logo.png"/>
       <span class="text-lg tracking-tight text-primary font-black">maketo</span>
@@ -299,7 +299,7 @@
       <a class="hover:text-primary transition-colors" href="#como-funciona">Cómo Funciona</a>
     </div>
     <div class="flex items-center gap-3">
-      <a href="https://wa.me/584124058904?text=Hola%20Maketo,%20necesito%20una%20página%20web%20para%20mi%20negocio" class="hidden lg:inline-flex items-center gap-2 gradient-green text-white px-5 py-2.5 rounded-full font-bold text-sm hover:opacity-90 transition-all shadow-[0_4px_16px_rgba(34,197,94,0.3)]">
+      <a href="https://wa.me/584124058904?text=Hola%20Maketo,%20necesito%20una%20página%20web%20para%20mi%20negocio" class="hidden md:inline-flex items-center gap-2 gradient-green text-white px-5 py-2.5 rounded-full font-bold text-sm hover:opacity-90 transition-all shadow-[0_4px_16px_rgba(34,197,94,0.3)]">
         <i class="ri-whatsapp-fill text-base"></i>
         WhatsApp
       </a>
@@ -308,16 +308,15 @@
       </button>
     </div>
   </nav>
+  <div id="main-menu" role="navigation" aria-label="Menú móvil">
+    <ul class="text-center">
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#como-funciona">Cómo Funciona</a></li>
+      <li class="pt-4"><a href="https://wa.me/584124058904?text=Hola%20Maketo,%20necesito%20una%20página%20web" class="inline-flex w-full items-center justify-center gap-2 gradient-green text-white px-6 py-4 rounded-2xl font-bold text-base shadow-lg"><i class="ri-whatsapp-fill text-lg"></i> Escribir por WhatsApp</a></li>
+    </ul>
+  </div>
 </header>
-
-<div id="main-menu" role="navigation" aria-label="Menú móvil">
-  <ul class="text-center">
-    <li><a href="#servicios">Servicios</a></li>
-    <li><a href="#proyectos">Proyectos</a></li>
-    <li><a href="#como-funciona">Cómo Funciona</a></li>
-    <li class="pt-4"><a href="https://wa.me/584124058904?text=Hola%20Maketo,%20necesito%20una%20página%20web" class="inline-flex w-full items-center justify-center gap-2 gradient-green text-white px-6 py-4 rounded-2xl font-bold text-base shadow-lg"><i class="ri-whatsapp-fill text-lg"></i> Escribir por WhatsApp</a></li>
-  </ul>
-</div>
 
 <!-- Hero Bento -->
 <section class="pt-28 pb-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
